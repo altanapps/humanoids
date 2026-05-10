@@ -1,0 +1,14 @@
+{
+  "name": "humanoid-directory",
+  "version": "1.0.0",
+  "description": "The directory of humanoid robots. Pricing, availability, deployments.",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-seo.js",
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

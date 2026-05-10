@@ -1,0 +1,6118 @@
+[
+  {
+    "company": "AgiBot (Zhiyuan Robotics)",
+    "robot_name": "Yuanzheng A2",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": 169,
+    "weight_kg": 69,
+    "payload_kg": 15,
+    "dof": 40,
+    "battery_hours": 2,
+    "walking_speed_ms": 3.3,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "service deployments"
+    ],
+    "website": "https://www.agibot.com/products/A2",
+    "image_url": "images/agibot-zhiyuan-robotics--yuanzheng-a2.png",
+    "image_source": "agibot.com",
+    "short_description": "Service humanoid with 19-DOF hands; set Guinness record walking 106 km in Nov 2025; 5,000+ units shipped.",
+    "price_usd": 27000,
+    "price_note": "~$27,000 for Youth Edition on JD.com; $44,560 for A2 Lite (AgiBot store); full A2 variants $100K-$190K. First humanoid certified in China, US, and EU markets.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China",
+      "USA",
+      "EU"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "research_education"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "FULIN P.M. (auto parts factory)",
+        "year": 2025,
+        "details": "Multi-million yuan order for 100 A2-W wheeled humanoids deployed in flexible intelligent manufacturing.",
+        "source": "https://www.scmp.com/tech/tech-trends/article/3321456/chinese-robotics-start-agibot-lands-deal-deploy-100-robots-car-parts-factories"
+      },
+      {
+        "customer": "AgiBot mass shipments (5,000+ units)",
+        "year": 2025,
+        "details": "AgiBot shipped 5,000 humanoids in Q4 2025 alone; reached 10,000 units delivered globally by March 2026, reportedly the highest of any humanoid maker.",
+        "source": "https://www.chosun.com/english/world-en/2025/12/26/X6UYTLNXIFFV7I5WPNQIVLMHBY/"
+      }
+    ]
+  },
+  {
+    "company": "AgiBot (Zhiyuan Robotics)",
+    "robot_name": "Lingxi X1",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": 130,
+    "weight_kg": 33,
+    "payload_kg": 3,
+    "dof": 34,
+    "battery_hours": 2,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "developers",
+      "research"
+    ],
+    "website": "https://www.agibot.com/",
+    "image_url": "images/agibot-zhiyuan-robotics--lingxi-x1.jpg",
+    "image_source": "agibot.com",
+    "short_description": "Open-source bipedal kit, 130 cm, 33 kg, modular design with 34-44 DOF and 10-DOF fingers.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "AgiBot (Zhiyuan Robotics)",
+    "robot_name": "Lingxi X2",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": 130,
+    "weight_kg": 34,
+    "payload_kg": null,
+    "dof": 27,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "research"
+    ],
+    "website": "https://www.agibot.com/products/X2",
+    "image_url": "images/agibot-zhiyuan-robotics--lingxi-x2.jpg",
+    "image_source": "Wikimedia Commons (CC BY 4.0, JJxFile, MWC Barcelona 2026; https://commons.wikimedia.org/wiki/File:AGIBOT-X2-_by_JxFile_MWC26.jpg)",
+    "short_description": "Compact bipedal humanoid with multimodal AI, 27 DOF, demonstrated bicycle riding capability.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Agility Robotics",
+    "robot_name": "Digit",
+    "country": "USA",
+    "hq_city": "Salem, OR",
+    "year_founded": 2015,
+    "year_revealed": 2019,
+    "height_cm": 175,
+    "weight_kg": 65,
+    "payload_kg": 16,
+    "dof": null,
+    "battery_hours": 16,
+    "walking_speed_ms": 1.5,
+    "status": "commercial",
+    "funding_usd_m": 683,
+    "key_customers_or_pilots": [
+      "GXO Logistics",
+      "Amazon",
+      "Spanx"
+    ],
+    "website": "https://www.agilityrobotics.com",
+    "image_url": "images/agility-robotics--digit.jpg",
+    "image_source": "agilityrobotics.com (Webflow CDN)",
+    "short_description": "Bird-legged bipedal humanoid purpose-built for warehouse tote handling; first commercially deployed humanoid in US logistics.",
+    "price_usd": 250000,
+    "price_note": "List price ~$250K; also offered as Robots-as-a-Service at $10-$25/hour. Amazon led $150M strategic investment in 2025.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA",
+      "EU"
+    ],
+    "use_cases": [
+      "warehouse_logistics",
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "GXO Logistics (Spanx warehouse, Atlanta)",
+        "year": 2024,
+        "details": "First formal commercial RaaS contract for a humanoid; Digits move totes between AMRs and conveyors.",
+        "source": "https://www.agilityrobotics.com/"
+      },
+      {
+        "customer": "Amazon",
+        "year": 2024,
+        "details": "Pilot at Amazon fulfillment center; Amazon led $150M strategic investment in 2025.",
+        "source": "https://www.22astronauts.com/p/how-agility-robotics-convinced-amazon"
+      },
+      {
+        "customer": "Schaeffler",
+        "year": 2026,
+        "details": "Digits deployed at Schaeffler auto-parts factory carrying bins.",
+        "source": "https://www.deeplearning.ai/the-batch/agiliy-digits-humanoid-robots-fetch-and-carry-bins-at-a-schaeffler-auto-parts-factory-displacing-humans-into-higher-level-jobs/"
+      }
+    ]
+  },
+  {
+    "company": "AI2 Robotics (Zhifang)",
+    "robot_name": "AlphaBot 2",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": 145,
+    "key_customers_or_pilots": [],
+    "website": "https://ai2robotics.com/en/",
+    "image_url": "images/ai2-robotics-zhifang--alphabot-2.webp",
+    "image_source": "CNMRA AI2 Robotics article",
+    "short_description": "AGI-native firm whose AlphaBot wheeled dual-arm humanoid won a 1,000-unit RMB 500M order, raised $145M Series B.",
+    "price_usd": 145,
+    "price_note": "$145 (from description)",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "AiMOGA Robotics (Chery)",
+    "robot_name": "Mornine M1",
+    "country": "China",
+    "hq_city": "Wuhu",
+    "year_founded": 2025,
+    "year_revealed": 2026,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://aimoga.com/",
+    "image_url": "images/aimoga-robotics-chery--mornine-m1.webp",
+    "image_source": "Electrek Chery Mornine article",
+    "short_description": "Chery-incubated humanoid sold online via JD.com for $41,400 with VR teleop, dual-arm coordination, and a 0.7 kWh battery.",
+    "price_usd": 41400,
+    "price_note": "$41,400  (from description)",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "AIST",
+    "robot_name": "HRP-4",
+    "country": "Japan",
+    "hq_city": "Tsukuba",
+    "year_founded": 2001,
+    "year_revealed": 2010,
+    "height_cm": 150,
+    "weight_kg": 39,
+    "payload_kg": 0.5,
+    "dof": 34,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.aist.go.jp",
+    "image_url": "images/aist--hrp-4.webp",
+    "image_source": "spectrum.ieee.org",
+    "short_description": "Slim adult-sized HRP humanoid built by AIST and Kawada for natural human-like motion in shared workspaces.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Japan"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "AKINROBOTICS",
+    "robot_name": "ADA",
+    "country": "Turkey",
+    "hq_city": "Konya",
+    "year_founded": 2017,
+    "year_revealed": 2017,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Istanbul Airport"
+    ],
+    "website": "https://www.akinrobotics.com/en/",
+    "image_url": "images/akinrobotics--ada.jpg",
+    "image_source": "Engadget AKINROBOTICS article",
+    "short_description": "Turkish humanoid social robot family (ADA-7, Mini ADA, GH5) produced at Konya factory for service and reception.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Turkey"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "customer_service"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Aldebaran (United Robotics Group)",
+    "robot_name": "NAO",
+    "country": "France",
+    "hq_city": "Paris",
+    "year_founded": 2005,
+    "year_revealed": 2008,
+    "height_cm": 58,
+    "weight_kg": 5.5,
+    "payload_kg": null,
+    "dof": 25,
+    "battery_hours": 1.5,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "RoboCup",
+      "5000+ research and education customers"
+    ],
+    "website": "https://www.aldebaran.com",
+    "image_url": "images/aldebaran-united-robotics-group--nao.jpg",
+    "image_source": "Wikimedia Commons (CC BY-SA 3.0, Jiuguang Wang, Georgia Tech GRITS Lab; https://commons.wikimedia.org/wiki/File:Nao_humanoid_robot.jpg)",
+    "short_description": "Small bipedal programmable humanoid widely used in research and education, the de facto standard RoboCup SPL platform.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "France"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Beijing Galbot",
+    "robot_name": "Galbot G1",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": 173,
+    "weight_kg": 85,
+    "payload_kg": null,
+    "dof": 47,
+    "battery_hours": 10,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": 300,
+    "key_customers_or_pilots": [
+      "Beijing pharmacies",
+      "convenience stores"
+    ],
+    "website": "https://www.galbot.com/g1",
+    "image_url": "images/beijing-galbot--galbot-g1.webp",
+    "image_source": "humanoid.guide Galbot page",
+    "short_description": "Wheeled dual-arm large-model humanoid deployed in Beijing convenience stores and pharmacies; 360-degree omni-wheel base.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Booster Robotics",
+    "robot_name": "T1",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": 118,
+    "weight_kg": 30,
+    "payload_kg": null,
+    "dof": 23,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "RoboCup teams",
+      "developers"
+    ],
+    "website": "https://www.booster.tech/booster-t1/",
+    "image_url": "images/booster-robotics--t1.webp",
+    "image_source": "humanoid.guide",
+    "short_description": "118 cm developer humanoid with 23 DOF, 200 TOPS Jetson Orin; won RoboCup 2025 AdultSize, 700+ units shipped.",
+    "price_usd": 41224,
+    "price_note": "$41,224 (Standard) via RobotShop with US tariffs included. Open-source developer platform.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": 5,
+    "support_regions": [
+      "China",
+      "USA",
+      "EU"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Universities and developer community",
+        "year": 2025,
+        "details": "Open-source platform widely sold via Maverick Drone, RobotShop, GenerationRobots; primarily research/development applications.",
+        "source": "https://www.robotshop.com/products/booster-t1-humanoid-robot-standard"
+      }
+    ]
+  },
+  {
+    "company": "Booster Robotics",
+    "robot_name": "K1",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": 95,
+    "weight_kg": 19.5,
+    "payload_kg": null,
+    "dof": 22,
+    "battery_hours": 0.67,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "RoboCup teams",
+      "education"
+    ],
+    "website": "https://www.booster.tech/booster-k1/",
+    "image_url": "images/booster-robotics--k1.webp",
+    "image_source": "humanoid.guide",
+    "short_description": "Compact 95 cm humanoid for education/research, sub-$5,000, won RoboCup 2025 KidSize league.",
+    "price_usd": 4999,
+    "price_note": "$4,999 starting price for entry-level embodied development platform; international pricing up to $7,500. RoboCup-winning platform.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": 6,
+    "support_regions": [
+      "China",
+      "USA",
+      "EU"
+    ],
+    "use_cases": [
+      "research_education",
+      "entertainment_events"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "RoboCup competition teams and educational institutions",
+        "year": 2025,
+        "details": "Launched October 2025 as RoboCup-Winning platform for education and competitions; under-1m, 19.5kg child-size robot.",
+        "source": "https://www.humanoidsdaily.com/news/booster-robotics-launches-k1-robocup-champion-platform"
+      }
+    ]
+  },
+  {
+    "company": "Booster Robotics",
+    "robot_name": "K1 Pro",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": null,
+    "year_revealed": 2026,
+    "height_cm": null,
+    "weight_kg": 19.5,
+    "payload_kg": null,
+    "dof": 22,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "RoboCup 2025 KidSize"
+    ],
+    "website": "https://www.booster.tech/booster-k1/",
+    "image_url": "images/booster-robotics--k1-pro.png",
+    "image_source": "PR Times Booster Robotics K1 Pro release",
+    "short_description": "Sub-20 kg, 22-DoF entry-level humanoid with NVIDIA Jetson AGX Orin (200 TOPS), used in RoboCup KidSize soccer.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "CasiVision",
+    "robot_name": "CASIVIBOT",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://en.zhongkehuiyuan.com/",
+    "image_url": "images/casivision--casivibot.webp",
+    "image_source": "humanoid.guide CASIVIBOT page",
+    "short_description": "Wheeled humanoid quality-inspector for smart-manufacturing lines, replacing fixed inspection systems with mobile dual-arm units.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "security_inspection"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Cyan Robotics",
+    "robot_name": "Orca",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": 145,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "eldercare",
+      "education",
+      "physical therapy"
+    ],
+    "website": null,
+    "image_url": "images/cyan-robotics--orca.webp",
+    "image_source": "humanoid.guide",
+    "short_description": "1.45 m bipedal with emotional-gait LLM, OLED face display; sold on JD.com at $40-50K.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education",
+      "healthcare_eldercare"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Dataa Robotics (CloudMinds)",
+    "robot_name": "XR-1 / Cloud Ginger",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2015,
+    "year_revealed": 2019,
+    "height_cm": 158,
+    "weight_kg": 62,
+    "payload_kg": null,
+    "dof": 34,
+    "battery_hours": null,
+    "walking_speed_ms": 1.01,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "service deployments"
+    ],
+    "website": "https://www.cloudminds.com/en/product-44.html",
+    "image_url": "images/dataa-robotics-cloudminds--xr-1-cloud-ginger.png",
+    "image_source": "robotatta.com",
+    "short_description": "5G-connected service humanoid with 34 smart compliant actuators; cloud-brain HARIX architecture.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "DEEP Robotics",
+    "robot_name": "DR02",
+    "country": "China",
+    "hq_city": "Hangzhou",
+    "year_founded": 2017,
+    "year_revealed": 2025,
+    "height_cm": 175,
+    "weight_kg": 65,
+    "payload_kg": 20,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": 4,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "industrial"
+    ],
+    "website": "https://www.deeprobotics.cn/en/index/dr02.html",
+    "image_url": "images/deep-robotics--dr02.jpg",
+    "image_source": "deeprobotics.cn",
+    "short_description": "First IP66 all-weather humanoid, operates -20 to +55C, 4 m/s sprint, 275 TOPS compute.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "agriculture_outdoor"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Dobot (Yuejiang Technology)",
+    "robot_name": "Atom",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2015,
+    "year_revealed": 2025,
+    "height_cm": 153,
+    "weight_kg": 62,
+    "payload_kg": null,
+    "dof": 41,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "industrial"
+    ],
+    "website": "https://www.dobot-robots.com/products/humanoid-robots/atom.html",
+    "image_url": "images/dobot-yuejiang-technology--atom.png",
+    "image_source": "dobot.cc CDN",
+    "short_description": "153 cm straight-knee walker with 41 DOF and 1,500 TOPS edge compute; mass production from ~$27K.",
+    "price_usd": 27000,
+    "price_note": "$27K (from description)",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "EngineAI",
+    "robot_name": "SE01",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": 170,
+    "weight_kg": 55,
+    "payload_kg": null,
+    "dof": 32,
+    "battery_hours": null,
+    "walking_speed_ms": 2,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "research"
+    ],
+    "website": "https://www.engineai.com.cn/",
+    "image_url": "images/engineai--se01.png",
+    "image_source": "engineai.com.cn (Tencent COS)",
+    "short_description": "Full-size flagship with 32 DOF, depth camera + LiDAR, neural-network gait optimization for upright walking.",
+    "price_usd": 27500,
+    "price_note": "Reported price 150,000-200,000 RMB (~$20K-$30K). Flagship full-size 170cm humanoid with 32 DoF.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education",
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Research labs (Nvidia and SenseTime took interest)",
+        "year": 2025,
+        "details": "EngineAI's SE01 widely cited for natural human-like gait; demonstrated at industry events.",
+        "source": "https://www.digitimes.com/news/a20250121PD213/robot-nvidia-sensetime-startup-2024.html"
+      }
+    ]
+  },
+  {
+    "company": "EngineAI",
+    "robot_name": "PM01",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": 138,
+    "weight_kg": 40,
+    "payload_kg": null,
+    "dof": 23,
+    "battery_hours": null,
+    "walking_speed_ms": 2,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "education",
+      "research"
+    ],
+    "website": "https://www.engineai.com.cn/",
+    "image_url": "images/engineai--pm01.png",
+    "image_source": "engineai.com.cn (Tencent COS)",
+    "short_description": "138 cm open platform with 320 deg waist rotation, performed world-first humanoid front-flip.",
+    "price_usd": 12000,
+    "price_note": "$12,000 (88,000 yuan) initial offer; current US distributor pricing ~$39,500 for Education Edition. Compact humanoid for developers.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China",
+      "USA"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Educational and developer institutions",
+        "year": 2025,
+        "details": "Released Dec 2024 for developer/educational use; demonstrated at CES 2025.",
+        "source": "https://www.therobotreport.com/engineai-releases-pm01-humanoid-robot-for-commercial-educational-use/"
+      }
+    ]
+  },
+  {
+    "company": "EngineAI",
+    "robot_name": "T800",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": 185,
+    "weight_kg": 85,
+    "payload_kg": null,
+    "dof": 41,
+    "battery_hours": 4,
+    "walking_speed_ms": 3,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "industrial"
+    ],
+    "website": "https://www.engineai.com.cn/",
+    "image_url": "images/engineai--t800.jpg",
+    "image_source": "New Atlas via S3 (https://newatlas.com/ai-humanoids/engineai-t800-humanoid/)",
+    "short_description": "Heavy-duty 185 cm humanoid with 450 Nm peak torque, solid-state battery, ~$25K price target.",
+    "price_usd": 25000,
+    "price_note": "$25,000 base (180,000 yuan) entered mass production; configurations up to $80K. Full-size 173cm with 29 DoF and 450 N-m peak torque.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "research_education"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Factory pilots (Chinese OEMs)",
+        "year": 2025,
+        "details": "Entered mass production end of 2025; positioned as one of the strongest humanoids per dollar.",
+        "source": "https://www.theresarobotforthat.com/engineais-t800-humanoid-enters-mass-production-for-25k/"
+      }
+    ]
+  },
+  {
+    "company": "Engineered Arts",
+    "robot_name": "Ameca",
+    "country": "United Kingdom",
+    "hq_city": "Falmouth, Cornwall",
+    "year_founded": 2004,
+    "year_revealed": 2021,
+    "height_cm": 187,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": 61,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "museums",
+      "universities",
+      "tech expos"
+    ],
+    "website": "https://engineeredarts.com",
+    "image_url": "images/engineered-arts--ameca.jpg",
+    "image_source": "Wikimedia Commons (CC)",
+    "short_description": "Highly expressive social humanoid with 27 DoF in the face, designed for human-robot interaction; sold in head-only, half-body, and full-body configurations.",
+    "price_usd": 250000,
+    "price_note": "From ~$130K (half-body) to $250K-$500K+ for full custom enterprise deployment. Also available for rent.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "UK",
+      "USA",
+      "EU",
+      "UAE"
+    ],
+    "use_cases": [
+      "research_education",
+      "customer_service",
+      "entertainment_events"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Museum of the Future (Dubai)",
+        "year": 2025,
+        "details": "Latest version of Ameca welcomes Museum of the Future visitors in 6+ languages; revealed during Dubai AI Week April 2025.",
+        "source": "https://www.tahawultech.com/business/museum-of-the-future-debuts-upgraded-ai-enabled-humanoid-robot-ameca/"
+      },
+      {
+        "customer": "Computer History Museum (Mountain View, CA)",
+        "year": 2024,
+        "details": "Ameca featured in Chatbots Decoded exhibit at Computer History Museum.",
+        "source": "https://www.mv-voice.com/technology/2024/11/26/computer-history-museum-unveils-new-ai-exhibit-featuring-chatbots/"
+      }
+    ]
+  },
+  {
+    "company": "Engineered Arts",
+    "robot_name": "Mesmer",
+    "country": "United Kingdom",
+    "hq_city": "Falmouth, Cornwall",
+    "year_founded": 2004,
+    "year_revealed": 2018,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "theme parks",
+      "museums"
+    ],
+    "website": "https://engineeredarts.com",
+    "image_url": "images/engineered-arts--mesmer.webp",
+    "image_source": "newatlas.com",
+    "short_description": "Modular animatronic humanoid line built from 3D scans of real people, used for entertainment and exhibition installations.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "United Kingdom"
+    ],
+    "use_cases": [
+      "customer_service",
+      "entertainment_events"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Fauna Robotics",
+    "robot_name": "Sprout",
+    "country": "USA",
+    "hq_city": "New York, NY",
+    "year_founded": 2024,
+    "year_revealed": 2026,
+    "height_cm": 107,
+    "weight_kg": 22.7,
+    "payload_kg": null,
+    "dof": 29,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Amazon (acquirer)"
+    ],
+    "website": "https://faunarobotics.com/",
+    "image_url": "images/fauna-robotics--sprout.webp",
+    "image_source": "Fauna Robotics product page",
+    "short_description": "Approachable 1.07 m, 22.7 kg, 29-DOF $50K developer humanoid; Amazon acquired Fauna in 2026.",
+    "price_usd": 50000,
+    "price_note": "$50K (from description)",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "warehouse_logistics",
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Fourier Intelligence",
+    "robot_name": "GR-1",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2015,
+    "year_revealed": 2023,
+    "height_cm": 165,
+    "weight_kg": 55,
+    "payload_kg": 50,
+    "dof": 40,
+    "battery_hours": null,
+    "walking_speed_ms": 1.39,
+    "status": "commercial",
+    "funding_usd_m": 246,
+    "key_customers_or_pilots": [
+      "healthcare",
+      "research"
+    ],
+    "website": "https://www.fftai.com/products-gr1",
+    "image_url": "images/fourier-intelligence--gr-1.png",
+    "image_source": "fftai.com",
+    "short_description": "165 cm humanoid with 40 DOF, walks 5 km/h, carries 50 kg; 300 Nm peak hip torque.",
+    "price_usd": 150000,
+    "price_note": "~$150,000-$170,000 list price for full configuration; Indian distributors quote ~$150K. Available through authorized partners.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China",
+      "USA",
+      "EU"
+    ],
+    "use_cases": [
+      "research_education",
+      "healthcare_eldercare",
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Healthcare research institutions and rehabilitation centers",
+        "year": 2024,
+        "details": "GR-1 targeted at rehabilitation; Fourier built reputation in exoskeleton/rehab space before pivoting to humanoids.",
+        "source": "https://www.fftai.com/products-gr1"
+      }
+    ]
+  },
+  {
+    "company": "Fourier Intelligence",
+    "robot_name": "GR-2",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2015,
+    "year_revealed": 2024,
+    "height_cm": 175,
+    "weight_kg": 63,
+    "payload_kg": 3,
+    "dof": 53,
+    "battery_hours": 2,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": 246,
+    "key_customers_or_pilots": [
+      "research"
+    ],
+    "website": "https://www.fftai.com/products-gr2",
+    "image_url": "images/fourier-intelligence--gr-2.png",
+    "image_source": "fftai.com",
+    "short_description": "53-DOF humanoid with 12-DOF hands, FSA 2.0 actuators, detachable battery and 380 Nm peak torque.",
+    "price_usd": 125000,
+    "price_note": "~$125,000 via robotsinternational.com; estimated $100K-$150K range. Successor to GR-1 with 12-DoF dexterous hands.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China",
+      "USA",
+      "EU"
+    ],
+    "use_cases": [
+      "research_education",
+      "healthcare_eldercare"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Research labs (academic)",
+        "year": 2025,
+        "details": "GR-2 sold primarily to research institutions; no named industrial customer publicly announced.",
+        "source": "https://www.robotsinternational.com/Fourier.htm"
+      }
+    ]
+  },
+  {
+    "company": "Fourier Intelligence",
+    "robot_name": "GR-3",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2015,
+    "year_revealed": 2025,
+    "height_cm": 134,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": 55,
+    "battery_hours": 3,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": 246,
+    "key_customers_or_pilots": [
+      "elder care",
+      "social companion"
+    ],
+    "website": "https://www.fftai.com/",
+    "image_url": "images/fourier-intelligence--gr-3.jpg",
+    "image_source": "fftai.com",
+    "short_description": "Compact social-care humanoid with 55 DOF, dual hot-swap batteries giving 3 hours runtime.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "healthcare_eldercare"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Fourier Intelligence",
+    "robot_name": "N1",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2015,
+    "year_revealed": 2025,
+    "height_cm": 130,
+    "weight_kg": 38,
+    "payload_kg": null,
+    "dof": 23,
+    "battery_hours": 2,
+    "walking_speed_ms": 3.5,
+    "status": "commercial",
+    "funding_usd_m": 246,
+    "key_customers_or_pilots": [
+      "developers",
+      "researchers"
+    ],
+    "website": "https://www.fftai.com/",
+    "image_url": "images/fourier-intelligence--n1.webp",
+    "image_source": "futura-sciences.com",
+    "short_description": "China's first fully open-source humanoid, 130 cm, 38 kg, 23 DOF; runs 3.5 m/s with 2-hour swappable battery.",
+    "price_usd": null,
+    "price_note": "Open-source humanoid; pricing varies by configuration from DIY kits to full assembled units. Estimated under $20K at base.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China",
+      "USA",
+      "EU"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Open-source developer community",
+        "year": 2025,
+        "details": "Launched April 2025 as Fourier's open-source platform; targeting researchers and developers worldwide.",
+        "source": "https://www.humanoidsdaily.com/news/fourier-intelligence-launches-n1-humanoid-robot-with-open-source-strategy"
+      }
+    ]
+  },
+  {
+    "company": "Galaxea AI (Galaxea Dynamics)",
+    "robot_name": "R1 Pro",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": 170,
+    "weight_kg": 96,
+    "payload_kg": 10,
+    "dof": 26,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": 700,
+    "key_customers_or_pilots": [],
+    "website": "https://galaxea-dynamics.com/",
+    "image_url": "images/galaxea-ai-galaxea-dynamics--r1-pro.webp",
+    "image_source": "Galaxea Dynamics product page",
+    "short_description": "$700M-valued Beijing startup's wheeled dual-arm humanoid with 26 DoF, 7-DoF arms, 4-DoF torso, 200 TOPS compute.",
+    "price_usd": 700,
+    "price_note": "$700 (from description)",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Hanson Robotics",
+    "robot_name": "Sophia",
+    "country": "USA",
+    "hq_city": "Plano, TX / Hong Kong",
+    "year_founded": 2007,
+    "year_revealed": 2016,
+    "height_cm": 167,
+    "weight_kg": 20,
+    "payload_kg": null,
+    "dof": 83,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "UN AI ambassador",
+      "media / education appearances",
+      "Saudi Arabia (citizenship)"
+    ],
+    "website": "https://www.hansonrobotics.com",
+    "image_url": "images/hanson-robotics--sophia.jpg",
+    "image_source": "Wikimedia Commons (ITU Pictures, CC BY 2.0)",
+    "short_description": "Social humanoid known for lifelike Frubber-skin facial expressions and conversational AI; primarily used for education, research, and public AI advocacy.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "InMoov",
+    "robot_name": "InMoov",
+    "country": "France",
+    "hq_city": "Paris",
+    "year_founded": null,
+    "year_revealed": 2012,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://inmoov.fr/",
+    "image_url": "images/inmoov--inmoov.jpg",
+    "image_source": "Wikipedia InMoov article",
+    "short_description": "Gael Langevin's open-source life-size 3D-printable humanoid controlled by Arduino — first of its kind.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "France"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Istituto Italiano di Tecnologia (IIT)",
+    "robot_name": "iCub",
+    "country": "Italy",
+    "hq_city": "Genoa",
+    "year_founded": 2004,
+    "year_revealed": 2008,
+    "height_cm": 104,
+    "weight_kg": 22,
+    "payload_kg": null,
+    "dof": 53,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "EU research labs"
+    ],
+    "website": "https://icub.iit.it",
+    "image_url": "images/istituto-italiano-di-tecnologia-iit--icub.jpg",
+    "image_source": "Wikimedia Commons (CC)",
+    "short_description": "Open-source child-sized humanoid for embodied cognition research, with sensorized full-body skin and 9 DoF per hand.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Italy"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Leju Robot",
+    "robot_name": "Kuavo",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2016,
+    "year_revealed": 2023,
+    "height_cm": null,
+    "weight_kg": 45,
+    "payload_kg": null,
+    "dof": 26,
+    "battery_hours": null,
+    "walking_speed_ms": 1.28,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "China National Games torchbearer",
+      "education"
+    ],
+    "website": "https://www.lejurobot.com/en",
+    "image_url": "images/leju-robot--kuavo.png",
+    "image_source": "lejurobot.com",
+    "short_description": "Bipedal humanoid with 26 DOF and 360 Nm torque joints; runs Huawei HarmonyOS-based KaihongOS, ~$50K.",
+    "price_usd": 50000,
+    "price_note": "~$50,000 estimated. Tencent-backed; raised $210.5M in pre-IPO round 2025.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education",
+      "customer_service"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "China Mobile (Smart venues tour guide)",
+        "year": 2025,
+        "details": "Kuavo deployed as tour guide at China Mobile's Smart venues; collaboration with Huawei Cloud for cloud training.",
+        "source": "https://counterpointresearch.com/en/insights/Global-Humanoid-Robot-Installations-Reach-16%2C000-Units-in-2025-as-Mass-Production-Picks-Pace"
+      }
+    ]
+  },
+  {
+    "company": "LimX Dynamics",
+    "robot_name": "Oli",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2022,
+    "year_revealed": 2025,
+    "height_cm": 165,
+    "weight_kg": 55,
+    "payload_kg": null,
+    "dof": 31,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "research"
+    ],
+    "website": "https://www.limxdynamics.com/en/products/oli",
+    "image_url": "images/limx-dynamics--oli.webp",
+    "image_source": "limxdynamics.com (Aliyun OSS)",
+    "short_description": "Full-size 165 cm humanoid with 31 DOF (43 with hands); ~$22,000 preorder, modular for research.",
+    "price_usd": 21800,
+    "price_note": "Lite ~$21,800 (158K RMB) base; EDU $59,800-$65,249 via US distributors. Three versions: Lite, EDU, Super.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China",
+      "USA"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Research universities (US distribution via RobotShop, USRobotStore)",
+        "year": 2025,
+        "details": "Launched July 2025; distributed in US and China for research/education. CES 2026 demo unit. No named industrial customer.",
+        "source": "https://technode.com/2025/07/31/limx-dynamics-launches-humanoid-robot-limx-oli-starting-at-21800/"
+      }
+    ]
+  },
+  {
+    "company": "MagicLab",
+    "robot_name": "MagicBot Gen1",
+    "country": "China",
+    "hq_city": "Wuxi",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": 40,
+    "dof": 42,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "automotive production lines"
+    ],
+    "website": "https://www.magiclab.top/en/human",
+    "image_url": "images/magiclab--magicbot-gen1.webp",
+    "image_source": "humanoid.guide MagicBot page",
+    "short_description": "Full-size general-purpose humanoid with 42 DoF, 7.5 kg per-arm payload, 40 kg static body load, deployed on production lines.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Noetix Robotics",
+    "robot_name": "N2",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": null,
+    "year_revealed": 2024,
+    "height_cm": 118,
+    "weight_kg": 30,
+    "payload_kg": 5,
+    "dof": 18,
+    "battery_hours": 2,
+    "walking_speed_ms": 3.2,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "consumers",
+      "education"
+    ],
+    "website": "https://en.noetixrobotics.com/products-277.html",
+    "image_url": "images/noetix-robotics--n2.webp",
+    "image_source": "noetixrobotics.com",
+    "short_description": "118 cm child-sized humanoid that performs continuous backflips; 18 DOF, $1,400 consumer pricing.",
+    "price_usd": 1400,
+    "price_note": "$1,400  (from description)",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "home_consumer",
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "PAL Robotics",
+    "robot_name": "TALOS",
+    "country": "Spain",
+    "hq_city": "Barcelona",
+    "year_founded": 2004,
+    "year_revealed": 2017,
+    "height_cm": 175,
+    "weight_kg": 100,
+    "payload_kg": 6,
+    "dof": 32,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "LAAS-CNRS",
+      "DLR"
+    ],
+    "website": "https://pal-robotics.com",
+    "image_url": "images/pal-robotics--talos.webp",
+    "image_source": "pal-robotics.com",
+    "short_description": "Adult-sized fully torque-controlled bipedal humanoid sold to research labs for dynamic walking and heavy manipulation studies.",
+    "price_usd": 350000,
+    "price_note": "~$350,000 for research configuration. Premium full-size research humanoid; 32 DoF, 175cm, 100kg.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "EU",
+      "USA",
+      "Asia"
+    ],
+    "use_cases": [
+      "research_education",
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "TU Darmstadt (Germany)",
+        "year": 2025,
+        "details": "Technical University of Darmstadt acquired TALOS in Feb 2025 for AI control research.",
+        "source": "https://idw-online.de/en/news848275"
+      },
+      {
+        "customer": "LAAS-CNRS (France) and other EU research labs",
+        "year": 2017,
+        "details": "TALOS originally targeted for industrial research applications; deployed at multiple European robotics research institutions since 2017.",
+        "source": "https://hal.science/hal-01485519/file/ichr-talos.pdf"
+      }
+    ]
+  },
+  {
+    "company": "PAL Robotics",
+    "robot_name": "REEM-C",
+    "country": "Spain",
+    "hq_city": "Barcelona",
+    "year_founded": 2004,
+    "year_revealed": 2013,
+    "height_cm": 164,
+    "weight_kg": 77.5,
+    "payload_kg": 10,
+    "dof": 68,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "EU research labs"
+    ],
+    "website": "https://pal-robotics.com/robot/reem-c/",
+    "image_url": "images/pal-robotics--reem-c.jpg",
+    "image_source": "Wikimedia Commons (CC)",
+    "short_description": "Bipedal ROS-based humanoid research platform with 68 DoF, capable of dual-arm 10 kg payload.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Spain"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "PAL Robotics",
+    "robot_name": "TIAGo",
+    "country": "Spain",
+    "hq_city": "Barcelona",
+    "year_founded": 2004,
+    "year_revealed": 2015,
+    "height_cm": 145,
+    "weight_kg": 70,
+    "payload_kg": 3,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "EU research labs"
+    ],
+    "website": "https://pal-robotics.com/robot/tiago/",
+    "image_url": "images/pal-robotics--tiago.jpg",
+    "image_source": "Wikimedia Commons (CC0, ubahnverleih, RoboCup 2016 Leipzig; https://commons.wikimedia.org/wiki/File:RoboCup_2016_Leipzig_-_TIAGo.jpg)",
+    "short_description": "Mobile manipulator humanoid with extendable torso and one or two arms; widely deployed in service-robotics research.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Spain"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "pi4_robotics",
+    "robot_name": "Workerbot3",
+    "country": "Germany",
+    "hq_city": "Berlin",
+    "year_founded": 2008,
+    "year_revealed": 2012,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.pi4.de",
+    "image_url": "images/pi4-robotics--workerbot3.webp",
+    "image_source": "newatlas.com",
+    "short_description": "German-built two-armed humanoid for industrial inspection, concierge and service roles, manufactured in Berlin since 2012.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Germany"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "customer_service",
+      "security_inspection"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "PNDbotics",
+    "robot_name": "Adam (Pro)",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2020,
+    "year_revealed": 2023,
+    "height_cm": 160,
+    "weight_kg": 60,
+    "payload_kg": 5,
+    "dof": 41,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "research",
+      "industrial"
+    ],
+    "website": "https://www.pndbotics.com/",
+    "image_url": "images/pndbotics--adam-pro.jpg",
+    "image_source": "newatlas.com (PNDbotics Adam at VOYAGEX 2025)",
+    "short_description": "Modular full-size bipedal with 41 QDD-actuated joints (360 Nm peak), five-fingered hands.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "PNDbotics",
+    "robot_name": "Adam Lite",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2020,
+    "year_revealed": 2024,
+    "height_cm": 167,
+    "weight_kg": 60,
+    "payload_kg": null,
+    "dof": 25,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "research",
+      "education"
+    ],
+    "website": "https://www.pndbotics.com/",
+    "image_url": "images/pndbotics--adam-lite.webp",
+    "image_source": "humanoid.guide",
+    "short_description": "Education-focused 167 cm humanoid with 25 DOF, ~$45K price point.",
+    "price_usd": 45000,
+    "price_note": "$45K (from description)",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Pollen Robotics (Hugging Face)",
+    "robot_name": "Reachy 2",
+    "country": "France",
+    "hq_city": "Bordeaux",
+    "year_founded": 2016,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": 3,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Hugging Face (acquired 2025)",
+      "Cornell",
+      "CMU"
+    ],
+    "website": "https://www.pollen-robotics.com",
+    "image_url": "images/pollen-robotics-hugging-face--reachy-2.webp",
+    "image_source": "pollen-robotics.com",
+    "short_description": "Open-source humanoid with two 7-DoF bio-inspired arms on a wheeled omnidirectional base, used for embodied AI research; acquired by Hugging Face in 2025.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "France"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Pollen Robotics (Hugging Face)",
+    "robot_name": "Reachy Mini",
+    "country": "France",
+    "hq_city": "Bordeaux",
+    "year_founded": 2016,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://huggingface.co/spaces/pollen-robotics/Reachy_Mini",
+    "image_url": "images/pollen-robotics-hugging-face--reachy-mini.jpg",
+    "image_source": "The Robot Report Reachy Mini article",
+    "short_description": "Open-source desktop expressive companion robot for AI and coding education, named one of TIME's Best Inventions of 2025.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "France"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Poppy Project",
+    "robot_name": "Poppy Humanoid",
+    "country": "France",
+    "hq_city": "Bordeaux",
+    "year_founded": null,
+    "year_revealed": 2014,
+    "height_cm": 84,
+    "weight_kg": 3.5,
+    "payload_kg": null,
+    "dof": 25,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.poppy-project.org/",
+    "image_url": "images/poppy-project--poppy-humanoid.jpg",
+    "image_source": "Poppy Project humanoid page",
+    "short_description": "Open-source 3D-printed research humanoid using Robotis actuators for developmental robotics, education and art.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "France"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Rainbow Robotics",
+    "robot_name": "HUBO 2 / HUBO 2+",
+    "country": "South Korea",
+    "hq_city": "Daejeon",
+    "year_founded": 2011,
+    "year_revealed": 2008,
+    "height_cm": 125,
+    "weight_kg": 45,
+    "payload_kg": null,
+    "dof": 40,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "MIT",
+      "Google",
+      "international research labs"
+    ],
+    "website": "https://www.rainbow-robotics.com",
+    "image_url": "images/rainbow-robotics--hubo-2-hubo-2.png",
+    "image_source": "rainbow-robotics.com",
+    "short_description": "Commercialized version of KAIST's HUBO; exported to top global research labs and now backed by Samsung as largest shareholder.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "South Korea"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Realbotix",
+    "robot_name": "Melody",
+    "country": "USA",
+    "hq_city": "Las Vegas, NV",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.realbotix.com/",
+    "image_url": "images/realbotix--melody.webp",
+    "image_source": "Interesting Engineering Realbotix Melody article",
+    "short_description": "Open-source humanoid companion robot with Dynamixel servos, lifelike skin, and modular disassembly to fit in a suitcase.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Robbyant (Ant Lingbo Technology)",
+    "robot_name": "R1",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.robbyant.com/",
+    "image_url": "images/robbyant-ant-lingbo-technology--r1.png",
+    "image_source": "humanoid.guide Robbyant R1 page",
+    "short_description": "Ant Group's robotics arm Robbyant unveiled R1 wheeled humanoid kitchen-assistant cooking 10,000 dishes; in mass production.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Robosen Robotics",
+    "robot_name": "K1 Pro Interstellar Scout",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2008,
+    "year_revealed": 2023,
+    "height_cm": null,
+    "weight_kg": 0.94,
+    "payload_kg": null,
+    "dof": 17,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.robosen.com/eu/k1-pro-interstellar-scout",
+    "image_url": "images/robosen-robotics--k1-pro-interstellar-scout.webp",
+    "image_source": "Robosen US K1 Pro product page",
+    "short_description": "Compact consumer-grade bipedal humanoid for entertainment and education with 17 high-precision servos.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "home_consumer",
+      "research_education",
+      "entertainment_events"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "RobotEra",
+    "robot_name": "L7",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": 171,
+    "weight_kg": 65,
+    "payload_kg": 20,
+    "dof": 55,
+    "battery_hours": null,
+    "walking_speed_ms": 4,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "industrial customers"
+    ],
+    "website": "https://www.robotera.com/en/robotics/L7.html",
+    "image_url": "images/robotera--l7.jpg",
+    "image_source": "chinadaily.com.cn",
+    "short_description": "Claimed world's fastest bipedal at 14.4 km/h, 55 DOF, 400 Nm joint torque, ~$120K.",
+    "price_usd": 120000,
+    "price_note": "~$120,000 base; full-config range $150K-$250K+. Full-size bipedal humanoid with 55 DOF.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China",
+      "USA"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "research_education"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Research institutions and factory automation pilots",
+        "year": 2025,
+        "details": "Sold via Alibaba and robotsinternational.com to research labs and factory pilots; no named major customer publicly.",
+        "source": "https://www.robotsinternational.com/RobotEra-Humanoid-Robots.htm"
+      }
+    ]
+  },
+  {
+    "company": "ROBOTIS",
+    "robot_name": "OP3",
+    "country": "South Korea",
+    "hq_city": "Seoul",
+    "year_founded": null,
+    "year_revealed": 2017,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": 20,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://en.robotis.com/model/page.php?co_id=prd_op3",
+    "image_url": "images/robotis--op3.png",
+    "image_source": "ROBOTIS OP3 e-manual",
+    "short_description": "Affordable miniature 20-DoF research humanoid platform with Intel NUC i3 controller and Dynamixel XM430 actuators.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "South Korea"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "ROBOTIS",
+    "robot_name": "THORMANG3",
+    "country": "South Korea",
+    "hq_city": "Seoul",
+    "year_founded": null,
+    "year_revealed": 2015,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": 30,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://emanual.robotis.com/docs/en/platform/thormang3/getting_started/",
+    "image_url": "images/robotis--thormang3.png",
+    "image_source": "ROBOTIS THORMANG3 e-manual",
+    "short_description": "30-DoF DRC-class research humanoid with Dynamixel PRO actuators, LiDAR and force-torque sensors for hazardous-operations research.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "South Korea"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "UBTECH Robotics",
+    "robot_name": "Walker S2",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2012,
+    "year_revealed": 2025,
+    "height_cm": 176,
+    "weight_kg": 73,
+    "payload_kg": 15,
+    "dof": 52,
+    "battery_hours": 4,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "BYD",
+      "Geely",
+      "FAW-Volkswagen",
+      "Audi FAW",
+      "Nio",
+      "Zeekr"
+    ],
+    "website": "https://www.ubtrobot.com/en/humanoid/products/walker-s2",
+    "image_url": "images/ubtech-robotics--walker-s2.png",
+    "image_source": "ubtrobot.com",
+    "short_description": "First humanoid with autonomous battery-swap (3 minutes); $112M+ in confirmed orders by Nov 2025.",
+    "price_usd": 112,
+    "price_note": "Not publicly priced. Mass production began Nov 2025; orders exceeding 800M yuan (~$110M) by end of 2025.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "warehouse_logistics",
+      "security_inspection"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Foxconn New Energy Vehicle R&D Centre",
+        "year": 2025,
+        "details": "Walker S2 collaborates with autonomous logistics vehicles in Foxconn's NEV production environment.",
+        "source": "https://www.linkedin.com/posts/humanoid-robotics-technology_ubtech-robotics-walker-s2-collaborates-with-activity-7425467744197922817-lRQS"
+      },
+      {
+        "customer": "China-Vietnam border checkpoints",
+        "year": 2025,
+        "details": "$37M (264M yuan) contract to deploy Walker S2 robots at border checkpoints — first government/security deployment of humanoids.",
+        "source": "https://www.facebook.com/TechnologyInnovation1/posts/chinas-ubtech-robotics-has-signed-a-264-million-yuan-us37-million-deal-to-deploy/1161464002806911/"
+      }
+    ]
+  },
+  {
+    "company": "Unitree Robotics",
+    "robot_name": "H1",
+    "country": "China",
+    "hq_city": "Hangzhou",
+    "year_founded": 2016,
+    "year_revealed": 2023,
+    "height_cm": 180,
+    "weight_kg": 47,
+    "payload_kg": null,
+    "dof": 20,
+    "battery_hours": null,
+    "walking_speed_ms": 3.3,
+    "status": "commercial",
+    "funding_usd_m": 155,
+    "key_customers_or_pilots": [
+      "research labs",
+      "universities"
+    ],
+    "website": "https://www.unitree.com/h1/",
+    "image_url": "images/unitree-robotics--h1.webp",
+    "image_source": "unitree.com",
+    "short_description": "Full-size 180 cm bipedal humanoid that holds a running speed record of 3.3 m/s, sold to research labs.",
+    "price_usd": 90000,
+    "price_note": "~$90,000 (contact for real price on Unitree shop). Premium full-size research humanoid.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": 6,
+    "support_regions": [
+      "China",
+      "USA",
+      "EU",
+      "Asia"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Various universities and research institutions",
+        "year": 2024,
+        "details": "H1 deployed for bipedal locomotion research; debuted on stage at China's 2025 Spring Festival Gala.",
+        "source": "https://shop.unitree.com/products/unitree-h1"
+      }
+    ]
+  },
+  {
+    "company": "Unitree Robotics",
+    "robot_name": "H1-2",
+    "country": "China",
+    "hq_city": "Hangzhou",
+    "year_founded": 2016,
+    "year_revealed": 2024,
+    "height_cm": 180,
+    "weight_kg": 73,
+    "payload_kg": null,
+    "dof": 27,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": 155,
+    "key_customers_or_pilots": [
+      "research labs"
+    ],
+    "website": "https://www.unitree.com/h1/",
+    "image_url": "images/unitree-robotics--h1-2.webp",
+    "image_source": "unitree.com",
+    "short_description": "Upgraded H1 with 7-DOF arms, dual Intel CPU and optional Jetson Orin NX (100 TOPS).",
+    "price_usd": 122455,
+    "price_note": "$122,455 via RobotShop; $99,900-$128,900 depending on configuration. Upgraded H1 with enhanced AI motion system.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": 6,
+    "support_regions": [
+      "China",
+      "USA",
+      "EU"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Research institutions",
+        "year": 2024,
+        "details": "Sold via RobotShop, OpenELab and similar distributors for academic and industrial research.",
+        "source": "https://www.robotshop.com/products/unitree-h1-2-humanoid-robot-us"
+      }
+    ]
+  },
+  {
+    "company": "Unitree Robotics",
+    "robot_name": "G1",
+    "country": "China",
+    "hq_city": "Hangzhou",
+    "year_founded": 2016,
+    "year_revealed": 2024,
+    "height_cm": 127,
+    "weight_kg": 35,
+    "payload_kg": null,
+    "dof": 23,
+    "battery_hours": 2,
+    "walking_speed_ms": 2,
+    "status": "commercial",
+    "funding_usd_m": 155,
+    "key_customers_or_pilots": [
+      "research labs",
+      "universities"
+    ],
+    "website": "https://www.unitree.com/g1/",
+    "image_url": "images/unitree-robotics--g1.jpg",
+    "image_source": "Wikimedia Commons (CC0, Sayanesy, UAV Expo 2024; https://commons.wikimedia.org/wiki/File:Unitree_G1.jpg)",
+    "short_description": "Compact 127 cm bipedal humanoid starting from 99,000 yuan, with 23-43 DOF configurable joints.",
+    "price_usd": 13500,
+    "price_note": "$13,500 base (G1 Standard); EDU configurations up to ~$73,900 with dexterous hands and full sensor suite. List price on shop.unitree.com.",
+    "availability_status": "shipping_now",
+    "lead_time_weeks": 4,
+    "support_regions": [
+      "China",
+      "USA",
+      "EU",
+      "Asia"
+    ],
+    "use_cases": [
+      "research_education",
+      "entertainment_events"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Universities and research labs worldwide",
+        "year": 2024,
+        "details": "Most widely-purchased full-size humanoid for research; ships to 40+ countries via authorized dealers.",
+        "source": "https://shop.unitree.com/products/unitree-g1"
+      }
+    ]
+  },
+  {
+    "company": "1X Technologies",
+    "robot_name": "Eve",
+    "country": "USA",
+    "hq_city": "Palo Alto, CA",
+    "year_founded": 2014,
+    "year_revealed": 2022,
+    "height_cm": 186,
+    "weight_kg": 86,
+    "payload_kg": 8,
+    "dof": 23,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": 1100,
+    "key_customers_or_pilots": [
+      "Security/industrial pilots in Norway"
+    ],
+    "website": "https://www.1x.tech",
+    "image_url": "images/1x-technologies--eve.jpg",
+    "image_source": "New Atlas via S3 (https://newatlas.com/robotics/eve-humanoid-voice-command-task-chaining/)",
+    "short_description": "1X's wheeled-base humanoid (formerly Halodi) with a self-balancing chassis and dual arms, used for security and industrial tasks before Neo's launch.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "security_inspection"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "AI2 Robotics",
+    "robot_name": "AlphaBot2",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "automotive factory",
+      "airports",
+      "semiconductor manufacturing"
+    ],
+    "website": "https://ai2robotics.com/en/",
+    "image_url": "images/ai2-robotics--alphabot2.jpg",
+    "image_source": "The Robot Report (https://www.therobotreport.com/ai2-robotics-raises-series-b-funding-advance-alphabot-embodied-ai/) — credit AI2 Robotics",
+    "short_description": "General-purpose humanoid powered by GOVLA model; deployed in auto factories, valued ~$2.93B.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Apptronik",
+    "robot_name": "Apollo",
+    "country": "USA",
+    "hq_city": "Austin, TX",
+    "year_founded": 2016,
+    "year_revealed": 2023,
+    "height_cm": 173,
+    "weight_kg": 73,
+    "payload_kg": 25,
+    "dof": 71,
+    "battery_hours": 4,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": 935,
+    "key_customers_or_pilots": [
+      "Mercedes-Benz",
+      "GXO Logistics",
+      "Jabil",
+      "NASA"
+    ],
+    "website": "https://apptronik.com",
+    "image_url": "images/apptronik--apollo.png",
+    "image_source": "Apptronik official site CDN (https://apptronik.com/apollo)",
+    "short_description": "UT-Austin spinout's commercial humanoid with hot-swap batteries and force-controlled actuators; piloting on Mercedes-Benz assembly lines and at GXO.",
+    "price_usd": null,
+    "price_note": "Not publicly priced; targeting sub-$50,000. $935M Series A; backed by Google and Mercedes-Benz.",
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "warehouse_logistics",
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Mercedes-Benz",
+        "year": 2024,
+        "details": "First publicly announced commercial deployment; Apollo handling repetitive labor at Mercedes-Benz factory floor.",
+        "source": "https://apptronik.com/news-collection/apptronik-and-mercedes-benz-enter-commercial-agreement"
+      },
+      {
+        "customer": "GXO Logistics",
+        "year": 2025,
+        "details": "Apollo piloted at GXO warehouse operations.",
+        "source": "https://www.cnbc.com/2026/02/11/apptronik-raises-520-million-at-5-billion-valuation-for-apollo-robot.html"
+      },
+      {
+        "customer": "Jabil",
+        "year": 2025,
+        "details": "Apollo deployed in pilot manufacturing operations.",
+        "source": "https://www.linkedin.com/posts/ryanabramson_updates-in-robotics-humanoid-robots-apptronik-activity-7438275204608528384-6lA3"
+      }
+    ]
+  },
+  {
+    "company": "Boston Dynamics",
+    "robot_name": "Atlas (Electric)",
+    "country": "USA",
+    "hq_city": "Waltham, MA",
+    "year_founded": 1992,
+    "year_revealed": 2024,
+    "height_cm": 175,
+    "weight_kg": 89,
+    "payload_kg": 50,
+    "dof": 56,
+    "battery_hours": null,
+    "walking_speed_ms": 2.5,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Hyundai Motor Group",
+      "Google DeepMind"
+    ],
+    "website": "https://bostondynamics.com/products/atlas/",
+    "image_url": "images/boston-dynamics--atlas-electric.webp",
+    "image_source": "Boston Dynamics WordPress CDN (https://bostondynamics.com/products/atlas/)",
+    "short_description": "Fully-electric next-gen Atlas with super-human range of motion, transitioning from research to commercial industrial humanoid with first pilots at Hyundai.",
+    "price_usd": null,
+    "price_note": "Not publicly priced; Korean securities analysts estimate $130K-$140K per unit. Hyundai targets ~$20K at 150K-unit scale by 2029.",
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA",
+      "Korea",
+      "EU"
+    ],
+    "use_cases": [
+      "research_education",
+      "industrial_manufacturing",
+      "warehouse_logistics"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Hyundai Motor Group",
+        "year": 2025,
+        "details": "Hyundai committed to deploying tens of thousands of Atlas robots; first deployments at Robotics Metaplant America (RMAC) in Georgia. 2026 production fully committed to Hyundai.",
+        "source": "https://www.forbes.com/sites/johnkoetsier/2026/01/06/atlas-humanoid-robots-production-fully-committed-for-2026-factory-will-build-30000-per-year/"
+      }
+    ]
+  },
+  {
+    "company": "Enchanted Tools",
+    "robot_name": "Mirokai",
+    "country": "France",
+    "hq_city": "Paris",
+    "year_founded": 2022,
+    "year_revealed": 2023,
+    "height_cm": 123,
+    "weight_kg": 28,
+    "payload_kg": 1.5,
+    "dof": 26,
+    "battery_hours": 4,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "hospitals",
+      "hospitality pilots"
+    ],
+    "website": "https://enchanted.tools",
+    "image_url": "images/enchanted-tools--mirokai.jpg",
+    "image_source": "The Robot Report (https://www.therobotreport.com/enchanted-tools-delivers-mirokai-robot-to-its-first-customer/) — credit Enchanted Tools",
+    "short_description": "Character-driven service humanoid balancing on a 3-DoF ball base, with two 4-DoF arms and LLM-powered conversation.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "France"
+    ],
+    "use_cases": [
+      "customer_service",
+      "healthcare_eldercare"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Figure AI",
+    "robot_name": "Figure 03",
+    "country": "USA",
+    "hq_city": "San Jose, CA",
+    "year_founded": 2022,
+    "year_revealed": 2025,
+    "height_cm": 173,
+    "weight_kg": 61,
+    "payload_kg": 20,
+    "dof": null,
+    "battery_hours": 5,
+    "walking_speed_ms": 1.2,
+    "status": "pilot",
+    "funding_usd_m": 1900,
+    "key_customers_or_pilots": [
+      "BMW",
+      "home consumer pre-orders"
+    ],
+    "website": "https://www.figure.ai",
+    "image_url": "images/figure-ai--figure-03.png",
+    "image_source": "Figure AI Contentful CDN (https://www.figure.ai/figure)",
+    "short_description": "Third-generation humanoid from Figure AI built for high-volume manufacturing and home use, powered by the in-house Helix vision-language-action model.",
+    "price_usd": null,
+    "price_note": "Not publicly priced. Reports estimate ~$20K target for home version; commercial customers negotiate contracts.",
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA",
+      "EU"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "home_consumer"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "BMW Group (Germany)",
+        "year": 2026,
+        "details": "BMW announced Figure 03 deployment in production in Germany — first humanoid use in BMW Germany operations following Spartanburg pilot.",
+        "source": "https://www.press.bmwgroup.com/canada/article/detail/T0456018EN/bmw-group-to-deploy-humanoid-robots-in-production-in-germany-for-the-first-time"
+      }
+    ]
+  },
+  {
+    "company": "Foxconn (Hon Hai)",
+    "robot_name": "Foxconn Humanoid",
+    "country": "Taiwan",
+    "hq_city": "Taipei",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Foxconn Houston AI server plant",
+      "NVIDIA"
+    ],
+    "website": "https://www.foxconn.com/",
+    "image_url": "images/foxconn-hon-hai--foxconn-humanoid.jpg",
+    "image_source": "Taiwan News Foxconn humanoid article",
+    "short_description": "Foxconn's first AI-server-factory humanoid integrated with NVIDIA, deployed on a Houston GB300 NVL72 production line.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Taiwan"
+    ],
+    "use_cases": [
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "GAC Group",
+    "robot_name": "GoMate",
+    "country": "China",
+    "hq_city": "Guangzhou",
+    "year_founded": null,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Guangzhou Metro"
+    ],
+    "website": "https://www.gacgroup.com/en/technology/cutting-edge-technology",
+    "image_url": "images/gac-group--gomate.png",
+    "image_source": "Apa Robot GoMate page",
+    "short_description": "GAC's third-generation embodied humanoid with a variable bi/quadruped wheel-leg chassis, deployed for metro safety guidance.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Haier Robotics",
+    "robot_name": "SHIDA",
+    "country": "China",
+    "hq_city": "Qingdao",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Haier factories"
+    ],
+    "website": "https://www.haier.com/",
+    "image_url": "images/haier-robotics--shida.webp",
+    "image_source": "humanoid.guide Haier HIVA Haiwa page (sister product)",
+    "short_description": "Haier Robotics' 'humanoid intern' deployed for two-worker factory tasks; partnered with Leju on Kuavo home humanoid.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "home_consumer"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Hyundai Motor Group",
+    "robot_name": "DAL-e",
+    "country": "South Korea",
+    "hq_city": "Seoul",
+    "year_founded": 1967,
+    "year_revealed": 2022,
+    "height_cm": 116,
+    "weight_kg": 80,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Hyundai Motorstudio Goyang",
+      "Hyundai customer service centers"
+    ],
+    "website": "https://www.hyundai.com",
+    "image_url": "images/hyundai-motor-group--dal-e.jpg",
+    "image_source": "The Robot Report (https://www.therobotreport.com/meet-dal-e-delivery-parking-robot-hyundai-office-friendly-robots/) — credit Hyundai Motor Group",
+    "short_description": "Hyundai's in-house customer-service humanoid with face recognition and a wheeled base, used for showroom interactions and indoor delivery.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "South Korea"
+    ],
+    "use_cases": [
+      "customer_service",
+      "entertainment_events"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Joybot Robotics (PIA + AgiBot JV)",
+    "robot_name": "Joybot Humanoid",
+    "country": "China",
+    "hq_city": "Ningbo",
+    "year_founded": 2025,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "PIA Automation"
+    ],
+    "website": "https://www.piagroup.com/en/automation/embodied-ai-humanoid-robotics/",
+    "image_url": "images/joybot-robotics-pia-agibot-jv--joybot-humanoid.webp",
+    "image_source": "PIA Automation Joybot/P-Bot page",
+    "short_description": "Ningbo joint venture between PIA Automation and AgiBot manufacturing scalable industrial-grade bipedal and rolling humanoids.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Kepler Robotics",
+    "robot_name": "Forerunner K2",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": 178,
+    "weight_kg": 85,
+    "payload_kg": 30,
+    "dof": 52,
+    "battery_hours": 8,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "industrial customers"
+    ],
+    "website": "https://www.gotokepler.com/",
+    "image_url": "images/kepler-robotics--forerunner-k2.jpg",
+    "image_source": "New Atlas via S3 (https://newatlas.com/ai-humanoids/kepler-forerunner-k2-humanoid-robot/) — credit Kepler",
+    "short_description": "5th-gen humanoid with 52 DOF, rope-driven 11-DOF hands, 15 kg per-hand payload, $20-30K target price.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "MagicLab",
+    "robot_name": "MagicBot",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2024,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": 40,
+    "dof": 42,
+    "battery_hours": 5,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "industrial deployments"
+    ],
+    "website": "https://www.magiclab.top/en/human",
+    "image_url": "images/magiclab--magicbot.jpg",
+    "image_source": "Robots International product catalog (https://www.robotsinternational.com/MagicLab-MagicBot-G1-Humanoid-Robot.htm)",
+    "short_description": "42-DOF industrial humanoid with 525 Nm peak torque, 7.5 kg single-arm payload, 5-hour runtime.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Mech-Mind",
+    "robot_name": "Eye-Brain-Hand Robot Station",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.mech-mind.com/",
+    "image_url": "images/mech-mind--eye-brain-hand-robot-station.jpg",
+    "image_source": "Mech-Mind product page",
+    "short_description": "Mech-Mind's embodied intelligence platform combining its 3D vision and AI brain with a humanoid body for autonomous picking.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "warehouse_logistics"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Mentee Robotics",
+    "robot_name": "MenteeBot V3",
+    "country": "Israel",
+    "hq_city": "Herzliya",
+    "year_founded": 2022,
+    "year_revealed": 2024,
+    "height_cm": 175,
+    "weight_kg": 70,
+    "payload_kg": 25,
+    "dof": 40,
+    "battery_hours": 3,
+    "walking_speed_ms": 1.5,
+    "status": "pilot",
+    "funding_usd_m": 38,
+    "key_customers_or_pilots": [
+      "Mobileye (acquirer)",
+      "logistics pilots"
+    ],
+    "website": "https://www.menteebot.com",
+    "image_url": "images/mentee-robotics--menteebot-v3.webp",
+    "image_source": "Interesting Engineering CMS (https://interestingengineering.com/innovation/israel-humanoid-robot-with-360-vision)",
+    "short_description": "Bipedal humanoid from Mobileye founder Amnon Shashua, with hot-swappable batteries, 360 deg vision and Sim2Real-trained locomotion; acquired by Mobileye for ~$900M in 2026.",
+    "price_usd": 900,
+    "price_note": "$900 (from description)",
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Israel"
+    ],
+    "use_cases": [
+      "warehouse_logistics"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Oversonic Robotics",
+    "robot_name": "RoBee",
+    "country": "Italy",
+    "hq_city": "Carate Brianza",
+    "year_founded": 2020,
+    "year_revealed": 2022,
+    "height_cm": 175,
+    "weight_kg": 80,
+    "payload_kg": null,
+    "dof": 39,
+    "battery_hours": 8,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "STMicroelectronics"
+    ],
+    "website": "https://www.oversonicrobotics.com",
+    "image_url": "images/oversonic-robotics--robee.jpg",
+    "image_source": "Oversonic Robotics official site (https://www.oversonicrobotics.com/robee-r/)",
+    "short_description": "First Italian commercial cognitive humanoid certified for industrial and healthcare environments, with bimanual manipulation and modular grippers.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Italy"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "healthcare_eldercare"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Reflex Robotics",
+    "robot_name": "Reflex",
+    "country": "USA",
+    "hq_city": "New York, NY",
+    "year_founded": 2022,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": 22,
+    "dof": null,
+    "battery_hours": 16,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": 7,
+    "key_customers_or_pilots": [
+      "GXO Logistics"
+    ],
+    "website": "https://www.reflexrobotics.com",
+    "image_url": "images/reflex-robotics--reflex.webp",
+    "image_source": "Reflex Robotics official site CDN (https://www.reflexrobotics.com/)",
+    "short_description": "Affordable wheeled humanoid (not bipedal) with telescoping spine and dual arms, teleoperated for warehouse picking.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "warehouse_logistics"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "RoboForce",
+    "robot_name": "Titan",
+    "country": "USA",
+    "hq_city": "Milpitas, CA",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": 40,
+    "dof": null,
+    "battery_hours": 8,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": 52,
+    "key_customers_or_pilots": [],
+    "website": "https://www.roboforce.ai/",
+    "image_url": "images/roboforce--titan.webp",
+    "image_source": "Apa Robot RoboForce Titan article",
+    "short_description": "Industrial mobile manipulator built for harsh outdoor 'dull, dirty, dangerous' work; 40 kg payload, 1 mm precision, 8 h endurance.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "agriculture_outdoor"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Sanctuary AI",
+    "robot_name": "Phoenix (Gen 7)",
+    "country": "Canada",
+    "hq_city": "Vancouver, BC",
+    "year_founded": 2018,
+    "year_revealed": 2023,
+    "height_cm": 170,
+    "weight_kg": 70,
+    "payload_kg": 25,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": 0.83,
+    "status": "pilot",
+    "funding_usd_m": 100,
+    "key_customers_or_pilots": [
+      "Magna International"
+    ],
+    "website": "https://www.sanctuary.ai",
+    "image_url": "images/sanctuary-ai--phoenix-gen-7.webp",
+    "image_source": "Sanctuary AI Squarespace CDN (https://www.sanctuary.ai/blog/sanctuary-ai-unveils-phoenix-a-humanoid-general-purpose-robot-designed-for-work)",
+    "short_description": "Canadian general-purpose humanoid distinguished by 21-DOF hydraulic hands and the Carbon AI control system; piloting on Magna automotive lines.",
+    "price_usd": null,
+    "price_note": "Not publicly priced; estimated $100K-$300K. Available exclusively through enterprise pilots, not general purchase.",
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Canada",
+      "USA"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "research_education"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Magna International",
+        "year": 2024,
+        "details": "Strategic partnership and investment from Magna; Phoenix deployed in Magna automotive manufacturing operations and Magna will contract-manufacture Phoenix units.",
+        "source": "https://www.sanctuary.ai/blog/sanctuary-ai-expands-general-purpose-robot-footprint-in-automotive-manufacturing-industry"
+      },
+      {
+        "customer": "Microsoft (research)",
+        "year": 2024,
+        "details": "Microsoft collaboration for general-purpose robot research, leveraging Azure AI.",
+        "source": "https://techcrunch.com/2024/05/01/microsoft-taps-sanctuary-ai-for-general-purpose-robot-research/"
+      }
+    ]
+  },
+  {
+    "company": "UBTECH Robotics",
+    "robot_name": "Walker S1",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2012,
+    "year_revealed": 2024,
+    "height_cm": 172,
+    "weight_kg": 76,
+    "payload_kg": 15,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "BYD",
+      "Geely",
+      "Foxconn",
+      "SF Express",
+      "Zeekr"
+    ],
+    "website": "https://www.ubtrobot.com/en/humanoid/products/walker-s1",
+    "image_url": "images/ubtech-robotics--walker-s1.jpg",
+    "image_source": "UBTECH official CDN (https://www.ubtrobot.com/en/humanoid/products/walker-s1)",
+    "short_description": "Industrial humanoid deployed at BYD, Geely, Foxconn for handling and inspection tasks; 500+ pre-orders.",
+    "price_usd": null,
+    "price_note": "Not publicly priced; Walker series reportedly costs ~$100,000 per unit. Operating costs cited at ~$24,800/year (180,000 RMB) for some models.",
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "warehouse_logistics",
+      "industrial_manufacturing",
+      "security_inspection"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "BYD, Geely, FAW-Volkswagen, Audi-FAW, Zeekr (auto factories)",
+        "year": 2024,
+        "details": "Walker S1 completed multi-robot, multi-task collaborative training across multiple automotive plants in China; first multi-scenario deployment.",
+        "source": "https://en.people.cn/n3/2025/0429/c90000-20309191.html"
+      }
+    ]
+  },
+  {
+    "company": "Wandercraft",
+    "robot_name": "Calvin-40",
+    "country": "France",
+    "hq_city": "Paris",
+    "year_founded": 2012,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": 40,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": 75,
+    "key_customers_or_pilots": [
+      "Renault (Douai EV plant)",
+      "Sapa"
+    ],
+    "website": "https://en.wandercraft.eu/calvin-40",
+    "image_url": "images/wandercraft--calvin-40.jpg",
+    "image_source": "The Robot Report (https://www.therobotreport.com/wandercraft-unveils-new-industrial-humanoid-renault/) — credit Wandercraft",
+    "short_description": "Headless self-balancing industrial humanoid built in 40 days from Wandercraft's exoskeleton tech, with 40 kg payload for factory work.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "France"
+    ],
+    "use_cases": [
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Westlake Robotics",
+    "robot_name": "Titan o2",
+    "country": "China",
+    "hq_city": "Hangzhou",
+    "year_founded": null,
+    "year_revealed": 2026,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "pilot",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Hangzhou retail"
+    ],
+    "website": "https://www.westlake-robotics.com/",
+    "image_url": "images/westlake-robotics--titan-o2.webp",
+    "image_source": "Robots Beat Westlake Titan article",
+    "short_description": "Successor to Titan o1 powered by the GAE General Action Expert model used as a real-time physical avatar in retail testing.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "pilot_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "customer_service"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "1X Technologies",
+    "robot_name": "Neo",
+    "country": "USA",
+    "hq_city": "Palo Alto, CA / Moss, Norway",
+    "year_founded": 2014,
+    "year_revealed": 2024,
+    "height_cm": 167,
+    "weight_kg": 30,
+    "payload_kg": 25,
+    "dof": null,
+    "battery_hours": 4,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": 1100,
+    "key_customers_or_pilots": [
+      "Consumer pre-orders (Early Access $20k or $499/mo)"
+    ],
+    "website": "https://www.1x.tech",
+    "image_url": "images/1x-technologies--neo.webp",
+    "image_source": "1x.tech (Sanity CDN)",
+    "short_description": "OpenAI-backed consumer humanoid for the home, using a soft polymer body and tendon-drive actuators; began shipping to US customers in 2026.",
+    "price_usd": 20000,
+    "price_note": "$20,000 outright or $499/month subscription (6-month commitment). $200 fully refundable deposit secures place in line. US deliveries begin 2026.",
+    "availability_status": "preorder",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "home_consumer"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "1X early-access preorder customers",
+        "year": 2025,
+        "details": "10,000 pre-orders booked; full-scale production began April 2026; first US home deliveries in 2026.",
+        "source": "https://www.forbes.com/sites/johnkoetsier/2026/04/30/1x-kicks-off-full-scale-production-of-humanoid-robot-neo/"
+      }
+    ]
+  },
+  {
+    "company": "Pudu Robotics",
+    "robot_name": "D9",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2016,
+    "year_revealed": 2024,
+    "height_cm": 170,
+    "weight_kg": 65,
+    "payload_kg": 20,
+    "dof": 42,
+    "battery_hours": null,
+    "walking_speed_ms": 2,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "service industry"
+    ],
+    "website": "https://www.pudurobotics.com/en/products/d9",
+    "image_url": "images/pudu-robotics--d9.jpg",
+    "image_source": "therobotreport.com",
+    "short_description": "Full-size 170 cm bipedal with 42 DOF, 7-DOF arms, DH11 dexterous hand, 275 TOPS compute.",
+    "price_usd": 60000,
+    "price_note": "$60,000 list via robotsinternational.com; speculation cited $20K-$30K range at announcement. Pudu's first full-size humanoid.",
+    "availability_status": "preorder",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China",
+      "USA",
+      "EU"
+    ],
+    "use_cases": [
+      "customer_service",
+      "warehouse_logistics",
+      "healthcare_eldercare"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Hospitality and retail pilots (Pudu existing customer base)",
+        "year": 2025,
+        "details": "Pudu has wide deployment in dining/hospitality with prior service robots; D9 piloted with hospitality and retail customers.",
+        "source": "https://www.pudurobotics.com/news/purpose-built-industrial-robots-2026"
+      }
+    ]
+  },
+  {
+    "company": "Unitree Robotics",
+    "robot_name": "R1",
+    "country": "China",
+    "hq_city": "Hangzhou",
+    "year_founded": 2016,
+    "year_revealed": 2025,
+    "height_cm": 121,
+    "weight_kg": 25,
+    "payload_kg": null,
+    "dof": 26,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": 155,
+    "key_customers_or_pilots": [
+      "consumers",
+      "developers"
+    ],
+    "website": "https://www.unitree.com/mobile/R1/",
+    "image_url": "images/unitree-robotics--r1.webp",
+    "image_source": "unitree.com",
+    "short_description": "Sub-$6,000 consumer/developer humanoid, 121 cm tall, 25 kg, named TIME Best Invention 2025.",
+    "price_usd": 4900,
+    "price_note": "$4,900 R1 Air / $5,900 R1 standard / EDU contact sales. Pre-sale on Unitree shop and AliExpress.",
+    "availability_status": "preorder",
+    "lead_time_weeks": 8,
+    "support_regions": [
+      "China",
+      "USA",
+      "EU",
+      "Asia"
+    ],
+    "use_cases": [
+      "home_consumer",
+      "research_education",
+      "entertainment_events"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "AliExpress consumers and developers (international preorders)",
+        "year": 2026,
+        "details": "Most affordable production humanoid; R1 listed on AliExpress in April 2026 for international markets.",
+        "source": "https://www.wired.com/story/unitree-r1-humanoid-robot-for-sale-on-aliexpress/"
+      }
+    ]
+  },
+  {
+    "company": "Addverb (Reliance)",
+    "robot_name": "Heal / Elixis-W",
+    "country": "India",
+    "hq_city": "Noida",
+    "year_founded": 2016,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Reliance Industries"
+    ],
+    "website": "https://addverb.com/",
+    "image_url": "images/addverb-reliance--heal-elixis-w.png",
+    "image_source": "Mike Kalil Addverb Elixis article",
+    "short_description": "Reliance-backed Indian robotics startup developing both bipedal and wheeled humanoids for logistics, with Elixis-W debuted at LogiMAT India 2026.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "India"
+    ],
+    "use_cases": [
+      "warehouse_logistics"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "AgiBot (Zhiyuan Robotics)",
+    "robot_name": "Yuanzheng A1",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2023,
+    "year_revealed": 2023,
+    "height_cm": 175,
+    "weight_kg": 53,
+    "payload_kg": 80,
+    "dof": 49,
+    "battery_hours": null,
+    "walking_speed_ms": 1.94,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.agibot.com/",
+    "image_url": "images/agibot-zhiyuan-robotics--yuanzheng-a1.webp",
+    "image_source": "humanoid.guide (Raise A1 = Yuanzheng A1)",
+    "short_description": "Founder Peng Zhihui's first humanoid, 175 cm, 49+ DOF, 7 km/h walking, 200 TOPS compute.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "AgiBot (Zhiyuan Robotics)",
+    "robot_name": "Quester1 (Q1)",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": 80,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "developers"
+    ],
+    "website": "https://www.agibot.com/",
+    "image_url": "images/agibot-zhiyuan-robotics--quester1-q1.webp",
+    "image_source": "humanoid.guide",
+    "short_description": "Backpack-sized 80 cm bipedal humanoid with full-body force control and open SDK/HDK.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Agile Robots",
+    "robot_name": "Agile ONE",
+    "country": "Germany",
+    "hq_city": "Munich",
+    "year_founded": 2018,
+    "year_revealed": 2025,
+    "height_cm": 174,
+    "weight_kg": 69,
+    "payload_kg": 20,
+    "dof": 71,
+    "battery_hours": 8,
+    "walking_speed_ms": 2,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.agile-robots.com",
+    "image_url": "images/agile-robots--agile-one.webp",
+    "image_source": "Agile Robots official site (https://www.agile-robots.com/en/news/detail/agile-robots-launches-humanoid-robot-for-industry-agile-one/)",
+    "short_description": "Industrial humanoid with 21-DoF dexterous hands featuring fingertip and force-torque sensors for delicate manipulation tasks.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Germany"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "AheadForm",
+    "robot_name": "Origin M1",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.aheadform.com/",
+    "image_url": "images/aheadform--origin-m1.png",
+    "image_source": "AheadForm products page",
+    "short_description": "Ultra-bionic humanoid robot maker known for hyperrealistic faces (Elf V1, Lan Series) with 30 DoF facial expression.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "AIST",
+    "robot_name": "HRP-5P",
+    "country": "Japan",
+    "hq_city": "Tsukuba",
+    "year_founded": 2001,
+    "year_revealed": 2018,
+    "height_cm": 182,
+    "weight_kg": 101,
+    "payload_kg": null,
+    "dof": 37,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.aist.go.jp",
+    "image_url": "images/aist--hrp-5p.webp",
+    "image_source": "newatlas.com",
+    "short_description": "Heavy-labor humanoid prototype able to use power tools and install drywall, fifth generation in the HRP series.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Japan"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Beijing Humanoid Robotics Innovation Center (X-Humanoid)",
+    "robot_name": "Tien Kung 1.0",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": 163,
+    "weight_kg": 43,
+    "payload_kg": null,
+    "dof": 20,
+    "battery_hours": null,
+    "walking_speed_ms": 1.67,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "research"
+    ],
+    "website": "https://x-humanoid.com/",
+    "image_url": "images/beijing-humanoid-robotics-innovation-center-x-humanoid--tien-kung-1-0.jpg",
+    "image_source": "globaltimes.cn",
+    "short_description": "First electric-driven full-size humanoid that runs; won the Beijing humanoid half-marathon.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Beijing Humanoid Robotics Innovation Center (X-Humanoid)",
+    "robot_name": "Tien Kung 3.0",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2026,
+    "height_cm": 163,
+    "weight_kg": 43,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": 3.33,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "research"
+    ],
+    "website": "https://x-humanoid.com/",
+    "image_url": "images/beijing-humanoid-robotics-innovation-center-x-humanoid--tien-kung-3-0.webp",
+    "image_source": "interestingengineering.com",
+    "short_description": "Industry's first full-size humanoid with touch-interactive whole-body motion control; 12 km/h sprint.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Beyond Imagination",
+    "robot_name": "Beomni 1.0",
+    "country": "USA",
+    "hq_city": "Colorado Springs, CO",
+    "year_founded": null,
+    "year_revealed": 2022,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": 15.88,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.beyondimagination.com/",
+    "image_url": "images/beyond-imagination--beomni-1-0.jpg",
+    "image_source": "Designboom Beomni 1.0 article",
+    "short_description": "Wheeled humanoid that lifts ~15 kg per arm, controlled remotely via VR for telepresence and autonomy via Beomni AI.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Clone Robotics",
+    "robot_name": "Clone Alpha (Protoclone)",
+    "country": "Poland",
+    "hq_city": "Wroclaw",
+    "year_founded": 2021,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://clonerobotics.com/",
+    "image_url": "images/clone-robotics--clone-alpha-protoclone.webp",
+    "image_source": "humanoid.guide Clone Alpha page",
+    "short_description": "Polish musculoskeletal android using water-powered Myofiber artificial muscles and synthetic skeleton, priced at ~$20K.",
+    "price_usd": 20000,
+    "price_note": "$20K (from description)",
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Poland"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Daimon Robotics",
+    "robot_name": "Daimon One",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": 11,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "China Mobile"
+    ],
+    "website": "https://www.dmrobot.com/en/",
+    "image_url": "images/daimon-robotics--daimon-one.png",
+    "image_source": "Apa Robot Daimon One page",
+    "short_description": "Backed by China Mobile, Daimon's humanoid pairs the firm's vision-based tactile sensors with an 11-DoF biomimetic hand.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "DEEP Robotics",
+    "robot_name": "DR01",
+    "country": "China",
+    "hq_city": "Hangzhou",
+    "year_founded": 2017,
+    "year_revealed": 2024,
+    "height_cm": 170,
+    "weight_kg": 80,
+    "payload_kg": null,
+    "dof": 12,
+    "battery_hours": null,
+    "walking_speed_ms": 1.6,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "industrial inspection"
+    ],
+    "website": "https://www.deeprobotics.cn/en/wap/humanoid.html",
+    "image_url": "images/deep-robotics--dr01.jpg",
+    "image_source": "deeprobotics.cn",
+    "short_description": "First humanoid from quadruped specialist DEEP Robotics; 170 cm, 80 kg, focuses on terrain stability.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "security_inspection"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Devanthro (Roboy)",
+    "robot_name": "Robody",
+    "country": "Germany",
+    "hq_city": "Munich",
+    "year_founded": 2012,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.devanthro.com/",
+    "image_url": "images/devanthro-roboy--robody.jpg",
+    "image_source": "Devanthro homepage",
+    "short_description": "Munich Robody humanoid avatar from the Roboy team for 24/7 home monitoring and task assistance via teleoperation.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Germany"
+    ],
+    "use_cases": [
+      "home_consumer"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Devanthro / Roboy",
+    "robot_name": "Roboy 3.0",
+    "country": "Germany",
+    "hq_city": "Munich",
+    "year_founded": 2013,
+    "year_revealed": 2020,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://roboy.org",
+    "image_url": "images/devanthro-roboy--roboy-3-0.png",
+    "image_source": "roboy.org",
+    "short_description": "Tendon-driven musculoskeletal humanoid built around antagonistic muscle units, used as a teleoperated 'robody' platform out of TU Munich.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Germany"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Direct Drive Tech",
+    "robot_name": "D1 / D-infinite",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": 100,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://en.directdrivetech.com/",
+    "image_url": "images/direct-drive-tech--d1-d-infinite.jpg",
+    "image_source": "Global Times Direct Drive Tech article",
+    "short_description": "World-first modular embodied robot that can convert between bipedal/wheeled forms and link with peers for 100 kg payload.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "DroidUp",
+    "robot_name": "Moya",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": 165,
+    "weight_kg": 32,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "healthcare",
+      "education"
+    ],
+    "website": "https://www.droidup.com/",
+    "image_url": "images/droidup--moya.webp",
+    "image_source": "interestingengineering.com",
+    "short_description": "165 cm 'biomimetic AI' bipedal with thermo-regulated silicone skin (32-36C); ~$173K starting price.",
+    "price_usd": 173000,
+    "price_note": "$173K (from description)",
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education",
+      "healthcare_eldercare"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Estun Codroid",
+    "robot_name": "CODROID 01",
+    "country": "China",
+    "hq_city": "Nanjing",
+    "year_founded": 2022,
+    "year_revealed": 2024,
+    "height_cm": 170,
+    "weight_kg": 80,
+    "payload_kg": 35,
+    "dof": 44,
+    "battery_hours": null,
+    "walking_speed_ms": 0.83,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "industrial"
+    ],
+    "website": "https://www.estun.com/",
+    "image_url": "images/estun-codroid--codroid-01.jpg",
+    "image_source": "en.estun.com",
+    "short_description": "Industrial humanoid with IP68 protection, 44 DOF total, 7-DOF arms, designed for factory tasks.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Estun Robotics (Codroid)",
+    "robot_name": "Codroid 02",
+    "country": "China",
+    "hq_city": "Nanjing",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": 5,
+    "dof": 31,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.estun.com/",
+    "image_url": "images/estun-robotics-codroid--codroid-02.png",
+    "image_source": "Apa Robot Estun Codroid 02 page",
+    "short_description": "Estun's second-gen humanoid with 31 body DoF (up to 44 with hands), 5 kg per-arm payload, trained via imitation/reinforcement learning.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "EX Robots",
+    "robot_name": "Annie",
+    "country": "China",
+    "hq_city": "Dalian",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.ex-robots.com/",
+    "image_url": "images/ex-robots--annie.webp",
+    "image_source": "Interesting Engineering EX Robots article",
+    "short_description": "Dalian-based maker of hyperrealistic silicone-faced humanoids that smile, frown and replicate subtle emotional expressions.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Figure AI",
+    "robot_name": "Figure 01",
+    "country": "USA",
+    "hq_city": "San Jose, CA",
+    "year_founded": 2022,
+    "year_revealed": 2023,
+    "height_cm": 168,
+    "weight_kg": 60,
+    "payload_kg": 20,
+    "dof": null,
+    "battery_hours": 5,
+    "walking_speed_ms": 1.2,
+    "status": "prototype",
+    "funding_usd_m": 1900,
+    "key_customers_or_pilots": [
+      "BMW (initial pilot)"
+    ],
+    "website": "https://www.figure.ai",
+    "image_url": "images/figure-ai--figure-01.webp",
+    "image_source": "IEEE Spectrum (https://spectrum.ieee.org/figure-humanoid-robot-2665982283) — credit Figure AI",
+    "short_description": "Figure AI's first humanoid prototype, unveiled in 2023 to demonstrate OpenAI-powered conversational manipulation before being superseded.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Foundation Robotics",
+    "robot_name": "Phantom MK1",
+    "country": "USA",
+    "hq_city": "San Francisco, CA",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": 175,
+    "weight_kg": 80,
+    "payload_kg": 20,
+    "dof": 19,
+    "battery_hours": null,
+    "walking_speed_ms": 1.7,
+    "status": "prototype",
+    "funding_usd_m": 111,
+    "key_customers_or_pilots": [
+      "US Air Force",
+      "Ukraine frontline trials"
+    ],
+    "website": "https://foundation.bot",
+    "image_url": "images/foundation-robotics--phantom-mk1.webp",
+    "image_source": "Humanoid Guide (https://humanoid.guide/product/phantom-mk1/) — credit Foundation",
+    "short_description": "Camera-only industrial humanoid (formerly Boardwalk Robotics' Alex) pitched at defense and manufacturing buyers, with proprietary cycloidal actuators.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "defense_eod"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Generative Bionics",
+    "robot_name": "(unnamed first humanoid)",
+    "country": "Italy",
+    "hq_city": "Genoa",
+    "year_founded": 2024,
+    "year_revealed": 2026,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "concept",
+    "funding_usd_m": 75,
+    "key_customers_or_pilots": [],
+    "website": "https://gbionics.ai",
+    "image_url": "images/generative-bionics--unnamed-first-humanoid.webp",
+    "image_source": "interestingengineering.com (GENE.01)",
+    "short_description": "IIT-spinout building 'Made in Italy' Physical AI humanoids, backed by EUR 70M from CDP Venture Capital, AMD, Eni and Tether.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Italy"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Generative Bionics",
+    "robot_name": "GENE.01",
+    "country": "Italy",
+    "hq_city": "Genoa",
+    "year_founded": null,
+    "year_revealed": 2026,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "concept",
+    "funding_usd_m": 81,
+    "key_customers_or_pilots": [
+      "Italdesign"
+    ],
+    "website": "https://gbionics.ai/",
+    "image_url": "images/generative-bionics--gene-01.webp",
+    "image_source": "humanoid.guide GENE.01 page",
+    "short_description": "IIT spin-off building a 'Made in Italy' humanoid with full-body tactile sensing and AMD compute, debuted at CES 2026.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Italy"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Hexagon",
+    "robot_name": "AEON",
+    "country": "Sweden",
+    "hq_city": "Stockholm",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://hexagon.com/",
+    "image_url": "images/hexagon--aeon.jpg",
+    "image_source": "The Robot Report Hexagon AEON article",
+    "short_description": "Swedish industrial-tech firm Hexagon's humanoid robot intended for live work in factories starting 2025.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Sweden"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Holiday Robotics",
+    "robot_name": "Friday",
+    "country": "South Korea",
+    "hq_city": "Seoul",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": 176,
+    "weight_kg": 115,
+    "payload_kg": null,
+    "dof": 63,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": 13,
+    "key_customers_or_pilots": [],
+    "website": "https://holiday-robot.github.io/",
+    "image_url": "images/holiday-robotics--friday.webp",
+    "image_source": "Humanoids Daily article on Holiday Robotics Friday",
+    "short_description": "Korean wheeled humanoid prioritizing dexterous manipulation, 63 DOF, raised $13M seed for industrial deployments.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "South Korea"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Honda",
+    "robot_name": "E2-DR",
+    "country": "Japan",
+    "hq_city": "Tokyo",
+    "year_founded": 1948,
+    "year_revealed": 2017,
+    "height_cm": 168,
+    "weight_kg": 85,
+    "payload_kg": null,
+    "dof": 33,
+    "battery_hours": 1.5,
+    "walking_speed_ms": 1.2,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://global.honda",
+    "image_url": "images/honda--e2-dr.jpg",
+    "image_source": "Designboom (image © IEEE Spectrum / Honda R&D, used in Designboom press coverage)",
+    "short_description": "Disaster-response humanoid able to walk upright at 4.3 km/h, crawl on all fours, climb ladders and squeeze through 30 cm gaps.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Japan"
+    ],
+    "use_cases": [
+      "defense_eod"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Honor",
+    "robot_name": "Lightning",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": null,
+    "year_revealed": 2026,
+    "height_cm": 174,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.hihonor.com/",
+    "image_url": "images/honor--lightning.webp",
+    "image_source": "CBS News humanoid half-marathon article",
+    "short_description": "Chinese smartphone maker Honor's humanoid runner that won the 2026 Beijing E-Town half-marathon in just over 50 minutes with liquid-cooled joints.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Humanoid (UK)",
+    "robot_name": "HMND 01 Alpha Bipedal",
+    "country": "United Kingdom",
+    "hq_city": "London",
+    "year_founded": 2024,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://thehumanoid.ai/",
+    "image_url": "images/humanoid-uk--hmnd-01-alpha-bipedal.jpg",
+    "image_source": "The Robot Report HMND 01 article",
+    "short_description": "UK startup's bipedal humanoid built from concept to walking prototype in five months and stable within 48 hours of assembly.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "United Kingdom"
+    ],
+    "use_cases": [
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Humanoid Robot (Shanghai) Co.",
+    "robot_name": "Qinglong",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2024,
+    "year_revealed": 2024,
+    "height_cm": 185,
+    "weight_kg": 80,
+    "payload_kg": 40,
+    "dof": 43,
+    "battery_hours": null,
+    "walking_speed_ms": 1,
+    "status": "prototype",
+    "funding_usd_m": 140,
+    "key_customers_or_pilots": [
+      "research",
+      "open-source community"
+    ],
+    "website": "https://www.openloong.org.cn/",
+    "image_url": "images/humanoid-robot-shanghai-co--qinglong.webp",
+    "image_source": "technode.com",
+    "short_description": "China's first full-sized open-source general-purpose humanoid, 185 cm, 43 DOF, 400 TOPS.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "IHMC",
+    "robot_name": "Nadia",
+    "country": "USA",
+    "hq_city": "Pensacola, FL",
+    "year_founded": 1990,
+    "year_revealed": 2022,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": 29,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": 3,
+    "key_customers_or_pilots": [
+      "Office of Naval Research"
+    ],
+    "website": "https://robots.ihmc.us/nadia",
+    "image_url": "images/ihmc--nadia.webp",
+    "image_source": "spectrum.ieee.org",
+    "short_description": "Gymnast-inspired research humanoid built by IHMC with Boardwalk Robotics, designed for near-human range of motion in disaster-response and EOD scenarios.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "research_education",
+      "defense_eod"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "ISRO",
+    "robot_name": "Vyommitra",
+    "country": "India",
+    "hq_city": "Thiruvananthapuram",
+    "year_founded": 1969,
+    "year_revealed": 2020,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Gaganyaan crewed spaceflight programme"
+    ],
+    "website": "https://www.isro.gov.in",
+    "image_url": "images/isro--vyommitra.jpg",
+    "image_source": "Wikimedia Commons (CC)",
+    "short_description": "Half-humanoid female-styled space robot built from aluminium alloy and titanium for India's Gaganyaan crewed missions, with no legs but full torso/arms/head.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "India"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Istituto Italiano di Tecnologia (IIT)",
+    "robot_name": "R1",
+    "country": "Italy",
+    "hq_city": "Genoa",
+    "year_founded": 2004,
+    "year_revealed": 2017,
+    "height_cm": 130,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://icub.iit.it/products/r1-robot",
+    "image_url": "images/istituto-italiano-di-tecnologia-iit--r1.jpg",
+    "image_source": "icub.iit.it",
+    "short_description": "Wheeled mobile humanoid with extensible torso (1.15-1.45m), designed as a service robot platform with two arms and RGBD perception.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Italy"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Istituto Italiano di Tecnologia (IIT)",
+    "robot_name": "ergoCub",
+    "country": "Italy",
+    "hq_city": "Genoa",
+    "year_founded": 2004,
+    "year_revealed": 2023,
+    "height_cm": 150,
+    "weight_kg": 55.7,
+    "payload_kg": 10,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "INAIL"
+    ],
+    "website": "https://ami.iit.it/human-robot-collaboration",
+    "image_url": "images/istituto-italiano-di-tecnologia-iit--ergocub.jpg",
+    "image_source": "ergoCub official site (https://ergocub.eu/robot)",
+    "short_description": "Bipedal evolution of iCub built for ergonomic physical human-robot collaboration, capable of human-paced walking.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Italy"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Istituto Italiano di Tecnologia (IIT)",
+    "robot_name": "COMAN",
+    "country": "Italy",
+    "hq_city": "Genoa",
+    "year_founded": 2004,
+    "year_revealed": 2013,
+    "height_cm": 94.5,
+    "weight_kg": 31.2,
+    "payload_kg": null,
+    "dof": 25,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://hhcm.iit.it",
+    "image_url": "images/istituto-italiano-di-tecnologia-iit--coman.webp",
+    "image_source": "spectrum.ieee.org",
+    "short_description": "Compliant child-sized humanoid for locomotion research, with mixed stiff and elastic joints in a titanium/aluminium structure.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Italy"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "K-Scale Labs",
+    "robot_name": "K-Bot",
+    "country": "USA",
+    "hq_city": "Palo Alto, CA",
+    "year_founded": 2024,
+    "year_revealed": 2025,
+    "height_cm": 140,
+    "weight_kg": 34,
+    "payload_kg": 10,
+    "dof": null,
+    "battery_hours": 4,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Developer / research community"
+    ],
+    "website": "https://www.kscale.dev",
+    "image_url": "images/k-scale-labs--k-bot.webp",
+    "image_source": "RS DesignSpark via Cloudinary (https://www.rs-online.com/designspark/k-scale-labs-launches-k-bot-americas-first-open-source-humanoid-robot)",
+    "short_description": "America's first open-source humanoid robot, designed for hobbyists and researchers; company ceased operations in late 2025 and released all IP open-source.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "KAIST",
+    "robot_name": "DRC-Hubo+",
+    "country": "South Korea",
+    "hq_city": "Daejeon",
+    "year_founded": null,
+    "year_revealed": 2015,
+    "height_cm": 140,
+    "weight_kg": 60,
+    "payload_kg": null,
+    "dof": 33,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.kaist.ac.kr",
+    "image_url": "images/kaist--drc-hubo.jpg",
+    "image_source": "Wikimedia Commons (CC BY 2.0, U.S. Navy/Office of Naval Research photo of HUBO at DARPA Robotics Challenge 2015)",
+    "short_description": "Transformable bipedal-to-quadrupedal humanoid that won the 2015 DARPA Robotics Challenge Finals, with knee-mounted wheels for fast rolling locomotion.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "South Korea"
+    ],
+    "use_cases": [
+      "defense_eod"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Karlsruhe Institute of Technology (KIT)",
+    "robot_name": "ARMAR-6",
+    "country": "Germany",
+    "hq_city": "Karlsruhe",
+    "year_founded": null,
+    "year_revealed": 2018,
+    "height_cm": 192,
+    "weight_kg": 123,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Ocado"
+    ],
+    "website": "https://h2t.iar.kit.edu",
+    "image_url": "images/karlsruhe-institute-of-technology-kit--armar-6.png",
+    "image_source": "KIT H2T official robot page (relative image path /img/A6_cropped_hq_fixed_tablet4_rdax_1200x2048.png)",
+    "short_description": "Collaborative humanoid assistant on a wheeled base with two 8-DoF torque-controlled arms, built for industrial maintenance tasks.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Germany"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Karlsruhe Institute of Technology (KIT)",
+    "robot_name": "ARMAR-7",
+    "country": "Germany",
+    "hq_city": "Karlsruhe",
+    "year_founded": null,
+    "year_revealed": 2024,
+    "height_cm": 170,
+    "weight_kg": 70,
+    "payload_kg": null,
+    "dof": 32,
+    "battery_hours": null,
+    "walking_speed_ms": 1,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://h2t.iar.kit.edu",
+    "image_url": "images/karlsruhe-institute-of-technology-kit--armar-7.jpg",
+    "image_source": "KIT H2T Research lab official (https://h2t.iar.kit.edu/397.php)",
+    "short_description": "Latest ARMAR family humanoid for household and care environments, with dual 8-DoF arms and underactuated five-finger hands on a holonomic mobile base.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Germany"
+    ],
+    "use_cases": [
+      "home_consumer",
+      "healthcare_eldercare"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Kawasaki Heavy Industries",
+    "robot_name": "Kaleido",
+    "country": "Japan",
+    "hq_city": "Tokyo",
+    "year_founded": 1896,
+    "year_revealed": 2017,
+    "height_cm": 190,
+    "weight_kg": 99,
+    "payload_kg": 30,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://kawasakirobotics.com",
+    "image_url": "images/kawasaki-heavy-industries--kaleido.webp",
+    "image_source": "kawasakirobotics.com",
+    "short_description": "Robust adult-sized industrial humanoid for disaster response and material handling, ninth generation revealed at 2025 International Robot Exhibition.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Japan"
+    ],
+    "use_cases": [
+      "defense_eod",
+      "entertainment_events"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Keenon Robotics",
+    "robot_name": "XMAN-F1",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2010,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "service industry"
+    ],
+    "website": "https://www.keenon.com/",
+    "image_url": "images/keenon-robotics--xman-f1.jpg",
+    "image_source": "prnewswire.com",
+    "short_description": "Bipedal service humanoid debuted at WAIC 2025, 7-DOF dual arms with KOM2.0 VLA model.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Kepler Robotics",
+    "robot_name": "Forerunner K1",
+    "country": "China",
+    "hq_city": "Shanghai",
+    "year_founded": 2023,
+    "year_revealed": 2023,
+    "height_cm": 178,
+    "weight_kg": 85,
+    "payload_kg": 25,
+    "dof": 40,
+    "battery_hours": 8,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.gotokepler.com/",
+    "image_url": "images/kepler-robotics--forerunner-k1.jpg",
+    "image_source": "yicaiglobal.com",
+    "short_description": "Full-size 178 cm humanoid with planetary roller-screw actuators, 40 DOF, 100 TOPS NEBULA AI brain.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Kinetix AI",
+    "robot_name": "KAI",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": null,
+    "year_revealed": 2026,
+    "height_cm": 173,
+    "weight_kg": 70,
+    "payload_kg": null,
+    "dof": 115,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": null,
+    "image_url": "images/kinetix-ai--kai.webp",
+    "image_source": "Humanoids Daily Kinetix AI article",
+    "short_description": "Faceless full-size home-assistant humanoid with 115 DoF and 18,000 tactile sensors for whole-body touch sensing.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "home_consumer"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "LG Electronics",
+    "robot_name": "CLOiD",
+    "country": "South Korea",
+    "hq_city": "Seoul",
+    "year_founded": null,
+    "year_revealed": 2026,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-presents-lg-cloid-home-robot-to-demonstrate-zero-labor-home-at-ces-2026/",
+    "image_url": "images/lg-electronics--cloid.jpg",
+    "image_source": "The Robot Report LG CLOiD article",
+    "short_description": "Dual-armed AI home humanoid robot from LG's HS Robotics Lab debuted at CES 2026 to support 'Zero Labor Home' chores vision.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "South Korea"
+    ],
+    "use_cases": [
+      "home_consumer",
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "LimX Dynamics",
+    "robot_name": "CL-1",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2022,
+    "year_revealed": 2024,
+    "height_cm": 157,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": 20,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.limxdynamics.com/en",
+    "image_url": "images/limx-dynamics--cl-1.webp",
+    "image_source": "newatlas.com",
+    "short_description": "157 cm warehouse-style humanoid, demonstrated dynamic stair climbing, 20+ DOF skeleton.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "warehouse_logistics"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "LimX Dynamics",
+    "robot_name": "CL-2",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2022,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.limxdynamics.com/en",
+    "image_url": "images/limx-dynamics--cl-2.webp",
+    "image_source": "heise.de",
+    "short_description": "Second-gen humanoid, more compact and powerful than CL-1, positioned as China's Atlas-class platform.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "LimX Dynamics",
+    "robot_name": "P1",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2022,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.limxdynamics.com/en",
+    "image_url": "images/limx-dynamics--p1.webp",
+    "image_source": "freethink.com",
+    "short_description": "Bipedal robot platform demonstrated traversing rough terrain on Tanglang Mountain via reinforcement learning.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Lingbao CASBOT",
+    "robot_name": "CASBOT 01",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": 179,
+    "weight_kg": 60,
+    "payload_kg": null,
+    "dof": 52,
+    "battery_hours": 4,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": 14,
+    "key_customers_or_pilots": [
+      "industrial",
+      "mining"
+    ],
+    "website": "https://www.casbot.com/",
+    "image_url": "images/lingbao-casbot--casbot-01.webp",
+    "image_source": "interestingengineering.com",
+    "short_description": "Full-size bipedal humanoid with 52 DOF and 550 TOPS compute; bionic dexterous hands.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Lingbao CASBOT",
+    "robot_name": "CASBOT 02",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": 163,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": 37,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": 14,
+    "key_customers_or_pilots": [
+      "interactive entertainment",
+      "exhibitions"
+    ],
+    "website": "https://www.casbot.com/",
+    "image_url": "images/lingbao-casbot--casbot-02.webp",
+    "image_source": "humanoid.guide",
+    "short_description": "163 cm interaction-focused humanoid with 37 DOF, 150 Nm torque, 275 TOPS compute.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "entertainment_events"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Lingbao CASBOT",
+    "robot_name": "CASBOT SE",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://en.casbot.com/",
+    "image_url": "images/lingbao-casbot--casbot-se.webp",
+    "image_source": "Interesting Engineering CASBOT article",
+    "short_description": "Athletic humanoid built on the CASBOT 01 frame to compete in the 2025 world's-first humanoid half-marathon in Beijing.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Lumos Robotics",
+    "robot_name": "LUS2",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2024,
+    "year_revealed": 2025,
+    "height_cm": 160,
+    "weight_kg": 56,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.lumosbot.tech/",
+    "image_url": "images/lumos-robotics--lus2.webp",
+    "image_source": "humanoid.guide LUS2 page",
+    "short_description": "Full-size 160 cm/56 kg humanoid known for its '1-second ejection rising' demo from supine to standing, built for industrial deployment.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "MagicLab",
+    "robot_name": "MagicBot Z1",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2024,
+    "year_revealed": 2025,
+    "height_cm": 140,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": 24,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.magiclab.top/",
+    "image_url": "images/magiclab--magicbot-z1.webp",
+    "image_source": "humanoid.guide",
+    "short_description": "High-dynamics bipedal with 24 base DOF (expandable to 49), recovers from falls and large disturbances.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "MIT Biomimetic Robotics Lab",
+    "robot_name": "MIT Humanoid",
+    "country": "USA",
+    "hq_city": "Cambridge, MA",
+    "year_founded": null,
+    "year_revealed": 2021,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://robotics.mit.edu/",
+    "image_url": "images/mit-biomimetic-robotics-lab--mit-humanoid.webp",
+    "image_source": "IEEE Spectrum on MIT Dynamic Acrobatic Humanoid",
+    "short_description": "Small-scale acrobatic humanoid from Sangbae Kim's lab designed to do parkour, flips, and spinning jumps over rough terrain.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "NASA Johnson Space Center",
+    "robot_name": "Valkyrie (R5)",
+    "country": "USA",
+    "hq_city": "Houston, TX",
+    "year_founded": 1958,
+    "year_revealed": 2013,
+    "height_cm": 187,
+    "weight_kg": 129,
+    "payload_kg": null,
+    "dof": 44,
+    "battery_hours": 1,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "NASA (in-house)",
+      "MIT",
+      "IHMC",
+      "Northeastern"
+    ],
+    "website": "https://www.nasa.gov/technology/r5/",
+    "image_url": "images/nasa-johnson-space-center--valkyrie-r5.jpg",
+    "image_source": "Wikimedia Commons (NASA, public domain)",
+    "short_description": "NASA's electric DRC-era humanoid built for future Mars missions, distributed to leading robotics labs as a research platform.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "NEURA Robotics",
+    "robot_name": "4NE-1",
+    "country": "Germany",
+    "hq_city": "Metzingen",
+    "year_founded": 2019,
+    "year_revealed": 2023,
+    "height_cm": 180,
+    "weight_kg": 80,
+    "payload_kg": 15,
+    "dof": 55,
+    "battery_hours": null,
+    "walking_speed_ms": 0.83,
+    "status": "prototype",
+    "funding_usd_m": 1500,
+    "key_customers_or_pilots": [
+      "Kawasaki",
+      "Omron",
+      "SAP"
+    ],
+    "website": "https://neura-robotics.com",
+    "image_url": "images/neura-robotics--4ne-1.webp",
+    "image_source": "TechCrunch (https://techcrunch.com/2024/07/31/neura-shows-off-humanoid-robot-4ne-1/) — credit Neura Robotics",
+    "short_description": "Cognitive humanoid co-designed with Studio F.A. Porsche, with proprietary actuators and integrated AI for industrial and household tasks.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Germany"
+    ],
+    "use_cases": [
+      "home_consumer"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Old World Labs (OWL)",
+    "robot_name": "Replicants",
+    "country": "USA",
+    "hq_city": null,
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": 122,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.oldworldlabs.com/",
+    "image_url": null,
+    "image_source": "https://www.prnewswire.com/news-releases/old-world-labs-at-ces-2025-integrating-agents-into-humanoid-robots-and-virtual-worlds-302344534.html",
+    "short_description": "4-foot Replicants humanoid showcased at CES 2025 with OWL's 'Agents as a Service' AI integrated for autonomy.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "entertainment_events"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "PAL Robotics",
+    "robot_name": "Kangaroo",
+    "country": "Spain",
+    "hq_city": "Barcelona",
+    "year_founded": 2004,
+    "year_revealed": 2022,
+    "height_cm": 160,
+    "weight_kg": 40,
+    "payload_kg": null,
+    "dof": 28,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://pal-robotics.com",
+    "image_url": "images/pal-robotics--kangaroo.webp",
+    "image_source": "pal-robotics.com",
+    "short_description": "Lightweight bipedal humanoid using custom force-controlled linear actuators, built to study dynamic walking and jumping.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Spain"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Persona AI",
+    "robot_name": "Persona Industrial Humanoid",
+    "country": "USA",
+    "hq_city": "Houston, TX",
+    "year_founded": 2024,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": 27,
+    "key_customers_or_pilots": [
+      "HD Hyundai (shipyards)",
+      "ABS"
+    ],
+    "website": "https://persona.ai",
+    "image_url": "images/persona-ai--persona-industrial-humanoid.webp",
+    "image_source": "Persona AI official site (https://persona.ai/humanoid/)",
+    "short_description": "Houston-based humanoid startup founded by ex-Nauticus and ex-Figure execs, building rugged industrial humanoids for shipyard welding and heavy-industry tasks.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "PIA Automation",
+    "robot_name": "P-Bot",
+    "country": "Germany",
+    "hq_city": "Bad Neustadt",
+    "year_founded": null,
+    "year_revealed": 2026,
+    "height_cm": 180,
+    "weight_kg": 185,
+    "payload_kg": 5,
+    "dof": 26,
+    "battery_hours": 4,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.piagroup.com/en/automation/embodied-ai-humanoid-robotics/",
+    "image_url": "images/pia-automation--p-bot.webp",
+    "image_source": "PIA Automation humanoid robotics page",
+    "short_description": "PIA Automation's service-oriented humanoid (manufactured via Joybot/AGIBOT JV) for banks, malls and events with 26 DoF and 4 h battery.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Germany"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "customer_service",
+      "entertainment_events"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "QSS AI & Robots",
+    "robot_name": "Sara",
+    "country": "Saudi Arabia",
+    "hq_city": "Riyadh",
+    "year_founded": null,
+    "year_revealed": 2023,
+    "height_cm": 162,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "NEOM (planned)"
+    ],
+    "website": "https://qltyss.com",
+    "image_url": "images/qss-ai-robots--sara.jpg",
+    "image_source": "QSS AI official site (https://qltyss.com/qss-sarah/)",
+    "short_description": "First Saudi-made humanoid, an Arabic/English-speaking female-styled robot in traditional Saudi attire, built for cultural and IoT-control demos.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Saudi Arabia"
+    ],
+    "use_cases": [
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "RobotEra",
+    "robot_name": "Star1",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": 171,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": 55,
+    "battery_hours": null,
+    "walking_speed_ms": 3.6,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.robotera.com/",
+    "image_url": "images/robotera--star1.webp",
+    "image_source": "interestingengineering.com",
+    "short_description": "171 cm bipedal with 55 DOF, 12-DOF dexterous hands, ran 3.6 m/s on Gobi Desert; ERA-42 VLA model.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "RobotEra",
+    "robot_name": "XBot-L",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.robotera.com/",
+    "image_url": "images/robotera--xbot-l.webp",
+    "image_source": "newatlas.com",
+    "short_description": "First humanoid robot to ascend the Great Wall of China (2024).",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "ROBROS",
+    "robot_name": "IGRIS-C",
+    "country": "South Korea",
+    "hq_city": "Seoul",
+    "year_founded": 2020,
+    "year_revealed": 2025,
+    "height_cm": 154,
+    "weight_kg": 56,
+    "payload_kg": null,
+    "dof": 31,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://robros.co.kr/",
+    "image_url": "images/robros--igris-c.webp",
+    "image_source": "humanoid.guide IGRIS-C page",
+    "short_description": "Compact 31-DOF humanoid for service, retail, and human-robot collaboration, member of K-Humanoid Alliance.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "South Korea"
+    ],
+    "use_cases": [
+      "research_education",
+      "customer_service"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Samsung Electronics (Future Robotics)",
+    "robot_name": "Samsung Humanoid (unnamed prototype)",
+    "country": "South Korea",
+    "hq_city": "Suwon",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Samsung's own factories"
+    ],
+    "website": "https://www.samsung.com/",
+    "image_url": "images/samsung-electronics-future-robotics--samsung-humanoid-unnamed-prototype.webp",
+    "image_source": "Humanoids Daily Samsung article",
+    "short_description": "Samsung's Future Robotics Division humanoid prototype unveiled at RoboWorld 2025 to be deployed across its global factories by 2030.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "South Korea"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Skild AI",
+    "robot_name": "Skild Brain Humanoid",
+    "country": "USA",
+    "hq_city": "Pittsburgh, PA",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": 1400,
+    "key_customers_or_pilots": [
+      "ABB Robotics",
+      "Universal Robots"
+    ],
+    "website": "https://www.skild.ai/",
+    "image_url": "images/skild-ai--skild-brain-humanoid.webp",
+    "image_source": "humanoid.guide Skild Brain page",
+    "short_description": "$14B-valued Amazon/SoftBank-backed startup running its omni-bodied 'Skild Brain' on a humanoid demonstrator that vaults, flips, and crawls.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "warehouse_logistics",
+      "customer_service"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Stanford University",
+    "robot_name": "HumanPlus",
+    "country": "USA",
+    "hq_city": "Stanford, CA",
+    "year_founded": null,
+    "year_revealed": 2024,
+    "height_cm": 180,
+    "weight_kg": 60,
+    "payload_kg": null,
+    "dof": 33,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://humanoid-ai.github.io/",
+    "image_url": "images/stanford-university--humanplus.jpg",
+    "image_source": "Stanford HumanPlus project page",
+    "short_description": "Stanford research humanoid that learns by shadowing humans, with two egocentric cameras and 6-DoF dexterous hands.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Stardust Intelligence",
+    "robot_name": "Astribot S1",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2022,
+    "year_revealed": 2024,
+    "height_cm": 170,
+    "weight_kg": 58,
+    "payload_kg": 10,
+    "dof": 23,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.astribot.com/index-en.html",
+    "image_url": "images/stardust-intelligence--astribot-s1.webp",
+    "image_source": "New Atlas article on Astribot S1",
+    "short_description": "Chinese dexterous humanoid noted for 10 m/s arm-tip speed and 10 kg per-arm payload, demonstrated cooking and pouring wine.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Tashan Technology",
+    "robot_name": "TS-R",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2017,
+    "year_revealed": null,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.tashanrobot.com/",
+    "image_url": "images/tashan-technology--ts-r.png",
+    "image_source": "ITES China Tashan TS-R page",
+    "short_description": "Tactile-service humanoid built around Tashan's AI tactile-sensing chips for manipulation training in Beijing's robot training center.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Tesla",
+    "robot_name": "Optimus (Gen 2 / Gen 3)",
+    "country": "USA",
+    "hq_city": "Palo Alto, CA",
+    "year_founded": 2003,
+    "year_revealed": 2022,
+    "height_cm": 173,
+    "weight_kg": 57,
+    "payload_kg": 9,
+    "dof": 28,
+    "battery_hours": null,
+    "walking_speed_ms": 2.2,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Tesla Fremont factory (internal)"
+    ],
+    "website": "https://www.tesla.com/AI",
+    "image_url": "images/tesla--optimus-gen-2-gen-3.jpg",
+    "image_source": "Wikimedia Commons (CC license)",
+    "short_description": "Tesla's general-purpose humanoid built on the same neural-net stack as FSD, currently piloting in Tesla factories with Gen 3 expected in 2026.",
+    "price_usd": null,
+    "price_note": "Not yet for sale; Musk publicly targets $20,000-$30,000 at scale. Production at Fremont expected to begin late 2026.",
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "warehouse_logistics",
+      "home_consumer"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Tesla Fremont / Giga Texas (internal)",
+        "year": 2025,
+        "details": "Tesla deploying Optimus units at its own factories on simple repetitive tasks; no external customers yet.",
+        "source": "https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/"
+      }
+    ]
+  },
+  {
+    "company": "Toyota",
+    "robot_name": "T-HR3",
+    "country": "Japan",
+    "hq_city": "Toyota City",
+    "year_founded": 1937,
+    "year_revealed": 2017,
+    "height_cm": 154,
+    "weight_kg": 75,
+    "payload_kg": null,
+    "dof": 32,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://global.toyota",
+    "image_url": "images/toyota--t-hr3.webp",
+    "image_source": "spectrum.ieee.org",
+    "short_description": "Third-generation Toyota humanoid with 32 torque-controlled DoF and 10-fingered hands, controlled via a master maneuvering exoskeleton with VR head-mounted display.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Japan"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Toyota Research Institute",
+    "robot_name": "Punyo",
+    "country": "Japan",
+    "hq_city": "Los Altos, CA",
+    "year_founded": 2015,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.tri.global",
+    "image_url": "images/toyota-research-institute--punyo.jpg",
+    "image_source": "The Robot Report (https://www.therobotreport.com/punyo-soft-robot-from-tri-designed-for-whole-body-manipulation/) — credit Toyota Research Institute",
+    "short_description": "Soft torso-up humanoid covered in compliant inflatable bladders and tactile-sensing 'bubble' grippers for whole-body manipulation.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Japan"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "UBTECH Robotics",
+    "robot_name": "Walker X",
+    "country": "China",
+    "hq_city": "Shenzhen",
+    "year_founded": 2012,
+    "year_revealed": 2021,
+    "height_cm": 130,
+    "weight_kg": 63,
+    "payload_kg": 10,
+    "dof": 41,
+    "battery_hours": 4,
+    "walking_speed_ms": 0.83,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "service deployments"
+    ],
+    "website": "https://www.ubtrobot.com/en/humanoid/products/walker-x",
+    "image_url": "images/ubtech-robotics--walker-x.png",
+    "image_source": "ubtrobot.com",
+    "short_description": "41-DOF service humanoid with stereo vision and dexterous hands, walks at 3 km/h, sprints at 10 km/h.",
+    "price_usd": null,
+    "price_note": "Earlier flagship; reportedly priced ~$960K via RobotLAB research configuration. Now superseded by Walker S series for industrial use.",
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China",
+      "USA"
+    ],
+    "use_cases": [
+      "research_education",
+      "customer_service"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "Dubai Expo 2020 China Pavilion",
+        "year": 2021,
+        "details": "Walker X demonstrated at Dubai Expo 2020 (held 2021-2022) as a showcase of UBTECH's biped life-sized humanoid capabilities.",
+        "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2023/1229/11018858/sehk23120100082.pdf"
+      }
+    ]
+  },
+  {
+    "company": "UC Berkeley (Hybrid Robotics)",
+    "robot_name": "Berkeley Humanoid Lite",
+    "country": "USA",
+    "hq_city": "Berkeley, CA",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://berkeley-humanoid-lite.gitbook.io/docs",
+    "image_url": "images/uc-berkeley-hybrid-robotics--berkeley-humanoid-lite.png",
+    "image_source": "Berkeley Humanoid Lite project site",
+    "short_description": "Open-source, sub-$5,000 humanoid with modular 3D-printed cycloidal gearboxes designed as an accessible research platform.",
+    "price_usd": 5000,
+    "price_note": "$5,000  (from description)",
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "University of Bonn",
+    "robot_name": "Robotinho",
+    "country": "Germany",
+    "hq_city": "Bonn",
+    "year_founded": null,
+    "year_revealed": 2008,
+    "height_cm": 110,
+    "weight_kg": 6,
+    "payload_kg": null,
+    "dof": 25,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Deutsches Museum Bonn (tour-guide pilot)"
+    ],
+    "website": "https://www.hrl.uni-bonn.de",
+    "image_url": "images/university-of-bonn--robotinho.jpg",
+    "image_source": "roboticstoday.com",
+    "short_description": "Small bipedal RoboCup-derived humanoid repurposed as an interactive museum tour guide with multimodal HRI capabilities.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Germany"
+    ],
+    "use_cases": [
+      "research_education",
+      "customer_service"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "University of Tokyo (JSK Lab)",
+    "robot_name": "Kengoro",
+    "country": "Japan",
+    "hq_city": "Tokyo",
+    "year_founded": null,
+    "year_revealed": 2016,
+    "height_cm": 167,
+    "weight_kg": 56.5,
+    "payload_kg": null,
+    "dof": 114,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.jsk.t.u-tokyo.ac.jp",
+    "image_url": "images/university-of-tokyo-jsk-lab--kengoro.webp",
+    "image_source": "spectrum.ieee.org",
+    "short_description": "Musculoskeletal humanoid driven by 108 motors that mimic muscles and tendons; cools itself by sweating water through a porous aluminium skeleton.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Japan"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "University of Tokyo (JSK Lab)",
+    "robot_name": "Kenshiro",
+    "country": "Japan",
+    "hq_city": "Tokyo",
+    "year_founded": null,
+    "year_revealed": 2012,
+    "height_cm": 158,
+    "weight_kg": 50,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.jsk.t.u-tokyo.ac.jp",
+    "image_url": "images/university-of-tokyo-jsk-lab--kenshiro.webp",
+    "image_source": "newatlas.com",
+    "short_description": "Anthropomimetic humanoid modelled on a 12-year-old boy's anatomy, with 160 pulley-driven 'muscles' replicating the human musculoskeletal system.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Japan"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "UniX AI",
+    "robot_name": "Martian",
+    "country": "China",
+    "hq_city": "Suzhou",
+    "year_founded": 2024,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "security",
+      "household services",
+      "elder care"
+    ],
+    "website": "https://www.unix-group.ai/",
+    "image_url": "images/unix-ai--martian.webp",
+    "image_source": "humanoid.guide",
+    "short_description": "Bipedal humanoid in UniX AI's portfolio (alongside wheeled Wanda/Panther) for security and home services.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "home_consumer",
+      "security_inspection",
+      "healthcare_eldercare"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Walt Disney Imagineering",
+    "robot_name": "Disney Bipedal Robotic Character",
+    "country": "USA",
+    "hq_city": "Glendale, CA",
+    "year_founded": 1952,
+    "year_revealed": 2023,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Disney Parks (BDX droids)"
+    ],
+    "website": "https://research.disney.com",
+    "image_url": "images/walt-disney-imagineering--disney-bipedal-robotic-character.jpg",
+    "image_source": "New Atlas via S3 (https://newatlas.com/robotics/disney-wall-e-robot/) — credit Disney Research",
+    "short_description": "Free-walking, expressive bipedal robot character developed by Disney Research and Imagineering using reinforcement-learning-driven animation.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "research_education",
+      "entertainment_events"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Westlake Robotics",
+    "robot_name": "Titan o1",
+    "country": "China",
+    "hq_city": "Hangzhou",
+    "year_founded": null,
+    "year_revealed": 2026,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "research"
+    ],
+    "website": null,
+    "image_url": "images/westlake-robotics--titan-o1.webp",
+    "image_source": "interestingengineering.com",
+    "short_description": "Humanoid powered by General Action Expert (GAE) foundation model, demonstrated real-time motion mirroring.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "WIRobotics",
+    "robot_name": "ALLEX",
+    "country": "South Korea",
+    "hq_city": "Seoul",
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.wirobotics.com/",
+    "image_url": "images/wirobotics--allex.jpg",
+    "image_source": "PRNewswire WIRobotics ALLEX press release",
+    "short_description": "Korean general-purpose humanoid (ALL-purpose Excellence) with high-DoF dexterous hands sensing 100 gram-force forces.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "South Korea"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "X-Humanoid (Beijing Innovation Center)",
+    "robot_name": "Tien Kung Ultra",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2023,
+    "year_revealed": 2025,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "UBTech"
+    ],
+    "website": "https://www.x-humanoid.com/",
+    "image_url": "images/x-humanoid-beijing-innovation-center--tien-kung-ultra.jpg",
+    "image_source": "TechXplore Tien Kung Ultra article",
+    "short_description": "Upgraded humanoid co-developed with UBTech that won the 2025 Beijing Humanoid Half-Marathon at 2h40m and handles 35cm height differences.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Xiaomi",
+    "robot_name": "CyberOne",
+    "country": "China",
+    "hq_city": "Beijing",
+    "year_founded": 2010,
+    "year_revealed": 2022,
+    "height_cm": 177,
+    "weight_kg": 52,
+    "payload_kg": 1.5,
+    "dof": 21,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.mi.com/global/discover/article?id=2754",
+    "image_url": "images/xiaomi--cyberone.webp",
+    "image_source": "robbreport.com",
+    "short_description": "Xiaomi's R&D humanoid, 177 cm, 52 kg, with Mi-Sense vision recognizing 85 sounds and 45 emotions.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "XPENG",
+    "robot_name": "Iron (Next-Gen)",
+    "country": "China",
+    "hq_city": "Guangzhou",
+    "year_founded": 2014,
+    "year_revealed": 2024,
+    "height_cm": 178,
+    "weight_kg": 70,
+    "payload_kg": null,
+    "dof": 82,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "XPENG factories"
+    ],
+    "website": "https://www.xpeng.com/",
+    "image_url": "images/xpeng--iron-next-gen.png",
+    "image_source": "xpeng.com",
+    "short_description": "82-DOF humanoid with solid-state battery, 22-DOF hands, 2,250 TOPS Turing AI; mass production targeted late 2026.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "XPENG",
+    "robot_name": "PX5",
+    "country": "China",
+    "hq_city": "Guangzhou",
+    "year_founded": 2014,
+    "year_revealed": 2024,
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "prototype",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.xpeng.com/",
+    "image_url": "images/xpeng--px5.jpg",
+    "image_source": "kr-asia.com",
+    "short_description": "XPENG's earlier bipedal humanoid prototype, predecessor to the Iron platform.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "research_only",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "AIST",
+    "robot_name": "HRP-2",
+    "country": "Japan",
+    "hq_city": "Tsukuba",
+    "year_founded": 2001,
+    "year_revealed": 2002,
+    "height_cm": 154,
+    "weight_kg": 58,
+    "payload_kg": null,
+    "dof": 30,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "retired",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "JAIST",
+      "AIST",
+      "LAAS-CNRS"
+    ],
+    "website": "https://www.aist.go.jp",
+    "image_url": "images/aist--hrp-2.jpg",
+    "image_source": "Wikimedia Commons (CC BY-SA 3.0 / GFDL, photographer: Morio, Science Museum Tokyo 2010)",
+    "short_description": "Second-generation HRP humanoid notable for being able to stand up from prone or supine; designed by Yutaka Izubuchi (Patlabor).",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "retired",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Japan"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "AIST / Kawada Robotics",
+    "robot_name": "HRP-4C",
+    "country": "Japan",
+    "hq_city": "Tsukuba",
+    "year_founded": 2001,
+    "year_revealed": 2009,
+    "height_cm": 158,
+    "weight_kg": 43,
+    "payload_kg": null,
+    "dof": 42,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "retired",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.aist.go.jp",
+    "image_url": "images/aist-kawada-robotics--hrp-4c.jpg",
+    "image_source": "Wikimedia Commons (CC)",
+    "short_description": "Feminine-styled bipedal humanoid built to match average young Japanese woman dimensions, demonstrated singing and runway-walking performances.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "retired",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Japan"
+    ],
+    "use_cases": [
+      "entertainment_events"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Aldebaran (United Robotics Group)",
+    "robot_name": "Pepper",
+    "country": "France",
+    "hq_city": "Paris",
+    "year_founded": 2005,
+    "year_revealed": 2014,
+    "height_cm": 120,
+    "weight_kg": 28,
+    "payload_kg": null,
+    "dof": 20,
+    "battery_hours": 12,
+    "walking_speed_ms": 0.83,
+    "status": "retired",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "SoftBank retail",
+      "banks"
+    ],
+    "website": "https://www.aldebaran.com",
+    "image_url": "images/aldebaran-united-robotics-group--pepper.jpg",
+    "image_source": "Wikimedia Commons (CC)",
+    "short_description": "Wheeled humanoid social robot with two articulated arms and head; production halted in 2021.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "retired",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "France"
+    ],
+    "use_cases": [
+      "customer_service"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Aldebaran (United Robotics Group)",
+    "robot_name": "Romeo",
+    "country": "France",
+    "hq_city": "Paris",
+    "year_founded": 2005,
+    "year_revealed": 2013,
+    "height_cm": 140,
+    "weight_kg": 40,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "retired",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.aldebaran.com",
+    "image_url": "images/aldebaran-united-robotics-group--romeo.jpg",
+    "image_source": "roboticstoday.com",
+    "short_description": "Bipedal research platform intended as an assistive companion robot for elderly and disabled users.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "retired",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "France"
+    ],
+    "use_cases": [
+      "industrial_manufacturing",
+      "research_education",
+      "healthcare_eldercare"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Boston Dynamics",
+    "robot_name": "Atlas (Hydraulic / DRC)",
+    "country": "USA",
+    "hq_city": "Waltham, MA",
+    "year_founded": 1992,
+    "year_revealed": 2013,
+    "height_cm": 150,
+    "weight_kg": 80,
+    "payload_kg": 11,
+    "dof": 28,
+    "battery_hours": 1,
+    "walking_speed_ms": 2.5,
+    "status": "retired",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "DARPA Robotics Challenge",
+      "research only"
+    ],
+    "website": "https://bostondynamics.com",
+    "image_url": "images/boston-dynamics--atlas-hydraulic-drc.jpg",
+    "image_source": "Wikimedia Commons (DARPA, public domain)",
+    "short_description": "The original DARPA-funded hydraulic Atlas, famous for parkour and backflip demos, retired April 2024 after a decade of research milestones.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "retired",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "research_education",
+      "defense_eod"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Figure AI",
+    "robot_name": "Figure 02",
+    "country": "USA",
+    "hq_city": "San Jose, CA",
+    "year_founded": 2022,
+    "year_revealed": 2024,
+    "height_cm": 170,
+    "weight_kg": 70,
+    "payload_kg": 25,
+    "dof": null,
+    "battery_hours": 5,
+    "walking_speed_ms": 1.2,
+    "status": "pilot",
+    "funding_usd_m": 1900,
+    "key_customers_or_pilots": [
+      "BMW Spartanburg plant"
+    ],
+    "website": "https://www.figure.ai",
+    "image_url": "images/figure-ai--figure-02.jpg",
+    "image_source": "The Robot Report (https://www.therobotreport.com/figure-02-humanoid-robot-is-ready-to-get-to-work/) — credit Figure AI",
+    "short_description": "Figure AI's second-generation humanoid that performed BMW production-line trials, predecessor to Figure 03.",
+    "price_usd": null,
+    "price_note": "Not publicly priced. Retired from commercial deployment in late 2025 in favor of Figure 03.",
+    "availability_status": "retired",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "industrial_manufacturing"
+    ],
+    "verified_deployments": [
+      {
+        "customer": "BMW Plant Spartanburg",
+        "year": 2024,
+        "details": "11-month autonomous deployment on X3 body shop line; loaded 90,000+ sheet metal parts and contributed to ~30,000 cars before retirement.",
+        "source": "https://www.figure.ai/news/production-at-bmw"
+      }
+    ]
+  },
+  {
+    "company": "Honda",
+    "robot_name": "ASIMO",
+    "country": "Japan",
+    "hq_city": "Tokyo",
+    "year_founded": 1948,
+    "year_revealed": 2000,
+    "height_cm": 130,
+    "weight_kg": 54,
+    "payload_kg": null,
+    "dof": 57,
+    "battery_hours": 1,
+    "walking_speed_ms": 1.6,
+    "status": "retired",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "Honda showrooms"
+    ],
+    "website": "https://asimo.honda.com",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Honda_ASIMO_%28ver._2011%29_2011_Tokyo_Motor_Show.jpg/640px-Honda_ASIMO_%28ver._2011%29_2011_Tokyo_Motor_Show.jpg",
+    "image_source": "Wikimedia Commons (CC)",
+    "short_description": "Pioneering bipedal humanoid that established many modern walking-robot conventions; development ended in 2018, last public appearance in 2022.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "retired",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Japan"
+    ],
+    "use_cases": [
+      "customer_service",
+      "entertainment_events"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Istituto Italiano di Tecnologia (IIT)",
+    "robot_name": "WALK-MAN",
+    "country": "Italy",
+    "hq_city": "Genoa",
+    "year_founded": 2004,
+    "year_revealed": 2015,
+    "height_cm": 185,
+    "weight_kg": 102,
+    "payload_kg": 10,
+    "dof": null,
+    "battery_hours": 2,
+    "walking_speed_ms": null,
+    "status": "retired",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://hhcm.iit.it",
+    "image_url": "images/istituto-italiano-di-tecnologia-iit--walk-man.webp",
+    "image_source": "spectrum.ieee.org",
+    "short_description": "Disaster-response bipedal humanoid built for the EU WALK-MAN project, with series-elastic actuators and 10 kg/arm payload.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "retired",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Italy"
+    ],
+    "use_cases": [
+      "defense_eod"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "NASA Johnson Space Center",
+    "robot_name": "Robonaut 2 (R2)",
+    "country": "USA",
+    "hq_city": "Houston, TX",
+    "year_founded": 1958,
+    "year_revealed": 2010,
+    "height_cm": null,
+    "weight_kg": 150,
+    "payload_kg": 18,
+    "dof": 42,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "retired",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [
+      "International Space Station (2011-2018)"
+    ],
+    "website": "https://www.nasa.gov/robonaut2/",
+    "image_url": "images/nasa-johnson-space-center--robonaut-2-r2.jpg",
+    "image_source": "Wikimedia Commons (NASA, public domain)",
+    "short_description": "First humanoid robot in space, jointly built by NASA and GM; deployed on the ISS from 2011-2018 and returned to Earth for repair.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "retired",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [],
+    "verified_deployments": []
+  },
+  {
+    "company": "Sony",
+    "robot_name": "QRIO",
+    "country": "Japan",
+    "hq_city": "Tokyo",
+    "year_founded": 1946,
+    "year_revealed": 2003,
+    "height_cm": 58,
+    "weight_kg": 6.5,
+    "payload_kg": null,
+    "dof": 38,
+    "battery_hours": 1,
+    "walking_speed_ms": 0.23,
+    "status": "retired",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.sony.com",
+    "image_url": "images/sony--qrio.jpg",
+    "image_source": "Wikimedia Commons (CC)",
+    "short_description": "Compact bipedal entertainment humanoid, the world's first running robot via ZMP control; discontinued in 2006 after ~100 units built.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "retired",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "Japan"
+    ],
+    "use_cases": [
+      "entertainment_events"
+    ],
+    "verified_deployments": []
+  }
+]

@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+.env
+.env.local
+*.log
+
+# Working / scratch data files (regenerable)
+data/_*.json
+data/seo-jsonld.html

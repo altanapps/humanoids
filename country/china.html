@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Humanoid Robots in China — Pricing, Companies, Deployments</title>
+<meta name="description" content="82 humanoid robot platforms built in China. 43% commercial, the rest in trials or labs. median price $28K, mid market. focus areas: research, manufacturing, healthcare." />
+<link rel="canonical" href="https://humanoid.directory/country/china.html" />
+<meta property="og:title" content="Humanoid Robots in China — Pricing, Companies, Deployments" />
+<meta property="og:description" content="82 humanoid robot platforms built in China. 43% commercial, the rest in trials or labs. median price $28K, mid market. focus areas: research, manufacturing, healthcare." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://humanoid.directory/country/china.html" />
+<meta property="og:image" content="https://humanoid.directory/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Humanoid Robots in China — Pricing, Companies, Deployments" />
+<meta name="twitter:description" content="82 humanoid robot platforms built in China. 43% commercial, the rest in trials or labs. median price $28K, mid market. focus areas: research, manufacturing, healthcare." />
+<meta name="twitter:image" content="https://humanoid.directory/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Geist+Mono:wght@100..900&family=Inter:wght@300..600&display=swap" rel="stylesheet" />
+<style>
+  :root { --obsidian:#080808; --obsidian-1:#0d0d0d; --white:#fff; --silver:#E2E8F0; --silver-faint:rgba(226,232,240,0.55); --silver-dim:rgba(226,232,240,0.35); --silver-grad:linear-gradient(135deg,#F8FAFC 0%,#94A3B8 100%); --border:rgba(255,255,255,0.08); --border-strong:rgba(255,255,255,0.18); --glass:rgba(255,255,255,0.02); --ease:cubic-bezier(0.16,1,0.3,1); }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--obsidian); color:var(--silver); font-family:'Inter',-apple-system,sans-serif; -webkit-font-smoothing:antialiased; line-height:1.6; }
+  a { color: var(--silver); text-decoration: none; }
+  a:hover { color: var(--white); }
+  .nav { position:sticky; top:0; z-index:60; backdrop-filter:blur(24px); background:rgba(8,8,8,0.7); border-bottom:1px solid var(--border); padding:22px 0; }
+  .nav-inner { width:92vw; max-width:1600px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+  .brand { font-family:'Geist Mono',monospace; font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--white); font-weight:500; }
+  .nav-links { display:flex; gap:4px; padding:4px; border:1px solid var(--border); border-radius:999px; background:var(--glass); }
+  .nav-links a { font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:0.22em; text-transform:uppercase; color:var(--silver-faint); padding:8px 14px; border-radius:999px; }
+  .nav-links a:hover { color:var(--white); background:rgba(255,255,255,0.04); }
+  @media (max-width:720px) { .nav-links { display:none; } }
+  .silver-btn { background:var(--silver-grad); color:var(--obsidian); font-family:'Geist Mono',monospace; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; font-weight:600; padding:11px 20px; border-radius:999px; border:0; cursor:pointer; }
+  .ghost-btn { background:transparent; color:var(--silver); font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:0.22em; text-transform:uppercase; padding:10px 18px; border:1px solid var(--border-strong); border-radius:999px; cursor:pointer; }
+  .container { width:92vw; max-width:1600px; margin:0 auto; padding:64px 0; }
+  .crumbs { font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:0.22em; text-transform:uppercase; color:var(--silver-dim); margin-bottom:24px; display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .crumbs a { color:var(--silver-faint); }
+  h1 { font-family:'DM Serif Display',serif; font-style:italic; font-weight:400; font-size:clamp(48px,8vw,112px); line-height:0.9; letter-spacing:-0.04em; color:var(--white); margin:0 0 24px; max-width:14ch; }
+  h1 .grad { background:var(--silver-grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+  .lede { color:var(--silver); font-size:18px; line-height:1.6; max-width:680px; margin:0 0 48px; }
+  .signature-card { background:var(--glass); border:1px solid var(--border); border-radius:1rem; padding:24px 28px; margin:48px 0; }
+  .signature-card .lbl { font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:0.32em; text-transform:uppercase; color:var(--silver-dim); margin-bottom:8px; }
+  .signature-card p { margin:0; font-family:'DM Serif Display',serif; font-style:italic; font-size:24px; line-height:1.4; letter-spacing:-0.01em; color:var(--white); }
+  .stats { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--border); border-radius:1rem; overflow:hidden; margin:32px 0 48px; background:var(--border); gap:1px; }
+  .stats .cell { background:var(--obsidian); padding:24px; }
+  .stats .cell .lbl { font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:0.32em; text-transform:uppercase; color:var(--silver-dim); }
+  .stats .cell .num { font-family:'DM Serif Display',serif; font-style:italic; font-size:48px; line-height:1; color:var(--white); margin-top:8px; letter-spacing:-0.02em; }
+  @media (max-width:920px) { .stats { grid-template-columns:repeat(2,1fr); } }
+  .section-h { font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:0.32em; text-transform:uppercase; color:var(--silver-dim); margin:48px 0 16px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; }
+  .card { background:var(--glass); border:1px solid var(--border); border-radius:1rem; overflow:hidden; transition:all .25s var(--ease); display:flex; flex-direction:column; }
+  .card:hover { border-color:var(--border-strong); transform:translateY(-2px); }
+  .card .photo { aspect-ratio:4/3; background:var(--obsidian-1); border-bottom:1px solid var(--border); position:relative; }
+  .card .photo img { width:100%; height:100%; object-fit:cover; filter:grayscale(1); opacity:0.9; mix-blend-mode:luminosity; transition:all .3s var(--ease); }
+  .card:hover .photo img { filter:grayscale(0); opacity:1; mix-blend-mode:normal; }
+  .card .price { position:absolute; top:10px; left:10px; font-family:'Geist Mono',monospace; font-size:10px; padding:4px 10px; background:var(--white); color:var(--obsidian); border-radius:999px; font-weight:600; letter-spacing:0.06em; }
+  .card .badge { position:absolute; top:10px; right:10px; display:inline-flex; align-items:center; gap:6px; border:1px solid var(--border-strong); padding:4px 10px; border-radius:999px; background:rgba(8,8,8,0.6); backdrop-filter:blur(12px); font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--silver); }
+  .card .badge .dot { width:6px; height:6px; border-radius:50%; background:var(--white); }
+  .card .body { padding:14px 16px 16px; }
+  .card .name { font-family:'DM Serif Display',serif; font-style:italic; font-size:20px; color:var(--white); line-height:1.05; }
+  .card .company { font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--silver-faint); margin-top:4px; }
+  .card .desc { color:var(--silver-faint); font-size:13px; line-height:1.55; margin-top:8px; }
+  .companies-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:1rem; overflow:hidden; }
+  .companies-list .item { background:var(--obsidian); padding:18px 20px; display:flex; justify-content:space-between; align-items:center; }
+  .companies-list .item .nm { font-family:'DM Serif Display',serif; font-style:italic; font-size:18px; color:var(--white); }
+  .companies-list .item .ct { font-family:'Geist Mono',monospace; font-size:10px; color:var(--silver-dim); letter-spacing:0.18em; text-transform:uppercase; }
+  .neighbors { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .neighbors a { font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; padding:8px 14px; border:1px solid var(--border-strong); border-radius:999px; color:var(--silver); }
+  .neighbors a:hover { color:var(--white); border-color:var(--white); }
+  footer { width:92vw; max-width:1600px; margin:96px auto 0; padding:48px 0; border-top:1px solid var(--border); color:var(--silver-dim); font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; line-height:1.9; }
+  footer p { margin:0 0 12px; }
+  footer a { color:var(--silver-faint); border-bottom:1px solid var(--border); }
+  </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Humanoid Robots in China — Pricing, Companies, Deployments","description":"82 humanoid robot platforms built in China. 43% commercial, the rest in trials or labs. median price $28K, mid market. focus areas: research, manufacturing, healthcare.","url":"https://humanoid.directory/country/china.html","mainEntity":{"@type":"ItemList","numberOfItems":82,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"R1 Pro","brand":{"@type":"Brand","name":"Galaxea AI (Galaxea Dynamics)"},"image":"https://humanoid.directory/images/galaxea-ai-galaxea-dynamics--r1-pro.webp","countryOfOrigin":"China","url":"https://humanoid.directory/?robot=galaxea-ai-galaxea-dynamics--r1-pro"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Galbot G1","brand":{"@type":"Brand","name":"Beijing Galbot"},"image":"https://humanoid.directory/images/beijing-galbot--galbot-g1.webp","countryOfOrigin":"China","url":"https://humanoid.directory/?robot=beijing-galbot--galbot-g1"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"GR-1","brand":{"@type":"Brand","name":"Fourier Intelligence"},"image":"https://humanoid.directory/images/fourier-intelligence--gr-1.png","countryOfOrigin":"China","url":"https://humanoid.directory/?robot=fourier-intelligence--gr-1"}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"GR-2","brand":{"@type":"Brand","name":"Fourier Intelligence"},"image":"https://humanoid.directory/images/fourier-intelligence--gr-2.png","countryOfOrigin":"China","url":"https://humanoid.directory/?robot=fourier-intelligence--gr-2"}},{"@type":"ListItem","position":5,"item":{"@type":"Product","name":"GR-3","brand":{"@type":"Brand","name":"Fourier Intelligence"},"image":"https://humanoid.directory/images/fourier-intelligence--gr-3.jpg","countryOfOrigin":"China","url":"https://humanoid.directory/?robot=fourier-intelligence--gr-3"}},{"@type":"ListItem","position":6,"item":{"@type":"Product","name":"N1","brand":{"@type":"Brand","name":"Fourier Intelligence"},"image":"https://humanoid.directory/images/fourier-intelligence--n1.webp","countryOfOrigin":"China","url":"https://humanoid.directory/?robot=fourier-intelligence--n1"}},{"@type":"ListItem","position":7,"item":{"@type":"Product","name":"H1","brand":{"@type":"Brand","name":"Unitree Robotics"},"image":"https://humanoid.directory/images/unitree-robotics--h1.webp","countryOfOrigin":"China","url":"https://humanoid.directory/?robot=unitree-robotics--h1"}},{"@type":"ListItem","position":8,"item":{"@type":"Product","name":"H1-2","brand":{"@type":"Brand","name":"Unitree Robotics"},"image":"https://humanoid.directory/images/unitree-robotics--h1-2.webp","countryOfOrigin":"China","url":"https://humanoid.directory/?robot=unitree-robotics--h1-2"}},{"@type":"ListItem","position":9,"item":{"@type":"Product","name":"G1","brand":{"@type":"Brand","name":"Unitree Robotics"},"image":"https://humanoid.directory/images/unitree-robotics--g1.jpg","countryOfOrigin":"China","url":"https://humanoid.directory/?robot=unitree-robotics--g1"}},{"@type":"ListItem","position":10,"item":{"@type":"Product","name":"AlphaBot 2","brand":{"@type":"Brand","name":"AI2 Robotics (Zhifang)"},"image":"https://humanoid.directory/images/ai2-robotics-zhifang--alphabot-2.webp","countryOfOrigin":"China","url":"https://humanoid.directory/?robot=ai2-robotics-zhifang--alphabot-2"}},{"@type":"ListItem","position":11,"item":{"@type":"Product","name":"Yuanzheng A2","brand":{"@type":"Brand","name":"AgiBot (Zhiyuan Robotics)"},"image":"https://humanoid.directory/images/agibot-zhiyuan-robotics--yuanzheng-a2.png","countryOfOrigin":"China","url":"https://humanoid.directory/?robot=agibot-zhiyuan-robotics--yuanzheng-a2"}},{"@type":"ListItem","position":12,"item":{"@type":"Product","name":"Lingxi X1","brand":{"@type":"Brand","name":"AgiBot (Zhiyuan Robotics)"},"image":"https://humanoid.directory/images/agibot-zhiyuan-robotics--lingxi-x1.jpg","countryOfOrigin":"China","url":"https://humanoid.directory/?robot=agibot-zhiyuan-robotics--lingxi-x1"}}]}}</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../" class="brand">HUMANOID / DIRECTORY</a>
+    <div class="nav-links">
+      <a href="../">01 · CATALOG</a>
+      <a href="../?view=map">02 · MAP</a>
+    </div>
+    <div style="display:flex;gap:8px;">
+      <a href="mailto:a@nuff.tech" class="ghost-btn">Contact</a>
+      <a href="../#hero-capture" class="silver-btn" style="text-decoration:none;display:inline-block;">Join</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="crumbs"><a href="../">// DIRECTORY</a> <span>/</span> <span>China</span></div>
+  <h1>Humanoid robots<br/><span class="grad">in China.</span></h1>
+  <p class="lede">82 platforms built here, from 6 companies and labs. China is part of a global market of 174 humanoids across 17 countries.</p>
+
+  <div class="signature-card">
+    <div class="lbl">// THE SHAPE OF CHINA'S HUMANOID MARKET</div>
+    <p>43% commercial, the rest in trials or labs. median price $28K, mid market. focus areas: research, manufacturing, healthcare.</p>
+  </div>
+
+  <div class="stats">
+    <div class="cell"><div class="lbl">Total platforms</div><div class="num">82</div></div>
+    <div class="cell"><div class="lbl">Shipping today</div><div class="num">35</div></div>
+    <div class="cell"><div class="lbl">Verified deployments</div><div class="num">20</div></div>
+    <div class="cell"><div class="lbl">Median price</div><div class="num">$28K</div></div>
+  </div>
+
+  <div class="section-h">// FEATURED PLATFORMS</div>
+  <div class="grid"><a class="card" href="../?robot=galaxea-ai-galaxea-dynamics--r1-pro">
+    <div class="photo"><img src="../images/galaxea-ai-galaxea-dynamics--r1-pro.webp" alt="R1 Pro" loading="lazy" /><div class="price">$700</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">R1 Pro</div>
+      <div class="company">Galaxea AI (Galaxea Dynamics)</div>
+      <div class="desc">$700M-valued Beijing startup&#39;s wheeled dual-arm humanoid with 26 DoF, 7-DoF arms, 4-DoF torso, 200 TOPS compute.</div>
+    </div>
+  </a><a class="card" href="../?robot=beijing-galbot--galbot-g1">
+    <div class="photo"><img src="../images/beijing-galbot--galbot-g1.webp" alt="Galbot G1" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Galbot G1</div>
+      <div class="company">Beijing Galbot</div>
+      <div class="desc">Wheeled dual-arm large-model humanoid deployed in Beijing convenience stores and pharmacies; 360-degree omni-wheel base.</div>
+    </div>
+  </a><a class="card" href="../?robot=fourier-intelligence--gr-1">
+    <div class="photo"><img src="../images/fourier-intelligence--gr-1.png" alt="GR-1" loading="lazy" /><div class="price">$150K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">GR-1</div>
+      <div class="company">Fourier Intelligence</div>
+      <div class="desc">165 cm humanoid with 40 DOF, walks 5 km/h, carries 50 kg; 300 Nm peak hip torque.</div>
+    </div>
+  </a><a class="card" href="../?robot=fourier-intelligence--gr-2">
+    <div class="photo"><img src="../images/fourier-intelligence--gr-2.png" alt="GR-2" loading="lazy" /><div class="price">$125K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">GR-2</div>
+      <div class="company">Fourier Intelligence</div>
+      <div class="desc">53-DOF humanoid with 12-DOF hands, FSA 2.0 actuators, detachable battery and 380 Nm peak torque.</div>
+    </div>
+  </a><a class="card" href="../?robot=fourier-intelligence--gr-3">
+    <div class="photo"><img src="../images/fourier-intelligence--gr-3.jpg" alt="GR-3" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">GR-3</div>
+      <div class="company">Fourier Intelligence</div>
+      <div class="desc">Compact social-care humanoid with 55 DOF, dual hot-swap batteries giving 3 hours runtime.</div>
+    </div>
+  </a><a class="card" href="../?robot=fourier-intelligence--n1">
+    <div class="photo"><img src="../images/fourier-intelligence--n1.webp" alt="N1" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">N1</div>
+      <div class="company">Fourier Intelligence</div>
+      <div class="desc">China&#39;s first fully open-source humanoid, 130 cm, 38 kg, 23 DOF; runs 3.5 m/s with 2-hour swappable battery.</div>
+    </div>
+  </a><a class="card" href="../?robot=unitree-robotics--h1">
+    <div class="photo"><img src="../images/unitree-robotics--h1.webp" alt="H1" loading="lazy" /><div class="price">$90K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">H1</div>
+      <div class="company">Unitree Robotics</div>
+      <div class="desc">Full-size 180 cm bipedal humanoid that holds a running speed record of 3.3 m/s, sold to research labs.</div>
+    </div>
+  </a><a class="card" href="../?robot=unitree-robotics--h1-2">
+    <div class="photo"><img src="../images/unitree-robotics--h1-2.webp" alt="H1-2" loading="lazy" /><div class="price">$122K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">H1-2</div>
+      <div class="company">Unitree Robotics</div>
+      <div class="desc">Upgraded H1 with 7-DOF arms, dual Intel CPU and optional Jetson Orin NX (100 TOPS).</div>
+    </div>
+  </a><a class="card" href="../?robot=unitree-robotics--g1">
+    <div class="photo"><img src="../images/unitree-robotics--g1.jpg" alt="G1" loading="lazy" /><div class="price">$14K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">G1</div>
+      <div class="company">Unitree Robotics</div>
+      <div class="desc">Compact 127 cm bipedal humanoid starting from 99,000 yuan, with 23-43 DOF configurable joints.</div>
+    </div>
+  </a><a class="card" href="../?robot=ai2-robotics-zhifang--alphabot-2">
+    <div class="photo"><img src="../images/ai2-robotics-zhifang--alphabot-2.webp" alt="AlphaBot 2" loading="lazy" /><div class="price">$145</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">AlphaBot 2</div>
+      <div class="company">AI2 Robotics (Zhifang)</div>
+      <div class="desc">AGI-native firm whose AlphaBot wheeled dual-arm humanoid won a 1,000-unit RMB 500M order, raised $145M Series B.</div>
+    </div>
+  </a><a class="card" href="../?robot=agibot-zhiyuan-robotics--yuanzheng-a2">
+    <div class="photo"><img src="../images/agibot-zhiyuan-robotics--yuanzheng-a2.png" alt="Yuanzheng A2" loading="lazy" /><div class="price">$27K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Yuanzheng A2</div>
+      <div class="company">AgiBot (Zhiyuan Robotics)</div>
+      <div class="desc">Service humanoid with 19-DOF hands; set Guinness record walking 106 km in Nov 2025; 5,000+ units shipped.</div>
+    </div>
+  </a><a class="card" href="../?robot=agibot-zhiyuan-robotics--lingxi-x1">
+    <div class="photo"><img src="../images/agibot-zhiyuan-robotics--lingxi-x1.jpg" alt="Lingxi X1" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Lingxi X1</div>
+      <div class="company">AgiBot (Zhiyuan Robotics)</div>
+      <div class="desc">Open-source bipedal kit, 130 cm, 33 kg, modular design with 34-44 DOF and 10-DOF fingers.</div>
+    </div>
+  </a></div>
+
+  <div class="section-h">// ALL 82 ROBOTS FROM CHINA</div><div class="grid"><a class="card" href="../?robot=agibot-zhiyuan-robotics--lingxi-x2">
+    <div class="photo"><img src="../images/agibot-zhiyuan-robotics--lingxi-x2.jpg" alt="Lingxi X2" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Lingxi X2</div>
+      <div class="company">AgiBot (Zhiyuan Robotics)</div>
+      <div class="desc">Compact bipedal humanoid with multimodal AI, 27 DOF, demonstrated bicycle riding capability.</div>
+    </div>
+  </a><a class="card" href="../?robot=aimoga-robotics-chery--mornine-m1">
+    <div class="photo"><img src="../images/aimoga-robotics-chery--mornine-m1.webp" alt="Mornine M1" loading="lazy" /><div class="price">$41K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Mornine M1</div>
+      <div class="company">AiMOGA Robotics (Chery)</div>
+      <div class="desc">Chery-incubated humanoid sold online via JD.com for $41,400 with VR teleop, dual-arm coordination, and a 0.7 kWh battery.</div>
+    </div>
+  </a><a class="card" href="../?robot=booster-robotics--t1">
+    <div class="photo"><img src="../images/booster-robotics--t1.webp" alt="T1" loading="lazy" /><div class="price">$41K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">T1</div>
+      <div class="company">Booster Robotics</div>
+      <div class="desc">118 cm developer humanoid with 23 DOF, 200 TOPS Jetson Orin; won RoboCup 2025 AdultSize, 700+ units shipped.</div>
+    </div>
+  </a><a class="card" href="../?robot=booster-robotics--k1">
+    <div class="photo"><img src="../images/booster-robotics--k1.webp" alt="K1" loading="lazy" /><div class="price">$5K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">K1</div>
+      <div class="company">Booster Robotics</div>
+      <div class="desc">Compact 95 cm humanoid for education/research, sub-$5,000, won RoboCup 2025 KidSize league.</div>
+    </div>
+  </a><a class="card" href="../?robot=booster-robotics--k1-pro">
+    <div class="photo"><img src="../images/booster-robotics--k1-pro.png" alt="K1 Pro" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">K1 Pro</div>
+      <div class="company">Booster Robotics</div>
+      <div class="desc">Sub-20 kg, 22-DoF entry-level humanoid with NVIDIA Jetson AGX Orin (200 TOPS), used in RoboCup KidSize soccer.</div>
+    </div>
+  </a><a class="card" href="../?robot=casivision--casivibot">
+    <div class="photo"><img src="../images/casivision--casivibot.webp" alt="CASIVIBOT" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">CASIVIBOT</div>
+      <div class="company">CasiVision</div>
+      <div class="desc">Wheeled humanoid quality-inspector for smart-manufacturing lines, replacing fixed inspection systems with mobile dual-arm units.</div>
+    </div>
+  </a><a class="card" href="../?robot=cyan-robotics--orca">
+    <div class="photo"><img src="../images/cyan-robotics--orca.webp" alt="Orca" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Orca</div>
+      <div class="company">Cyan Robotics</div>
+      <div class="desc">1.45 m bipedal with emotional-gait LLM, OLED face display; sold on JD.com at $40-50K.</div>
+    </div>
+  </a><a class="card" href="../?robot=dataa-robotics-cloudminds--xr-1-cloud-ginger">
+    <div class="photo"><img src="../images/dataa-robotics-cloudminds--xr-1-cloud-ginger.png" alt="XR-1 / Cloud Ginger" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">XR-1 / Cloud Ginger</div>
+      <div class="company">Dataa Robotics (CloudMinds)</div>
+      <div class="desc">5G-connected service humanoid with 34 smart compliant actuators; cloud-brain HARIX architecture.</div>
+    </div>
+  </a><a class="card" href="../?robot=deep-robotics--dr02">
+    <div class="photo"><img src="../images/deep-robotics--dr02.jpg" alt="DR02" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">DR02</div>
+      <div class="company">DEEP Robotics</div>
+      <div class="desc">First IP66 all-weather humanoid, operates -20 to +55C, 4 m/s sprint, 275 TOPS compute.</div>
+    </div>
+  </a><a class="card" href="../?robot=dobot-yuejiang-technology--atom">
+    <div class="photo"><img src="../images/dobot-yuejiang-technology--atom.png" alt="Atom" loading="lazy" /><div class="price">$27K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Atom</div>
+      <div class="company">Dobot (Yuejiang Technology)</div>
+      <div class="desc">153 cm straight-knee walker with 41 DOF and 1,500 TOPS edge compute; mass production from ~$27K.</div>
+    </div>
+  </a><a class="card" href="../?robot=engineai--se01">
+    <div class="photo"><img src="../images/engineai--se01.png" alt="SE01" loading="lazy" /><div class="price">$28K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">SE01</div>
+      <div class="company">EngineAI</div>
+      <div class="desc">Full-size flagship with 32 DOF, depth camera + LiDAR, neural-network gait optimization for upright walking.</div>
+    </div>
+  </a><a class="card" href="../?robot=engineai--pm01">
+    <div class="photo"><img src="../images/engineai--pm01.png" alt="PM01" loading="lazy" /><div class="price">$12K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">PM01</div>
+      <div class="company">EngineAI</div>
+      <div class="desc">138 cm open platform with 320 deg waist rotation, performed world-first humanoid front-flip.</div>
+    </div>
+  </a><a class="card" href="../?robot=engineai--t800">
+    <div class="photo"><img src="../images/engineai--t800.jpg" alt="T800" loading="lazy" /><div class="price">$25K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">T800</div>
+      <div class="company">EngineAI</div>
+      <div class="desc">Heavy-duty 185 cm humanoid with 450 Nm peak torque, solid-state battery, ~$25K price target.</div>
+    </div>
+  </a><a class="card" href="../?robot=leju-robot--kuavo">
+    <div class="photo"><img src="../images/leju-robot--kuavo.png" alt="Kuavo" loading="lazy" /><div class="price">$50K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Kuavo</div>
+      <div class="company">Leju Robot</div>
+      <div class="desc">Bipedal humanoid with 26 DOF and 360 Nm torque joints; runs Huawei HarmonyOS-based KaihongOS, ~$50K.</div>
+    </div>
+  </a><a class="card" href="../?robot=limx-dynamics--oli">
+    <div class="photo"><img src="../images/limx-dynamics--oli.webp" alt="Oli" loading="lazy" /><div class="price">$22K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Oli</div>
+      <div class="company">LimX Dynamics</div>
+      <div class="desc">Full-size 165 cm humanoid with 31 DOF (43 with hands); ~$22,000 preorder, modular for research.</div>
+    </div>
+  </a><a class="card" href="../?robot=magiclab--magicbot-gen1">
+    <div class="photo"><img src="../images/magiclab--magicbot-gen1.webp" alt="MagicBot Gen1" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">MagicBot Gen1</div>
+      <div class="company">MagicLab</div>
+      <div class="desc">Full-size general-purpose humanoid with 42 DoF, 7.5 kg per-arm payload, 40 kg static body load, deployed on production lines.</div>
+    </div>
+  </a><a class="card" href="../?robot=noetix-robotics--n2">
+    <div class="photo"><img src="../images/noetix-robotics--n2.webp" alt="N2" loading="lazy" /><div class="price">$1K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">N2</div>
+      <div class="company">Noetix Robotics</div>
+      <div class="desc">118 cm child-sized humanoid that performs continuous backflips; 18 DOF, $1,400 consumer pricing.</div>
+    </div>
+  </a><a class="card" href="../?robot=pndbotics--adam-pro">
+    <div class="photo"><img src="../images/pndbotics--adam-pro.jpg" alt="Adam (Pro)" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Adam (Pro)</div>
+      <div class="company">PNDbotics</div>
+      <div class="desc">Modular full-size bipedal with 41 QDD-actuated joints (360 Nm peak), five-fingered hands.</div>
+    </div>
+  </a><a class="card" href="../?robot=pndbotics--adam-lite">
+    <div class="photo"><img src="../images/pndbotics--adam-lite.webp" alt="Adam Lite" loading="lazy" /><div class="price">$45K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Adam Lite</div>
+      <div class="company">PNDbotics</div>
+      <div class="desc">Education-focused 167 cm humanoid with 25 DOF, ~$45K price point.</div>
+    </div>
+  </a><a class="card" href="../?robot=robbyant-ant-lingbo-technology--r1">
+    <div class="photo"><img src="../images/robbyant-ant-lingbo-technology--r1.png" alt="R1" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">R1</div>
+      <div class="company">Robbyant (Ant Lingbo Technology)</div>
+      <div class="desc">Ant Group&#39;s robotics arm Robbyant unveiled R1 wheeled humanoid kitchen-assistant cooking 10,000 dishes; in mass production.</div>
+    </div>
+  </a><a class="card" href="../?robot=robosen-robotics--k1-pro-interstellar-scout">
+    <div class="photo"><img src="../images/robosen-robotics--k1-pro-interstellar-scout.webp" alt="K1 Pro Interstellar Scout" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">K1 Pro Interstellar Scout</div>
+      <div class="company">Robosen Robotics</div>
+      <div class="desc">Compact consumer-grade bipedal humanoid for entertainment and education with 17 high-precision servos.</div>
+    </div>
+  </a><a class="card" href="../?robot=robotera--l7">
+    <div class="photo"><img src="../images/robotera--l7.jpg" alt="L7" loading="lazy" /><div class="price">$120K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">L7</div>
+      <div class="company">RobotEra</div>
+      <div class="desc">Claimed world&#39;s fastest bipedal at 14.4 km/h, 55 DOF, 400 Nm joint torque, ~$120K.</div>
+    </div>
+  </a><a class="card" href="../?robot=ubtech-robotics--walker-s2">
+    <div class="photo"><img src="../images/ubtech-robotics--walker-s2.png" alt="Walker S2" loading="lazy" /><div class="price">$112</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Walker S2</div>
+      <div class="company">UBTECH Robotics</div>
+      <div class="desc">First humanoid with autonomous battery-swap (3 minutes); $112M+ in confirmed orders by Nov 2025.</div>
+    </div>
+  </a><a class="card" href="../?robot=unitree-robotics--r1">
+    <div class="photo"><img src="../images/unitree-robotics--r1.webp" alt="R1" loading="lazy" /><div class="price">$5K</div><div class="badge"><span class="dot"></span>Preorder</div></div>
+    <div class="body">
+      <div class="name">R1</div>
+      <div class="company">Unitree Robotics</div>
+      <div class="desc">Sub-$6,000 consumer/developer humanoid, 121 cm tall, 25 kg, named TIME Best Invention 2025.</div>
+    </div>
+  </a><a class="card" href="../?robot=pudu-robotics--d9">
+    <div class="photo"><img src="../images/pudu-robotics--d9.jpg" alt="D9" loading="lazy" /><div class="price">$60K</div><div class="badge"><span class="dot"></span>Preorder</div></div>
+    <div class="body">
+      <div class="name">D9</div>
+      <div class="company">Pudu Robotics</div>
+      <div class="desc">Full-size 170 cm bipedal with 42 DOF, 7-DOF arms, DH11 dexterous hand, 275 TOPS compute.</div>
+    </div>
+  </a><a class="card" href="../?robot=ai2-robotics--alphabot2">
+    <div class="photo"><img src="../images/ai2-robotics--alphabot2.jpg" alt="AlphaBot2" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">AlphaBot2</div>
+      <div class="company">AI2 Robotics</div>
+      <div class="desc">General-purpose humanoid powered by GOVLA model; deployed in auto factories, valued ~$2.93B.</div>
+    </div>
+  </a><a class="card" href="../?robot=gac-group--gomate">
+    <div class="photo"><img src="../images/gac-group--gomate.png" alt="GoMate" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">GoMate</div>
+      <div class="company">GAC Group</div>
+      <div class="desc">GAC&#39;s third-generation embodied humanoid with a variable bi/quadruped wheel-leg chassis, deployed for metro safety guidance.</div>
+    </div>
+  </a><a class="card" href="../?robot=haier-robotics--shida">
+    <div class="photo"><img src="../images/haier-robotics--shida.webp" alt="SHIDA" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">SHIDA</div>
+      <div class="company">Haier Robotics</div>
+      <div class="desc">Haier Robotics&#39; &#39;humanoid intern&#39; deployed for two-worker factory tasks; partnered with Leju on Kuavo home humanoid.</div>
+    </div>
+  </a><a class="card" href="../?robot=joybot-robotics-pia-agibot-jv--joybot-humanoid">
+    <div class="photo"><img src="../images/joybot-robotics-pia-agibot-jv--joybot-humanoid.webp" alt="Joybot Humanoid" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">Joybot Humanoid</div>
+      <div class="company">Joybot Robotics (PIA + AgiBot JV)</div>
+      <div class="desc">Ningbo joint venture between PIA Automation and AgiBot manufacturing scalable industrial-grade bipedal and rolling humanoids.</div>
+    </div>
+  </a><a class="card" href="../?robot=kepler-robotics--forerunner-k2">
+    <div class="photo"><img src="../images/kepler-robotics--forerunner-k2.jpg" alt="Forerunner K2" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">Forerunner K2</div>
+      <div class="company">Kepler Robotics</div>
+      <div class="desc">5th-gen humanoid with 52 DOF, rope-driven 11-DOF hands, 15 kg per-hand payload, $20-30K target price.</div>
+    </div>
+  </a><a class="card" href="../?robot=magiclab--magicbot">
+    <div class="photo"><img src="../images/magiclab--magicbot.jpg" alt="MagicBot" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">MagicBot</div>
+      <div class="company">MagicLab</div>
+      <div class="desc">42-DOF industrial humanoid with 525 Nm peak torque, 7.5 kg single-arm payload, 5-hour runtime.</div>
+    </div>
+  </a><a class="card" href="../?robot=mech-mind--eye-brain-hand-robot-station">
+    <div class="photo"><img src="../images/mech-mind--eye-brain-hand-robot-station.jpg" alt="Eye-Brain-Hand Robot Station" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">Eye-Brain-Hand Robot Station</div>
+      <div class="company">Mech-Mind</div>
+      <div class="desc">Mech-Mind&#39;s embodied intelligence platform combining its 3D vision and AI brain with a humanoid body for autonomous picking.</div>
+    </div>
+  </a><a class="card" href="../?robot=ubtech-robotics--walker-s1">
+    <div class="photo"><img src="../images/ubtech-robotics--walker-s1.jpg" alt="Walker S1" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">Walker S1</div>
+      <div class="company">UBTECH Robotics</div>
+      <div class="desc">Industrial humanoid deployed at BYD, Geely, Foxconn for handling and inspection tasks; 500+ pre-orders.</div>
+    </div>
+  </a><a class="card" href="../?robot=westlake-robotics--titan-o2">
+    <div class="photo"><img src="../images/westlake-robotics--titan-o2.webp" alt="Titan o2" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">Titan o2</div>
+      <div class="company">Westlake Robotics</div>
+      <div class="desc">Successor to Titan o1 powered by the GAE General Action Expert model used as a real-time physical avatar in retail testing.</div>
+    </div>
+  </a><a class="card" href="../?robot=humanoid-robot-shanghai-co--qinglong">
+    <div class="photo"><img src="../images/humanoid-robot-shanghai-co--qinglong.webp" alt="Qinglong" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Qinglong</div>
+      <div class="company">Humanoid Robot (Shanghai) Co.</div>
+      <div class="desc">China&#39;s first full-sized open-source general-purpose humanoid, 185 cm, 43 DOF, 400 TOPS.</div>
+    </div>
+  </a><a class="card" href="../?robot=lingbao-casbot--casbot-01">
+    <div class="photo"><img src="../images/lingbao-casbot--casbot-01.webp" alt="CASBOT 01" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">CASBOT 01</div>
+      <div class="company">Lingbao CASBOT</div>
+      <div class="desc">Full-size bipedal humanoid with 52 DOF and 550 TOPS compute; bionic dexterous hands.</div>
+    </div>
+  </a><a class="card" href="../?robot=lingbao-casbot--casbot-02">
+    <div class="photo"><img src="../images/lingbao-casbot--casbot-02.webp" alt="CASBOT 02" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">CASBOT 02</div>
+      <div class="company">Lingbao CASBOT</div>
+      <div class="desc">163 cm interaction-focused humanoid with 37 DOF, 150 Nm torque, 275 TOPS compute.</div>
+    </div>
+  </a><a class="card" href="../?robot=agibot-zhiyuan-robotics--yuanzheng-a1">
+    <div class="photo"><img src="../images/agibot-zhiyuan-robotics--yuanzheng-a1.webp" alt="Yuanzheng A1" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Yuanzheng A1</div>
+      <div class="company">AgiBot (Zhiyuan Robotics)</div>
+      <div class="desc">Founder Peng Zhihui&#39;s first humanoid, 175 cm, 49+ DOF, 7 km/h walking, 200 TOPS compute.</div>
+    </div>
+  </a><a class="card" href="../?robot=agibot-zhiyuan-robotics--quester1-q1">
+    <div class="photo"><img src="../images/agibot-zhiyuan-robotics--quester1-q1.webp" alt="Quester1 (Q1)" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Quester1 (Q1)</div>
+      <div class="company">AgiBot (Zhiyuan Robotics)</div>
+      <div class="desc">Backpack-sized 80 cm bipedal humanoid with full-body force control and open SDK/HDK.</div>
+    </div>
+  </a><a class="card" href="../?robot=aheadform--origin-m1">
+    <div class="photo"><img src="../images/aheadform--origin-m1.png" alt="Origin M1" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Origin M1</div>
+      <div class="company">AheadForm</div>
+      <div class="desc">Ultra-bionic humanoid robot maker known for hyperrealistic faces (Elf V1, Lan Series) with 30 DoF facial expression.</div>
+    </div>
+  </a><a class="card" href="../?robot=beijing-humanoid-robotics-innovation-center-x-humanoid--tien-kung-1-0">
+    <div class="photo"><img src="../images/beijing-humanoid-robotics-innovation-center-x-humanoid--tien-kung-1-0.jpg" alt="Tien Kung 1.0" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Tien Kung 1.0</div>
+      <div class="company">Beijing Humanoid Robotics Innovation Center (X-Humanoid)</div>
+      <div class="desc">First electric-driven full-size humanoid that runs; won the Beijing humanoid half-marathon.</div>
+    </div>
+  </a><a class="card" href="../?robot=beijing-humanoid-robotics-innovation-center-x-humanoid--tien-kung-3-0">
+    <div class="photo"><img src="../images/beijing-humanoid-robotics-innovation-center-x-humanoid--tien-kung-3-0.webp" alt="Tien Kung 3.0" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Tien Kung 3.0</div>
+      <div class="company">Beijing Humanoid Robotics Innovation Center (X-Humanoid)</div>
+      <div class="desc">Industry&#39;s first full-size humanoid with touch-interactive whole-body motion control; 12 km/h sprint.</div>
+    </div>
+  </a><a class="card" href="../?robot=daimon-robotics--daimon-one">
+    <div class="photo"><img src="../images/daimon-robotics--daimon-one.png" alt="Daimon One" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Daimon One</div>
+      <div class="company">Daimon Robotics</div>
+      <div class="desc">Backed by China Mobile, Daimon&#39;s humanoid pairs the firm&#39;s vision-based tactile sensors with an 11-DoF biomimetic hand.</div>
+    </div>
+  </a><a class="card" href="../?robot=deep-robotics--dr01">
+    <div class="photo"><img src="../images/deep-robotics--dr01.jpg" alt="DR01" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">DR01</div>
+      <div class="company">DEEP Robotics</div>
+      <div class="desc">First humanoid from quadruped specialist DEEP Robotics; 170 cm, 80 kg, focuses on terrain stability.</div>
+    </div>
+  </a><a class="card" href="../?robot=direct-drive-tech--d1-d-infinite">
+    <div class="photo"><img src="../images/direct-drive-tech--d1-d-infinite.jpg" alt="D1 / D-infinite" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">D1 / D-infinite</div>
+      <div class="company">Direct Drive Tech</div>
+      <div class="desc">World-first modular embodied robot that can convert between bipedal/wheeled forms and link with peers for 100 kg payload.</div>
+    </div>
+  </a><a class="card" href="../?robot=droidup--moya">
+    <div class="photo"><img src="../images/droidup--moya.webp" alt="Moya" loading="lazy" /><div class="price">$173K</div><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Moya</div>
+      <div class="company">DroidUp</div>
+      <div class="desc">165 cm &#39;biomimetic AI&#39; bipedal with thermo-regulated silicone skin (32-36C); ~$173K starting price.</div>
+    </div>
+  </a><a class="card" href="../?robot=estun-codroid--codroid-01">
+    <div class="photo"><img src="../images/estun-codroid--codroid-01.jpg" alt="CODROID 01" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">CODROID 01</div>
+      <div class="company">Estun Codroid</div>
+      <div class="desc">Industrial humanoid with IP68 protection, 44 DOF total, 7-DOF arms, designed for factory tasks.</div>
+    </div>
+  </a><a class="card" href="../?robot=estun-robotics-codroid--codroid-02">
+    <div class="photo"><img src="../images/estun-robotics-codroid--codroid-02.png" alt="Codroid 02" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Codroid 02</div>
+      <div class="company">Estun Robotics (Codroid)</div>
+      <div class="desc">Estun&#39;s second-gen humanoid with 31 body DoF (up to 44 with hands), 5 kg per-arm payload, trained via imitation/reinforcement learning.</div>
+    </div>
+  </a><a class="card" href="../?robot=ex-robots--annie">
+    <div class="photo"><img src="../images/ex-robots--annie.webp" alt="Annie" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Annie</div>
+      <div class="company">EX Robots</div>
+      <div class="desc">Dalian-based maker of hyperrealistic silicone-faced humanoids that smile, frown and replicate subtle emotional expressions.</div>
+    </div>
+  </a><a class="card" href="../?robot=honor--lightning">
+    <div class="photo"><img src="../images/honor--lightning.webp" alt="Lightning" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Lightning</div>
+      <div class="company">Honor</div>
+      <div class="desc">Chinese smartphone maker Honor&#39;s humanoid runner that won the 2026 Beijing E-Town half-marathon in just over 50 minutes with liquid-cooled j…</div>
+    </div>
+  </a><a class="card" href="../?robot=keenon-robotics--xman-f1">
+    <div class="photo"><img src="../images/keenon-robotics--xman-f1.jpg" alt="XMAN-F1" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">XMAN-F1</div>
+      <div class="company">Keenon Robotics</div>
+      <div class="desc">Bipedal service humanoid debuted at WAIC 2025, 7-DOF dual arms with KOM2.0 VLA model.</div>
+    </div>
+  </a><a class="card" href="../?robot=kepler-robotics--forerunner-k1">
+    <div class="photo"><img src="../images/kepler-robotics--forerunner-k1.jpg" alt="Forerunner K1" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Forerunner K1</div>
+      <div class="company">Kepler Robotics</div>
+      <div class="desc">Full-size 178 cm humanoid with planetary roller-screw actuators, 40 DOF, 100 TOPS NEBULA AI brain.</div>
+    </div>
+  </a><a class="card" href="../?robot=kinetix-ai--kai">
+    <div class="photo"><img src="../images/kinetix-ai--kai.webp" alt="KAI" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">KAI</div>
+      <div class="company">Kinetix AI</div>
+      <div class="desc">Faceless full-size home-assistant humanoid with 115 DoF and 18,000 tactile sensors for whole-body touch sensing.</div>
+    </div>
+  </a><a class="card" href="../?robot=limx-dynamics--cl-1">
+    <div class="photo"><img src="../images/limx-dynamics--cl-1.webp" alt="CL-1" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">CL-1</div>
+      <div class="company">LimX Dynamics</div>
+      <div class="desc">157 cm warehouse-style humanoid, demonstrated dynamic stair climbing, 20+ DOF skeleton.</div>
+    </div>
+  </a><a class="card" href="../?robot=limx-dynamics--cl-2">
+    <div class="photo"><img src="../images/limx-dynamics--cl-2.webp" alt="CL-2" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">CL-2</div>
+      <div class="company">LimX Dynamics</div>
+      <div class="desc">Second-gen humanoid, more compact and powerful than CL-1, positioned as China&#39;s Atlas-class platform.</div>
+    </div>
+  </a><a class="card" href="../?robot=limx-dynamics--p1">
+    <div class="photo"><img src="../images/limx-dynamics--p1.webp" alt="P1" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">P1</div>
+      <div class="company">LimX Dynamics</div>
+      <div class="desc">Bipedal robot platform demonstrated traversing rough terrain on Tanglang Mountain via reinforcement learning.</div>
+    </div>
+  </a><a class="card" href="../?robot=lingbao-casbot--casbot-se">
+    <div class="photo"><img src="../images/lingbao-casbot--casbot-se.webp" alt="CASBOT SE" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">CASBOT SE</div>
+      <div class="company">Lingbao CASBOT</div>
+      <div class="desc">Athletic humanoid built on the CASBOT 01 frame to compete in the 2025 world&#39;s-first humanoid half-marathon in Beijing.</div>
+    </div>
+  </a><a class="card" href="../?robot=lumos-robotics--lus2">
+    <div class="photo"><img src="../images/lumos-robotics--lus2.webp" alt="LUS2" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">LUS2</div>
+      <div class="company">Lumos Robotics</div>
+      <div class="desc">Full-size 160 cm/56 kg humanoid known for its &#39;1-second ejection rising&#39; demo from supine to standing, built for industrial deployment.</div>
+    </div>
+  </a><a class="card" href="../?robot=magiclab--magicbot-z1">
+    <div class="photo"><img src="../images/magiclab--magicbot-z1.webp" alt="MagicBot Z1" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">MagicBot Z1</div>
+      <div class="company">MagicLab</div>
+      <div class="desc">High-dynamics bipedal with 24 base DOF (expandable to 49), recovers from falls and large disturbances.</div>
+    </div>
+  </a><a class="card" href="../?robot=robotera--star1">
+    <div class="photo"><img src="../images/robotera--star1.webp" alt="Star1" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Star1</div>
+      <div class="company">RobotEra</div>
+      <div class="desc">171 cm bipedal with 55 DOF, 12-DOF dexterous hands, ran 3.6 m/s on Gobi Desert; ERA-42 VLA model.</div>
+    </div>
+  </a><a class="card" href="../?robot=robotera--xbot-l">
+    <div class="photo"><img src="../images/robotera--xbot-l.webp" alt="XBot-L" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">XBot-L</div>
+      <div class="company">RobotEra</div>
+      <div class="desc">First humanoid robot to ascend the Great Wall of China (2024).</div>
+    </div>
+  </a><a class="card" href="../?robot=stardust-intelligence--astribot-s1">
+    <div class="photo"><img src="../images/stardust-intelligence--astribot-s1.webp" alt="Astribot S1" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Astribot S1</div>
+      <div class="company">Stardust Intelligence</div>
+      <div class="desc">Chinese dexterous humanoid noted for 10 m/s arm-tip speed and 10 kg per-arm payload, demonstrated cooking and pouring wine.</div>
+    </div>
+  </a><a class="card" href="../?robot=tashan-technology--ts-r">
+    <div class="photo"><img src="../images/tashan-technology--ts-r.png" alt="TS-R" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">TS-R</div>
+      <div class="company">Tashan Technology</div>
+      <div class="desc">Tactile-service humanoid built around Tashan&#39;s AI tactile-sensing chips for manipulation training in Beijing&#39;s robot training center.</div>
+    </div>
+  </a><a class="card" href="../?robot=ubtech-robotics--walker-x">
+    <div class="photo"><img src="../images/ubtech-robotics--walker-x.png" alt="Walker X" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Walker X</div>
+      <div class="company">UBTECH Robotics</div>
+      <div class="desc">41-DOF service humanoid with stereo vision and dexterous hands, walks at 3 km/h, sprints at 10 km/h.</div>
+    </div>
+  </a><a class="card" href="../?robot=unix-ai--martian">
+    <div class="photo"><img src="../images/unix-ai--martian.webp" alt="Martian" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Martian</div>
+      <div class="company">UniX AI</div>
+      <div class="desc">Bipedal humanoid in UniX AI&#39;s portfolio (alongside wheeled Wanda/Panther) for security and home services.</div>
+    </div>
+  </a><a class="card" href="../?robot=westlake-robotics--titan-o1">
+    <div class="photo"><img src="../images/westlake-robotics--titan-o1.webp" alt="Titan o1" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Titan o1</div>
+      <div class="company">Westlake Robotics</div>
+      <div class="desc">Humanoid powered by General Action Expert (GAE) foundation model, demonstrated real-time motion mirroring.</div>
+    </div>
+  </a><a class="card" href="../?robot=x-humanoid-beijing-innovation-center--tien-kung-ultra">
+    <div class="photo"><img src="../images/x-humanoid-beijing-innovation-center--tien-kung-ultra.jpg" alt="Tien Kung Ultra" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Tien Kung Ultra</div>
+      <div class="company">X-Humanoid (Beijing Innovation Center)</div>
+      <div class="desc">Upgraded humanoid co-developed with UBTech that won the 2025 Beijing Humanoid Half-Marathon at 2h40m and handles 35cm height differences.</div>
+    </div>
+  </a><a class="card" href="../?robot=xiaomi--cyberone">
+    <div class="photo"><img src="../images/xiaomi--cyberone.webp" alt="CyberOne" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">CyberOne</div>
+      <div class="company">Xiaomi</div>
+      <div class="desc">Xiaomi&#39;s R&amp;D humanoid, 177 cm, 52 kg, with Mi-Sense vision recognizing 85 sounds and 45 emotions.</div>
+    </div>
+  </a><a class="card" href="../?robot=xpeng--iron-next-gen">
+    <div class="photo"><img src="../images/xpeng--iron-next-gen.png" alt="Iron (Next-Gen)" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Iron (Next-Gen)</div>
+      <div class="company">XPENG</div>
+      <div class="desc">82-DOF humanoid with solid-state battery, 22-DOF hands, 2,250 TOPS Turing AI; mass production targeted late 2026.</div>
+    </div>
+  </a><a class="card" href="../?robot=xpeng--px5">
+    <div class="photo"><img src="../images/xpeng--px5.jpg" alt="PX5" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">PX5</div>
+      <div class="company">XPENG</div>
+      <div class="desc">XPENG&#39;s earlier bipedal humanoid prototype, predecessor to the Iron platform.</div>
+    </div>
+  </a></div>
+
+  <div class="section-h">// TOP BUILDERS</div><div class="companies-list"><div class="item"><div class="nm">AgiBot (Zhiyuan Robotics)</div><div class="ct">5 platforms</div></div><div class="item"><div class="nm">Fourier Intelligence</div><div class="ct">4 platforms</div></div><div class="item"><div class="nm">LimX Dynamics</div><div class="ct">4 platforms</div></div><div class="item"><div class="nm">Unitree Robotics</div><div class="ct">4 platforms</div></div><div class="item"><div class="nm">Booster Robotics</div><div class="ct">3 platforms</div></div><div class="item"><div class="nm">EngineAI</div><div class="ct">3 platforms</div></div></div>
+
+  <div class="section-h">// OTHER COUNTRIES</div>
+  <div class="neighbors"><a href="canada.html">Canada (1)</a><a href="france.html">France (9)</a><a href="germany.html">Germany (9)</a><a href="india.html">India (2)</a><a href="israel.html">Israel (1)</a><a href="italy.html">Italy (8)</a><a href="japan.html">Japan (12)</a><a href="poland.html">Poland (1)</a><a href="saudi-arabia.html">Saudi Arabia (1)</a><a href="south-korea.html">South Korea (10)</a><a href="spain.html">Spain (4)</a><a href="sweden.html">Sweden (1)</a><a href="taiwan.html">Taiwan (1)</a><a href="turkey.html">Turkey (1)</a><a href="usa.html">USA (28)</a><a href="united-kingdom.html">United Kingdom (3)</a></div>
+</div>
+
+<footer>
+  <p>Part of <a href="../">humanoid.directory</a>. The complete reference of humanoid robots: pricing, availability, lead times, verified deployments. <a href="../">View the full catalog →</a></p>
+  <p style="margin-top:16px;"><a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="mailto:a@nuff.tech">Contact</a></p>
+</footer>
+</body>
+</html>

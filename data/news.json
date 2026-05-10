@@ -1,0 +1,15 @@
+[
+  { "ago": "8H",  "kind": "deploy",  "text": "Apptronik Apollo deployed at Jabil for sub-assembly trials" },
+  { "ago": "1D",  "kind": "launch",  "text": "Unitree H2 prototype revealed in Hangzhou" },
+  { "ago": "2D",  "kind": "spec",    "text": "Tiangong 3.0 sprints 12 km/h, sets full-size humanoid record" },
+  { "ago": "3D",  "kind": "raise",   "text": "Figure AI closes Series C at $1.5B valuation" },
+  { "ago": "4D",  "kind": "deploy",  "text": "Walker S2 ships 100 units to Foxconn Shenzhen" },
+  { "ago": "5D",  "kind": "launch",  "text": "Unitree R1 starts shipping at $4,900" },
+  { "ago": "1W",  "kind": "deploy",  "text": "1X Neo enters paid early access in 11 US cities" },
+  { "ago": "1W",  "kind": "spec",    "text": "AgiBot Yuanzheng A2 sets walking distance record at 106 km" },
+  { "ago": "2W",  "kind": "raise",   "text": "Apptronik raises $400M Series A" },
+  { "ago": "2W",  "kind": "deploy",  "text": "Sanctuary Phoenix Gen 7 begins Microsoft datacenter trial" },
+  { "ago": "3W",  "kind": "launch",  "text": "EngineAI T800 enters preorder, $25K target" },
+  { "ago": "3W",  "kind": "deal",    "text": "Mobileye acquires Mentee Robotics for ~$900M" },
+  { "ago": "1MO", "kind": "deploy",  "text": "BMW Spartanburg expands Figure 02 pilot to 30 stations" }
+]

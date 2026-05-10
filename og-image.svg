@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0d10"/>
+      <stop offset="100%" stop-color="#14171c"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e7eaee"/>
+      <stop offset="60%" stop-color="#7cc4ff"/>
+      <stop offset="100%" stop-color="#a89cff"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1e242d"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)" opacity="0.6"/>
+
+  <!-- Top label -->
+  <text x="80" y="100" font-family="-apple-system, SF Pro, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#7cc4ff" letter-spacing="3">THE HUMANOID ROBOT DIRECTORY</text>
+
+  <!-- Big number -->
+  <text x="80" y="290" font-family="-apple-system, SF Pro, Helvetica, Arial, sans-serif" font-size="200" font-weight="800" fill="url(#title)" letter-spacing="-6">174</text>
+  <text x="80" y="345" font-family="-apple-system, SF Pro, Helvetica, Arial, sans-serif" font-size="38" font-weight="600" fill="#e7eaee" letter-spacing="-1">humanoid robots, in 17 countries.</text>
+  <text x="80" y="390" font-family="-apple-system, SF Pro, Helvetica, Arial, sans-serif" font-size="22" fill="#8b94a3">Pricing · Specs · Availability · Verified deployments</text>
+
+  <!-- Stat row -->
+  <g font-family="-apple-system, SF Pro, Helvetica, Arial, sans-serif">
+    <g transform="translate(80, 470)">
+      <rect width="240" height="80" rx="12" fill="#14171c" stroke="#232831"/>
+      <text x="20" y="38" font-size="32" font-weight="700" fill="#6ee7a8">58</text>
+      <text x="20" y="62" font-size="13" fill="#8b94a3">SHIPPING NOW</text>
+    </g>
+    <g transform="translate(335, 470)">
+      <rect width="240" height="80" rx="12" fill="#14171c" stroke="#232831"/>
+      <text x="20" y="38" font-size="32" font-weight="700" fill="#ffd166">22</text>
+      <text x="20" y="62" font-size="13" fill="#8b94a3">IN CUSTOMER TRIALS</text>
+    </g>
+    <g transform="translate(590, 470)">
+      <rect width="240" height="80" rx="12" fill="#14171c" stroke="#232831"/>
+      <text x="20" y="38" font-size="32" font-weight="700" fill="#7cc4ff">32</text>
+      <text x="20" y="62" font-size="13" fill="#8b94a3">PUBLIC PRICING</text>
+    </g>
+    <g transform="translate(845, 470)">
+      <rect width="240" height="80" rx="12" fill="#14171c" stroke="#232831"/>
+      <text x="20" y="38" font-size="32" font-weight="700" fill="#a89cff">30</text>
+      <text x="20" y="62" font-size="13" fill="#8b94a3">VERIFIED DEPLOYMENTS</text>
+    </g>
+  </g>
+
+  <!-- Domain -->
+  <text x="80" y="600" font-family="-apple-system, SF Pro, Helvetica, Arial, sans-serif" font-size="14" fill="#8b94a3" letter-spacing="1">humanoid.directory</text>
+</svg>

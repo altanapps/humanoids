@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Humanoid Robots in USA — Pricing, Companies, Deployments</title>
+<meta name="description" content="28 humanoid robot platforms built in USA. mostly research and prototypes (14% commercial). median price $50K, mid market. focus areas: research, manufacturing, warehouse." />
+<link rel="canonical" href="https://humanoid.directory/country/usa.html" />
+<meta property="og:title" content="Humanoid Robots in USA — Pricing, Companies, Deployments" />
+<meta property="og:description" content="28 humanoid robot platforms built in USA. mostly research and prototypes (14% commercial). median price $50K, mid market. focus areas: research, manufacturing, warehouse." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://humanoid.directory/country/usa.html" />
+<meta property="og:image" content="https://humanoid.directory/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Humanoid Robots in USA — Pricing, Companies, Deployments" />
+<meta name="twitter:description" content="28 humanoid robot platforms built in USA. mostly research and prototypes (14% commercial). median price $50K, mid market. focus areas: research, manufacturing, warehouse." />
+<meta name="twitter:image" content="https://humanoid.directory/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Geist+Mono:wght@100..900&family=Inter:wght@300..600&display=swap" rel="stylesheet" />
+<style>
+  :root { --obsidian:#080808; --obsidian-1:#0d0d0d; --white:#fff; --silver:#E2E8F0; --silver-faint:rgba(226,232,240,0.55); --silver-dim:rgba(226,232,240,0.35); --silver-grad:linear-gradient(135deg,#F8FAFC 0%,#94A3B8 100%); --border:rgba(255,255,255,0.08); --border-strong:rgba(255,255,255,0.18); --glass:rgba(255,255,255,0.02); --ease:cubic-bezier(0.16,1,0.3,1); }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--obsidian); color:var(--silver); font-family:'Inter',-apple-system,sans-serif; -webkit-font-smoothing:antialiased; line-height:1.6; }
+  a { color: var(--silver); text-decoration: none; }
+  a:hover { color: var(--white); }
+  .nav { position:sticky; top:0; z-index:60; backdrop-filter:blur(24px); background:rgba(8,8,8,0.7); border-bottom:1px solid var(--border); padding:22px 0; }
+  .nav-inner { width:92vw; max-width:1600px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+  .brand { font-family:'Geist Mono',monospace; font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--white); font-weight:500; }
+  .nav-links { display:flex; gap:4px; padding:4px; border:1px solid var(--border); border-radius:999px; background:var(--glass); }
+  .nav-links a { font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:0.22em; text-transform:uppercase; color:var(--silver-faint); padding:8px 14px; border-radius:999px; }
+  .nav-links a:hover { color:var(--white); background:rgba(255,255,255,0.04); }
+  @media (max-width:720px) { .nav-links { display:none; } }
+  .silver-btn { background:var(--silver-grad); color:var(--obsidian); font-family:'Geist Mono',monospace; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; font-weight:600; padding:11px 20px; border-radius:999px; border:0; cursor:pointer; }
+  .ghost-btn { background:transparent; color:var(--silver); font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:0.22em; text-transform:uppercase; padding:10px 18px; border:1px solid var(--border-strong); border-radius:999px; cursor:pointer; }
+  .container { width:92vw; max-width:1600px; margin:0 auto; padding:64px 0; }
+  .crumbs { font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:0.22em; text-transform:uppercase; color:var(--silver-dim); margin-bottom:24px; display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .crumbs a { color:var(--silver-faint); }
+  h1 { font-family:'DM Serif Display',serif; font-style:italic; font-weight:400; font-size:clamp(48px,8vw,112px); line-height:0.9; letter-spacing:-0.04em; color:var(--white); margin:0 0 24px; max-width:14ch; }
+  h1 .grad { background:var(--silver-grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+  .lede { color:var(--silver); font-size:18px; line-height:1.6; max-width:680px; margin:0 0 48px; }
+  .signature-card { background:var(--glass); border:1px solid var(--border); border-radius:1rem; padding:24px 28px; margin:48px 0; }
+  .signature-card .lbl { font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:0.32em; text-transform:uppercase; color:var(--silver-dim); margin-bottom:8px; }
+  .signature-card p { margin:0; font-family:'DM Serif Display',serif; font-style:italic; font-size:24px; line-height:1.4; letter-spacing:-0.01em; color:var(--white); }
+  .stats { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--border); border-radius:1rem; overflow:hidden; margin:32px 0 48px; background:var(--border); gap:1px; }
+  .stats .cell { background:var(--obsidian); padding:24px; }
+  .stats .cell .lbl { font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:0.32em; text-transform:uppercase; color:var(--silver-dim); }
+  .stats .cell .num { font-family:'DM Serif Display',serif; font-style:italic; font-size:48px; line-height:1; color:var(--white); margin-top:8px; letter-spacing:-0.02em; }
+  @media (max-width:920px) { .stats { grid-template-columns:repeat(2,1fr); } }
+  .section-h { font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:0.32em; text-transform:uppercase; color:var(--silver-dim); margin:48px 0 16px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; }
+  .card { background:var(--glass); border:1px solid var(--border); border-radius:1rem; overflow:hidden; transition:all .25s var(--ease); display:flex; flex-direction:column; }
+  .card:hover { border-color:var(--border-strong); transform:translateY(-2px); }
+  .card .photo { aspect-ratio:4/3; background:var(--obsidian-1); border-bottom:1px solid var(--border); position:relative; }
+  .card .photo img { width:100%; height:100%; object-fit:cover; filter:grayscale(1); opacity:0.9; mix-blend-mode:luminosity; transition:all .3s var(--ease); }
+  .card:hover .photo img { filter:grayscale(0); opacity:1; mix-blend-mode:normal; }
+  .card .price { position:absolute; top:10px; left:10px; font-family:'Geist Mono',monospace; font-size:10px; padding:4px 10px; background:var(--white); color:var(--obsidian); border-radius:999px; font-weight:600; letter-spacing:0.06em; }
+  .card .badge { position:absolute; top:10px; right:10px; display:inline-flex; align-items:center; gap:6px; border:1px solid var(--border-strong); padding:4px 10px; border-radius:999px; background:rgba(8,8,8,0.6); backdrop-filter:blur(12px); font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--silver); }
+  .card .badge .dot { width:6px; height:6px; border-radius:50%; background:var(--white); }
+  .card .body { padding:14px 16px 16px; }
+  .card .name { font-family:'DM Serif Display',serif; font-style:italic; font-size:20px; color:var(--white); line-height:1.05; }
+  .card .company { font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--silver-faint); margin-top:4px; }
+  .card .desc { color:var(--silver-faint); font-size:13px; line-height:1.55; margin-top:8px; }
+  .companies-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:1rem; overflow:hidden; }
+  .companies-list .item { background:var(--obsidian); padding:18px 20px; display:flex; justify-content:space-between; align-items:center; }
+  .companies-list .item .nm { font-family:'DM Serif Display',serif; font-style:italic; font-size:18px; color:var(--white); }
+  .companies-list .item .ct { font-family:'Geist Mono',monospace; font-size:10px; color:var(--silver-dim); letter-spacing:0.18em; text-transform:uppercase; }
+  .neighbors { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .neighbors a { font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; padding:8px 14px; border:1px solid var(--border-strong); border-radius:999px; color:var(--silver); }
+  .neighbors a:hover { color:var(--white); border-color:var(--white); }
+  footer { width:92vw; max-width:1600px; margin:96px auto 0; padding:48px 0; border-top:1px solid var(--border); color:var(--silver-dim); font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; line-height:1.9; }
+  footer p { margin:0 0 12px; }
+  footer a { color:var(--silver-faint); border-bottom:1px solid var(--border); }
+  </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Humanoid Robots in USA — Pricing, Companies, Deployments","description":"28 humanoid robot platforms built in USA. mostly research and prototypes (14% commercial). median price $50K, mid market. focus areas: research, manufacturing, warehouse.","url":"https://humanoid.directory/country/usa.html","mainEntity":{"@type":"ItemList","numberOfItems":28,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Digit","brand":{"@type":"Brand","name":"Agility Robotics"},"image":"https://humanoid.directory/images/agility-robotics--digit.jpg","countryOfOrigin":"USA","url":"https://humanoid.directory/?robot=agility-robotics--digit"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Sprout","brand":{"@type":"Brand","name":"Fauna Robotics"},"image":"https://humanoid.directory/images/fauna-robotics--sprout.webp","countryOfOrigin":"USA","url":"https://humanoid.directory/?robot=fauna-robotics--sprout"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Sophia","brand":{"@type":"Brand","name":"Hanson Robotics"},"image":"https://humanoid.directory/images/hanson-robotics--sophia.jpg","countryOfOrigin":"USA","url":"https://humanoid.directory/?robot=hanson-robotics--sophia"}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Melody","brand":{"@type":"Brand","name":"Realbotix"},"image":"https://humanoid.directory/images/realbotix--melody.webp","countryOfOrigin":"USA","url":"https://humanoid.directory/?robot=realbotix--melody"}},{"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Neo","brand":{"@type":"Brand","name":"1X Technologies"},"image":"https://humanoid.directory/images/1x-technologies--neo.webp","countryOfOrigin":"USA","url":"https://humanoid.directory/?robot=1x-technologies--neo"}},{"@type":"ListItem","position":6,"item":{"@type":"Product","name":"Figure 03","brand":{"@type":"Brand","name":"Figure AI"},"image":"https://humanoid.directory/images/figure-ai--figure-03.png","countryOfOrigin":"USA","url":"https://humanoid.directory/?robot=figure-ai--figure-03"}},{"@type":"ListItem","position":7,"item":{"@type":"Product","name":"Eve","brand":{"@type":"Brand","name":"1X Technologies"},"image":"https://humanoid.directory/images/1x-technologies--eve.jpg","countryOfOrigin":"USA","url":"https://humanoid.directory/?robot=1x-technologies--eve"}},{"@type":"ListItem","position":8,"item":{"@type":"Product","name":"Apollo","brand":{"@type":"Brand","name":"Apptronik"},"image":"https://humanoid.directory/images/apptronik--apollo.png","countryOfOrigin":"USA","url":"https://humanoid.directory/?robot=apptronik--apollo"}},{"@type":"ListItem","position":9,"item":{"@type":"Product","name":"Titan","brand":{"@type":"Brand","name":"RoboForce"},"image":"https://humanoid.directory/images/roboforce--titan.webp","countryOfOrigin":"USA","url":"https://humanoid.directory/?robot=roboforce--titan"}},{"@type":"ListItem","position":10,"item":{"@type":"Product","name":"Reflex","brand":{"@type":"Brand","name":"Reflex Robotics"},"image":"https://humanoid.directory/images/reflex-robotics--reflex.webp","countryOfOrigin":"USA","url":"https://humanoid.directory/?robot=reflex-robotics--reflex"}},{"@type":"ListItem","position":11,"item":{"@type":"Product","name":"Atlas (Electric)","brand":{"@type":"Brand","name":"Boston Dynamics"},"image":"https://humanoid.directory/images/boston-dynamics--atlas-electric.webp","countryOfOrigin":"USA","url":"https://humanoid.directory/?robot=boston-dynamics--atlas-electric"}},{"@type":"ListItem","position":12,"item":{"@type":"Product","name":"Figure 01","brand":{"@type":"Brand","name":"Figure AI"},"image":"https://humanoid.directory/images/figure-ai--figure-01.webp","countryOfOrigin":"USA","url":"https://humanoid.directory/?robot=figure-ai--figure-01"}}]}}</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../" class="brand">HUMANOID / DIRECTORY</a>
+    <div class="nav-links">
+      <a href="../">01 · CATALOG</a>
+      <a href="../?view=map">02 · MAP</a>
+    </div>
+    <div style="display:flex;gap:8px;">
+      <a href="mailto:a@nuff.tech" class="ghost-btn">Contact</a>
+      <a href="../#hero-capture" class="silver-btn" style="text-decoration:none;display:inline-block;">Join</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="crumbs"><a href="../">// DIRECTORY</a> <span>/</span> <span>USA</span></div>
+  <h1>Humanoid robots<br/><span class="grad">in USA.</span></h1>
+  <p class="lede">28 platforms built here, from 6 companies and labs. USA is part of a global market of 174 humanoids across 17 countries.</p>
+
+  <div class="signature-card">
+    <div class="lbl">// THE SHAPE OF USA'S HUMANOID MARKET</div>
+    <p>mostly research and prototypes (14% commercial). median price $50K, mid market. focus areas: research, manufacturing, warehouse.</p>
+  </div>
+
+  <div class="stats">
+    <div class="cell"><div class="lbl">Total platforms</div><div class="num">28</div></div>
+    <div class="cell"><div class="lbl">Shipping today</div><div class="num">4</div></div>
+    <div class="cell"><div class="lbl">Verified deployments</div><div class="num">7</div></div>
+    <div class="cell"><div class="lbl">Median price</div><div class="num">$50K</div></div>
+  </div>
+
+  <div class="section-h">// FEATURED PLATFORMS</div>
+  <div class="grid"><a class="card" href="../?robot=agility-robotics--digit">
+    <div class="photo"><img src="../images/agility-robotics--digit.jpg" alt="Digit" loading="lazy" /><div class="price">$250K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Digit</div>
+      <div class="company">Agility Robotics</div>
+      <div class="desc">Bird-legged bipedal humanoid purpose-built for warehouse tote handling; first commercially deployed humanoid in US logistics.</div>
+    </div>
+  </a><a class="card" href="../?robot=fauna-robotics--sprout">
+    <div class="photo"><img src="../images/fauna-robotics--sprout.webp" alt="Sprout" loading="lazy" /><div class="price">$50K</div><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Sprout</div>
+      <div class="company">Fauna Robotics</div>
+      <div class="desc">Approachable 1.07 m, 22.7 kg, 29-DOF $50K developer humanoid; Amazon acquired Fauna in 2026.</div>
+    </div>
+  </a><a class="card" href="../?robot=hanson-robotics--sophia">
+    <div class="photo"><img src="../images/hanson-robotics--sophia.jpg" alt="Sophia" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Sophia</div>
+      <div class="company">Hanson Robotics</div>
+      <div class="desc">Social humanoid known for lifelike Frubber-skin facial expressions and conversational AI; primarily used for education, research, and public…</div>
+    </div>
+  </a><a class="card" href="../?robot=realbotix--melody">
+    <div class="photo"><img src="../images/realbotix--melody.webp" alt="Melody" loading="lazy" /><div class="badge"><span class="dot"></span>Shipping now</div></div>
+    <div class="body">
+      <div class="name">Melody</div>
+      <div class="company">Realbotix</div>
+      <div class="desc">Open-source humanoid companion robot with Dynamixel servos, lifelike skin, and modular disassembly to fit in a suitcase.</div>
+    </div>
+  </a><a class="card" href="../?robot=1x-technologies--neo">
+    <div class="photo"><img src="../images/1x-technologies--neo.webp" alt="Neo" loading="lazy" /><div class="price">$20K</div><div class="badge"><span class="dot"></span>Preorder</div></div>
+    <div class="body">
+      <div class="name">Neo</div>
+      <div class="company">1X Technologies</div>
+      <div class="desc">OpenAI-backed consumer humanoid for the home, using a soft polymer body and tendon-drive actuators; began shipping to US customers in 2026.</div>
+    </div>
+  </a><a class="card" href="../?robot=figure-ai--figure-03">
+    <div class="photo"><img src="../images/figure-ai--figure-03.png" alt="Figure 03" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">Figure 03</div>
+      <div class="company">Figure AI</div>
+      <div class="desc">Third-generation humanoid from Figure AI built for high-volume manufacturing and home use, powered by the in-house Helix vision-language-act…</div>
+    </div>
+  </a><a class="card" href="../?robot=1x-technologies--eve">
+    <div class="photo"><img src="../images/1x-technologies--eve.jpg" alt="Eve" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">Eve</div>
+      <div class="company">1X Technologies</div>
+      <div class="desc">1X&#39;s wheeled-base humanoid (formerly Halodi) with a self-balancing chassis and dual arms, used for security and industrial tasks before Neo&#39;…</div>
+    </div>
+  </a><a class="card" href="../?robot=apptronik--apollo">
+    <div class="photo"><img src="../images/apptronik--apollo.png" alt="Apollo" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">Apollo</div>
+      <div class="company">Apptronik</div>
+      <div class="desc">UT-Austin spinout&#39;s commercial humanoid with hot-swap batteries and force-controlled actuators; piloting on Mercedes-Benz assembly lines and…</div>
+    </div>
+  </a><a class="card" href="../?robot=roboforce--titan">
+    <div class="photo"><img src="../images/roboforce--titan.webp" alt="Titan" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">Titan</div>
+      <div class="company">RoboForce</div>
+      <div class="desc">Industrial mobile manipulator built for harsh outdoor &#39;dull, dirty, dangerous&#39; work; 40 kg payload, 1 mm precision, 8 h endurance.</div>
+    </div>
+  </a><a class="card" href="../?robot=reflex-robotics--reflex">
+    <div class="photo"><img src="../images/reflex-robotics--reflex.webp" alt="Reflex" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">Reflex</div>
+      <div class="company">Reflex Robotics</div>
+      <div class="desc">Affordable wheeled humanoid (not bipedal) with telescoping spine and dual arms, teleoperated for warehouse picking.</div>
+    </div>
+  </a><a class="card" href="../?robot=boston-dynamics--atlas-electric">
+    <div class="photo"><img src="../images/boston-dynamics--atlas-electric.webp" alt="Atlas (Electric)" loading="lazy" /><div class="badge"><span class="dot"></span>In customer trials</div></div>
+    <div class="body">
+      <div class="name">Atlas (Electric)</div>
+      <div class="company">Boston Dynamics</div>
+      <div class="desc">Fully-electric next-gen Atlas with super-human range of motion, transitioning from research to commercial industrial humanoid with first pil…</div>
+    </div>
+  </a><a class="card" href="../?robot=figure-ai--figure-01">
+    <div class="photo"><img src="../images/figure-ai--figure-01.webp" alt="Figure 01" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Figure 01</div>
+      <div class="company">Figure AI</div>
+      <div class="desc">Figure AI&#39;s first humanoid prototype, unveiled in 2023 to demonstrate OpenAI-powered conversational manipulation before being superseded.</div>
+    </div>
+  </a></div>
+
+  <div class="section-h">// ALL 28 ROBOTS FROM USA</div><div class="grid"><a class="card" href="../?robot=skild-ai--skild-brain-humanoid">
+    <div class="photo"><img src="../images/skild-ai--skild-brain-humanoid.webp" alt="Skild Brain Humanoid" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Skild Brain Humanoid</div>
+      <div class="company">Skild AI</div>
+      <div class="desc">$14B-valued Amazon/SoftBank-backed startup running its omni-bodied &#39;Skild Brain&#39; on a humanoid demonstrator that vaults, flips, and crawls.</div>
+    </div>
+  </a><a class="card" href="../?robot=foundation-robotics--phantom-mk1">
+    <div class="photo"><img src="../images/foundation-robotics--phantom-mk1.webp" alt="Phantom MK1" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Phantom MK1</div>
+      <div class="company">Foundation Robotics</div>
+      <div class="desc">Camera-only industrial humanoid (formerly Boardwalk Robotics&#39; Alex) pitched at defense and manufacturing buyers, with proprietary cycloidal …</div>
+    </div>
+  </a><a class="card" href="../?robot=persona-ai--persona-industrial-humanoid">
+    <div class="photo"><img src="../images/persona-ai--persona-industrial-humanoid.webp" alt="Persona Industrial Humanoid" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Persona Industrial Humanoid</div>
+      <div class="company">Persona AI</div>
+      <div class="desc">Houston-based humanoid startup founded by ex-Nauticus and ex-Figure execs, building rugged industrial humanoids for shipyard welding and hea…</div>
+    </div>
+  </a><a class="card" href="../?robot=ihmc--nadia">
+    <div class="photo"><img src="../images/ihmc--nadia.webp" alt="Nadia" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Nadia</div>
+      <div class="company">IHMC</div>
+      <div class="desc">Gymnast-inspired research humanoid built by IHMC with Boardwalk Robotics, designed for near-human range of motion in disaster-response and E…</div>
+    </div>
+  </a><a class="card" href="../?robot=beyond-imagination--beomni-1-0">
+    <div class="photo"><img src="../images/beyond-imagination--beomni-1-0.jpg" alt="Beomni 1.0" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Beomni 1.0</div>
+      <div class="company">Beyond Imagination</div>
+      <div class="desc">Wheeled humanoid that lifts ~15 kg per arm, controlled remotely via VR for telepresence and autonomy via Beomni AI.</div>
+    </div>
+  </a><a class="card" href="../?robot=k-scale-labs--k-bot">
+    <div class="photo"><img src="../images/k-scale-labs--k-bot.webp" alt="K-Bot" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">K-Bot</div>
+      <div class="company">K-Scale Labs</div>
+      <div class="desc">America&#39;s first open-source humanoid robot, designed for hobbyists and researchers; company ceased operations in late 2025 and released all …</div>
+    </div>
+  </a><a class="card" href="../?robot=mit-biomimetic-robotics-lab--mit-humanoid">
+    <div class="photo"><img src="../images/mit-biomimetic-robotics-lab--mit-humanoid.webp" alt="MIT Humanoid" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">MIT Humanoid</div>
+      <div class="company">MIT Biomimetic Robotics Lab</div>
+      <div class="desc">Small-scale acrobatic humanoid from Sangbae Kim&#39;s lab designed to do parkour, flips, and spinning jumps over rough terrain.</div>
+    </div>
+  </a><a class="card" href="../?robot=nasa-johnson-space-center--valkyrie-r5">
+    <div class="photo"><img src="../images/nasa-johnson-space-center--valkyrie-r5.jpg" alt="Valkyrie (R5)" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Valkyrie (R5)</div>
+      <div class="company">NASA Johnson Space Center</div>
+      <div class="desc">NASA&#39;s electric DRC-era humanoid built for future Mars missions, distributed to leading robotics labs as a research platform.</div>
+    </div>
+  </a><a class="card" href="../?robot=old-world-labs-owl--replicants">
+    <div class="photo"><div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--silver-dim);font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.18em;">NO IMAGE YET</div><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Replicants</div>
+      <div class="company">Old World Labs (OWL)</div>
+      <div class="desc">4-foot Replicants humanoid showcased at CES 2025 with OWL&#39;s &#39;Agents as a Service&#39; AI integrated for autonomy.</div>
+    </div>
+  </a><a class="card" href="../?robot=stanford-university--humanplus">
+    <div class="photo"><img src="../images/stanford-university--humanplus.jpg" alt="HumanPlus" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">HumanPlus</div>
+      <div class="company">Stanford University</div>
+      <div class="desc">Stanford research humanoid that learns by shadowing humans, with two egocentric cameras and 6-DoF dexterous hands.</div>
+    </div>
+  </a><a class="card" href="../?robot=tesla--optimus-gen-2-gen-3">
+    <div class="photo"><img src="../images/tesla--optimus-gen-2-gen-3.jpg" alt="Optimus (Gen 2 / Gen 3)" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Optimus (Gen 2 / Gen 3)</div>
+      <div class="company">Tesla</div>
+      <div class="desc">Tesla&#39;s general-purpose humanoid built on the same neural-net stack as FSD, currently piloting in Tesla factories with Gen 3 expected in 202…</div>
+    </div>
+  </a><a class="card" href="../?robot=uc-berkeley-hybrid-robotics--berkeley-humanoid-lite">
+    <div class="photo"><img src="../images/uc-berkeley-hybrid-robotics--berkeley-humanoid-lite.png" alt="Berkeley Humanoid Lite" loading="lazy" /><div class="price">$5K</div><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Berkeley Humanoid Lite</div>
+      <div class="company">UC Berkeley (Hybrid Robotics)</div>
+      <div class="desc">Open-source, sub-$5,000 humanoid with modular 3D-printed cycloidal gearboxes designed as an accessible research platform.</div>
+    </div>
+  </a><a class="card" href="../?robot=walt-disney-imagineering--disney-bipedal-robotic-character">
+    <div class="photo"><img src="../images/walt-disney-imagineering--disney-bipedal-robotic-character.jpg" alt="Disney Bipedal Robotic Character" loading="lazy" /><div class="badge"><span class="dot"></span>Lab</div></div>
+    <div class="body">
+      <div class="name">Disney Bipedal Robotic Character</div>
+      <div class="company">Walt Disney Imagineering</div>
+      <div class="desc">Free-walking, expressive bipedal robot character developed by Disney Research and Imagineering using reinforcement-learning-driven animation…</div>
+    </div>
+  </a><a class="card" href="../?robot=figure-ai--figure-02">
+    <div class="photo"><img src="../images/figure-ai--figure-02.jpg" alt="Figure 02" loading="lazy" /><div class="badge"><span class="dot"></span>Retired</div></div>
+    <div class="body">
+      <div class="name">Figure 02</div>
+      <div class="company">Figure AI</div>
+      <div class="desc">Figure AI&#39;s second-generation humanoid that performed BMW production-line trials, predecessor to Figure 03.</div>
+    </div>
+  </a><a class="card" href="../?robot=boston-dynamics--atlas-hydraulic-drc">
+    <div class="photo"><img src="../images/boston-dynamics--atlas-hydraulic-drc.jpg" alt="Atlas (Hydraulic / DRC)" loading="lazy" /><div class="badge"><span class="dot"></span>Retired</div></div>
+    <div class="body">
+      <div class="name">Atlas (Hydraulic / DRC)</div>
+      <div class="company">Boston Dynamics</div>
+      <div class="desc">The original DARPA-funded hydraulic Atlas, famous for parkour and backflip demos, retired April 2024 after a decade of research milestones.</div>
+    </div>
+  </a><a class="card" href="../?robot=nasa-johnson-space-center--robonaut-2-r2">
+    <div class="photo"><img src="../images/nasa-johnson-space-center--robonaut-2-r2.jpg" alt="Robonaut 2 (R2)" loading="lazy" /><div class="badge"><span class="dot"></span>Retired</div></div>
+    <div class="body">
+      <div class="name">Robonaut 2 (R2)</div>
+      <div class="company">NASA Johnson Space Center</div>
+      <div class="desc">First humanoid robot in space, jointly built by NASA and GM; deployed on the ISS from 2011-2018 and returned to Earth for repair.</div>
+    </div>
+  </a></div>
+
+  <div class="section-h">// TOP BUILDERS</div><div class="companies-list"><div class="item"><div class="nm">Figure AI</div><div class="ct">3 platforms</div></div><div class="item"><div class="nm">1X Technologies</div><div class="ct">2 platforms</div></div><div class="item"><div class="nm">Boston Dynamics</div><div class="ct">2 platforms</div></div><div class="item"><div class="nm">NASA Johnson Space Center</div><div class="ct">2 platforms</div></div><div class="item"><div class="nm">Agility Robotics</div><div class="ct">1 platform</div></div><div class="item"><div class="nm">Fauna Robotics</div><div class="ct">1 platform</div></div></div>
+
+  <div class="section-h">// OTHER COUNTRIES</div>
+  <div class="neighbors"><a href="canada.html">Canada (1)</a><a href="china.html">China (82)</a><a href="france.html">France (9)</a><a href="germany.html">Germany (9)</a><a href="india.html">India (2)</a><a href="israel.html">Israel (1)</a><a href="italy.html">Italy (8)</a><a href="japan.html">Japan (12)</a><a href="poland.html">Poland (1)</a><a href="saudi-arabia.html">Saudi Arabia (1)</a><a href="south-korea.html">South Korea (10)</a><a href="spain.html">Spain (4)</a><a href="sweden.html">Sweden (1)</a><a href="taiwan.html">Taiwan (1)</a><a href="turkey.html">Turkey (1)</a><a href="united-kingdom.html">United Kingdom (3)</a></div>
+</div>
+
+<footer>
+  <p>Part of <a href="../">humanoid.directory</a>. The complete reference of humanoid robots: pricing, availability, lead times, verified deployments. <a href="../">View the full catalog →</a></p>
+  <p style="margin-top:16px;"><a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="mailto:a@nuff.tech">Contact</a></p>
+</footer>
+</body>
+</html>
