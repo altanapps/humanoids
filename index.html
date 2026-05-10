@@ -121,9 +121,6 @@
   .hero-meta .col { transition: opacity .35s var(--ease), transform .35s var(--ease); }
   .hero.swapping .hero-meta .col { opacity: 0; transform: translateY(8px); }
 
-  /* Rotation progress bar */
-  .hero-progress { position: absolute; left: 32px; right: 32px; bottom: 24px; height: 1px; background: var(--border); overflow: hidden; }
-  .hero-progress .bar { position: absolute; inset: 0 auto 0 0; background: var(--white); width: 0%; transition: width .12s linear; }
 
   @media (max-width: 720px) { .hero { border-radius: 2rem; } .hero-meta { grid-template-columns: 1fr; gap: 16px; } }
 
@@ -480,7 +477,6 @@
     <span class="grad" id="hero-q-b"></span><span class="caret" id="hero-caret-b"></span>
   </h1>
   <div class="hero-meta" id="hero-meta"></div>
-  <div class="hero-progress"><div class="bar" id="hero-progress-bar"></div></div>
 </section>
 
 <form class="capture reveal" id="hero-capture">
@@ -935,7 +931,6 @@ window.HUMANOID_CONFIG = {
   const heroQa = $('#hero-q-a'), heroQb = $('#hero-q-b');
   const caretA = $('#hero-caret-a'), caretB = $('#hero-caret-b');
   const heroMeta = $('#hero-meta');
-  const heroBar = $('#hero-progress-bar');
 
   function typeWrite(el, text, speed, token) {
     return new Promise(resolve => {
@@ -999,15 +994,10 @@ window.HUMANOID_CONFIG = {
   heroEl.addEventListener('mouseleave', () => { heroPaused = false; });
   function tick() {
     if (!heroPaused && !heroTyping) {
-      const elapsed = Date.now() - heroStart;
-      const pct = Math.min(100, (elapsed / HERO_INTERVAL) * 100);
-      heroBar.style.width = pct + '%';
-      if (elapsed >= HERO_INTERVAL) {
+      if (Date.now() - heroStart >= HERO_INTERVAL) {
         heroIdx = (heroIdx + 1) % heroQuestions.length;
         renderHero();
       }
-    } else if (heroTyping) {
-      heroBar.style.width = '0%';
     }
     requestAnimationFrame(tick);
   }
