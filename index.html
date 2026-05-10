@@ -538,7 +538,7 @@
 <div class="section-head reveal" id="directory">
   <div class="index">// 01 / CATALOG</div>
   <h2>The <span class="grad">directory.</span></h2>
-  <div class="right">// 174 ENTRIES · 2026.05.10</div>
+  <div class="right">// <span id="section-head-count">174</span> ENTRIES · <span id="section-head-date">2026.05.10</span></div>
 </div>
 
 <div class="controls reveal">
@@ -867,9 +867,16 @@ window.HUMANOID_CONFIG = {
   const countries = [...new Set(data.map(r => r.country))].sort();
   for (const c of countries) { const o = document.createElement('option'); o.value = c; o.textContent = c; country.appendChild(o); }
 
-  // Inject the live total into the hero CTA button
+  // Inject the live total wherever it appears in the static markup
   const heroCtaCount = document.getElementById('hero-cta-count');
   if (heroCtaCount) heroCtaCount.textContent = data.length;
+  const sectionHeadCount = document.getElementById('section-head-count');
+  if (sectionHeadCount) sectionHeadCount.textContent = data.length;
+  const sectionHeadDate = document.getElementById('section-head-date');
+  if (sectionHeadDate) {
+    const d = new Date();
+    sectionHeadDate.textContent = `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`;
+  }
 
   // ── Rotating hero (questions cycle every 6s, pause on hover) ──
   const fmtKHero = v => v >= 1000 ? '$' + (v/1000).toFixed(v%1000===0?0:1) + 'K' : '$' + v;
