@@ -127,8 +127,9 @@
   }
   .hero h1 .caret.active { animation: caret-blink 1s steps(2, end) infinite; }
   @keyframes caret-blink { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }
-  .hero-meta .col { transition: opacity .35s var(--ease), transform .35s var(--ease); }
-  .hero.swapping .hero-meta .col { opacity: 0; transform: translateY(8px); }
+  /* Stats fade only (h1 stays solid; typewriter is the transition) */
+  .hero-meta .col { transition: opacity .25s var(--ease); }
+  .hero.swapping .hero-meta .col { opacity: 0; }
 
 
   @media (max-width: 720px) { .hero { border-radius: 2rem; } .hero-meta { grid-template-columns: 1fr; gap: 16px; } }
@@ -966,27 +967,30 @@ window.HUMANOID_CONFIG = {
     const q = heroQuestions[heroIdx];
     const filtered = q.filter ? data.filter(q.filter) : data;
 
-    // Swap stats with fade
-    heroEl.classList.add('swapping');
-    await new Promise(r => setTimeout(r, 60));
-    if (token !== heroTypeToken) return; // a newer render fired
-
-    const stats = q.stats(filtered);
-    heroMeta.innerHTML = stats.map(s => `
-      <div class="col">
-        <div class="label">${s.lbl}</div>
-        <div class="value">${s.val}</div>
-        ${s.sub ? `<div class="sub">${s.sub}</div>` : ''}
-      </div>
-    `).join('');
-    heroEl.classList.remove('swapping');
-
-    // Typewriter: clear both, blink caret on line 1, type a, then caret on line 2, type b
+    // Clear headline and start typing IMMEDIATELY — no empty-state delay.
+    // Caret on line 1 active right away so something is visible the instant we swap.
     heroQa.textContent = '';
     heroQb.textContent = '';
     caretA.classList.add('active');
     caretB.classList.remove('active');
     heroTyping = true;
+
+    // Stats fade out, get rebuilt, fade in — this happens in parallel with the typewriter.
+    heroEl.classList.add('swapping');
+    setTimeout(() => {
+      if (token !== heroTypeToken) return;
+      const stats = q.stats(filtered);
+      heroMeta.innerHTML = stats.map(s => `
+        <div class="col">
+          <div class="label">${s.lbl}</div>
+          <div class="value">${s.val}</div>
+          ${s.sub ? `<div class="sub">${s.sub}</div>` : ''}
+        </div>
+      `).join('');
+      heroEl.classList.remove('swapping');
+    }, 120);
+
+    // Type line 1 immediately
     await typeWrite(heroQa, q.a, TYPE_SPEED, token);
     if (token !== heroTypeToken) return;
     caretA.classList.remove('active');
