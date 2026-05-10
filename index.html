@@ -115,9 +115,8 @@
     display: inline-block; width: 0.04em; min-width: 3px; height: 0.85em;
     background: var(--white); margin-left: 0.06em; vertical-align: -0.08em;
     opacity: 0;
-    animation: caret-blink 1s steps(2, end) infinite;
   }
-  .hero h1 .caret.active { opacity: 1; }
+  .hero h1 .caret.active { animation: caret-blink 1s steps(2, end) infinite; }
   @keyframes caret-blink { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }
   .hero-meta .col { transition: opacity .35s var(--ease), transform .35s var(--ease); }
   .hero.swapping .hero-meta .col { opacity: 0; transform: translateY(8px); }
@@ -935,7 +934,7 @@ window.HUMANOID_CONFIG = {
     },
   ];
   let heroIdx = 0, heroPaused = false, heroStart = Date.now(), heroTyping = false, heroTypeToken = 0;
-  const HERO_INTERVAL = 120000; // 2 minutes
+  const HERO_INTERVAL = 5000;  // ms after typewriter completes before swap
   const TYPE_SPEED = 45;        // ms per character
   const LINE_PAUSE = 220;       // ms between line 1 and line 2
   const heroEl = $('#hero');
@@ -1005,8 +1004,10 @@ window.HUMANOID_CONFIG = {
     caretB.classList.add('active');
     await typeWrite(heroQb, q.b, TYPE_SPEED, token);
     if (token !== heroTypeToken) return;
+    // Type complete: hide both carets, start the read-then-swap timer
+    caretA.classList.remove('active');
+    caretB.classList.remove('active');
     heroTyping = false;
-    // Start the 2-minute timer fresh once the question is fully written
     heroStart = Date.now();
   }
   renderHero();
