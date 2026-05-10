@@ -938,8 +938,8 @@ window.HUMANOID_CONFIG = {
   ];
   let heroIdx = 0, heroPaused = false, heroStart = Date.now(), heroTyping = false, heroTypeToken = 0;
   const HERO_INTERVAL = 0;     // ms after typewriter completes before swap
-  const TYPE_SPEED = 15;        // ms per character
-  const LINE_PAUSE = 30;        // ms between line 1 and line 2
+  const TYPE_SPEED = 40;        // ms per character (slower so you can read as it types)
+  const LINE_PAUSE = 50;        // ms between line 1 and line 2
   const heroEl = $('#hero');
   const heroQa = $('#hero-q-a'), heroQb = $('#hero-q-b');
   const caretA = $('#hero-caret-a'), caretB = $('#hero-caret-b');
@@ -968,7 +968,7 @@ window.HUMANOID_CONFIG = {
 
     // Swap stats with fade
     heroEl.classList.add('swapping');
-    await new Promise(r => setTimeout(r, 80));
+    await new Promise(r => setTimeout(r, 60));
     if (token !== heroTypeToken) return; // a newer render fired
 
     const stats = q.stats(filtered);
