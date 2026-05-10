@@ -20,6 +20,9 @@
 <meta name="twitter:description" content="174 humanoid robots across 17 countries. Pricing, specs, availability, verified deployments." />
 <meta name="twitter:image" content="https://humanoid.directory/og-image.png" />
 <link rel="canonical" href="https://humanoid.directory/" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
 <!-- SEO_JSONLD_START -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Humanoid Robot Directory","url":"https://humanoid.directory","description":"The complete directory of humanoid robots: 174 platforms across 17 countries with pricing, availability, lead times, and verified deployments.","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://humanoid.directory/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
@@ -100,10 +103,24 @@
   .hero-eyebrow { font-family: 'Geist Mono', monospace; font-size: 10px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--silver-dim); margin-bottom: 24px; }
   .hero h1 { font-family: 'DM Serif Display', serif; font-style: italic; font-weight: 400; font-size: clamp(48px, 10vw, 140px); line-height: 0.85; letter-spacing: -0.04em; color: var(--white); margin: 0 0 56px; max-width: 16ch; }
   .hero h1 .grad { background: var(--silver-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-  .hero-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; border-top: 1px solid var(--border); padding-top: 32px; }
-  .hero-meta .col { display: flex; flex-direction: column; gap: 6px; }
+  .hero-meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; border-top: 1px solid var(--border); padding-top: 32px; }
+  .hero-meta .col { display: flex; flex-direction: column; gap: 6px; transition: opacity .35s var(--ease), transform .35s var(--ease); }
   .hero-meta .label { font-family: 'Geist Mono', monospace; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--silver-dim); }
-  .hero-meta .value { font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.06em; color: var(--white); }
+  .hero-meta .value { font-family: 'DM Serif Display', serif; font-style: italic; font-weight: 400; font-size: 32px; letter-spacing: -0.02em; color: var(--white); line-height: 1; }
+  .hero-meta .sub { font-family: 'Geist Mono', monospace; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver-dim); margin-top: 2px; }
+
+  /* Rotating headline transition */
+  .hero h1 { transition: opacity .35s var(--ease), transform .35s var(--ease); }
+  .hero.swapping h1, .hero.swapping .hero-meta .col { opacity: 0; transform: translateY(8px); }
+
+  /* Rotation progress bar */
+  .hero-progress { position: absolute; left: 32px; right: 32px; bottom: 24px; height: 1px; background: var(--border); overflow: hidden; }
+  .hero-progress .bar { position: absolute; inset: 0 auto 0 0; background: var(--white); width: 0%; transition: width .12s linear; }
+  .hero-dots { display: flex; gap: 5px; margin-top: 24px; }
+  .hero-dots .dot { width: 24px; height: 2px; background: var(--border); transition: background .25s var(--ease); cursor: pointer; }
+  .hero-dots .dot.active { background: var(--white); }
+  .hero-dots .dot:hover { background: var(--silver-faint); }
+  .hero-dots .dot.active:hover { background: var(--white); }
 
   @media (max-width: 720px) { .hero { border-radius: 2rem; } .hero-meta { grid-template-columns: 1fr; gap: 16px; } }
 
@@ -452,23 +469,12 @@
   <div class="ticker-track" id="ticker-track"></div>
 </div>
 
-<section class="hero reveal">
+<section class="hero reveal" id="hero">
   <div class="hero-eyebrow">// THE BUYER'S DIRECTORY · 2026</div>
-  <h1>Which humanoid<br/>should I <span class="grad">buy?</span></h1>
-  <div class="hero-meta">
-    <div class="col">
-      <div class="label">Price range</div>
-      <div class="value" id="hero-price">$4.9K — $350K</div>
-    </div>
-    <div class="col">
-      <div class="label">Shipping today</div>
-      <div class="value" id="hero-shipping">58 platforms</div>
-    </div>
-    <div class="col">
-      <div class="label">Verified deployments</div>
-      <div class="value" id="hero-deployments">30 case studies</div>
-    </div>
-  </div>
+  <h1><span id="hero-q-a">Which humanoid</span><br/>should I <span class="grad" id="hero-q-b">buy?</span></h1>
+  <div class="hero-dots" id="hero-dots" aria-label="Question selector"></div>
+  <div class="hero-meta" id="hero-meta"></div>
+  <div class="hero-progress"><div class="bar" id="hero-progress-bar"></div></div>
 </section>
 
 <form class="capture reveal" id="hero-capture">
@@ -809,14 +815,170 @@ window.HUMANOID_CONFIG = {
   const countries = [...new Set(data.map(r => r.country))].sort();
   for (const c of countries) { const o = document.createElement('option'); o.value = c; o.textContent = c; country.appendChild(o); }
 
-  // ── Hero stats (compute from real data) ───────────────────────
-  const priced = data.filter(r => r.price_usd);
-  const minPrice = Math.min(...priced.map(r => r.price_usd));
-  const maxPrice = Math.max(...priced.map(r => r.price_usd));
+  // ── Rotating hero (questions cycle every 6s, pause on hover) ──
   const fmtKHero = v => v >= 1000 ? '$' + (v/1000).toFixed(v%1000===0?0:1) + 'K' : '$' + v;
-  $('#hero-price').textContent = `${fmtKHero(minPrice)} to ${fmtKHero(maxPrice)}`;
-  $('#hero-shipping').textContent = `${data.filter(r => r.availability_status === 'shipping_now').length} platforms`;
-  $('#hero-deployments').textContent = `${data.filter(r => r.verified_deployments && r.verified_deployments.length).length} case studies`;
+  const heroQuestions = [
+    {
+      a: 'Which humanoid', b: 'should I buy?',
+      stats: rs => [
+        { lbl: 'Platforms', val: rs.length },
+        { lbl: 'Shipping today', val: rs.filter(r => r.availability_status === 'shipping_now').length },
+        { lbl: 'With public pricing', val: rs.filter(r => r.price_usd != null).length, sub: '/ ' + rs.length },
+        { lbl: 'Verified deploys', val: rs.filter(r => r.verified_deployments && r.verified_deployments.length).length },
+      ],
+    },
+    {
+      a: 'What ships', b: 'under $20K?',
+      filter: r => r.availability_status === 'shipping_now' && r.price_usd != null && r.price_usd < 20000,
+      stats: rs => {
+        const sorted = rs.slice().sort((a, b) => a.price_usd - b.price_usd);
+        const cheap = sorted[0];
+        return [
+          { lbl: 'Matches', val: rs.length },
+          { lbl: 'Cheapest', val: cheap ? fmtKHero(cheap.price_usd) : '—' },
+          { lbl: 'Countries', val: new Set(rs.map(r => r.country)).size },
+          { lbl: 'Pick', val: cheap ? (cheap.robot_name.split(' (')[0]) : '—', sub: cheap ? cheap.company : '' },
+        ];
+      },
+    },
+    {
+      a: "Who's deployed", b: 'in warehouses?',
+      filter: r => (r.use_cases || []).includes('warehouse_logistics') && (r.verified_deployments || []).length,
+      stats: rs => [
+        { lbl: 'Platforms', val: rs.length },
+        { lbl: 'Case studies', val: rs.reduce((s, r) => s + (r.verified_deployments || []).length, 0) },
+        { lbl: 'Unique customers', val: new Set(rs.flatMap(r => (r.verified_deployments || []).map(d => (d.customer || '').split(' ')[0]))).size },
+        { lbl: 'Lead', val: rs[0] ? rs[0].robot_name.split(' (')[0] : '—' },
+      ],
+    },
+    {
+      a: "What's coming", b: 'from China?',
+      filter: r => r.country === 'China',
+      stats: rs => {
+        const priced = rs.filter(r => r.price_usd).map(r => r.price_usd);
+        const heaviest = rs.filter(r => r.payload_kg).sort((a, b) => b.payload_kg - a.payload_kg)[0];
+        return [
+          { lbl: 'Platforms', val: rs.length },
+          { lbl: 'Shipping', val: rs.filter(r => r.availability_status === 'shipping_now').length },
+          { lbl: 'Cheapest', val: priced.length ? fmtKHero(Math.min(...priced)) : '—' },
+          { lbl: 'Top payload', val: heaviest ? heaviest.payload_kg + ' kg' : '—' },
+        ];
+      },
+    },
+    {
+      a: 'Which robots', b: 'cost the least?',
+      filter: r => r.price_usd != null,
+      stats: rs => {
+        const sorted = rs.slice().sort((a, b) => a.price_usd - b.price_usd);
+        return [
+          { lbl: 'Cheapest', val: fmtKHero(sorted[0].price_usd) },
+          { lbl: 'Median', val: fmtKHero(sorted[Math.floor(sorted.length / 2)].price_usd) },
+          { lbl: 'Priciest', val: fmtKHero(sorted[sorted.length - 1].price_usd) },
+          { lbl: 'Priced', val: sorted.length, sub: '/ ' + data.length },
+        ];
+      },
+    },
+    {
+      a: 'What works', b: 'inside a home?',
+      filter: r => (r.use_cases || []).includes('home_consumer'),
+      stats: rs => {
+        const heights = rs.filter(r => r.height_cm).map(r => r.height_cm);
+        return [
+          { lbl: 'Platforms', val: rs.length },
+          { lbl: 'Shipping', val: rs.filter(r => r.availability_status === 'shipping_now').length },
+          { lbl: 'Pre-order', val: rs.filter(r => r.availability_status === 'preorder').length },
+          { lbl: 'Avg height', val: heights.length ? Math.round(heights.reduce((s, h) => s + h, 0) / heights.length) + ' cm' : '—' },
+        ];
+      },
+    },
+    {
+      a: 'Who builds', b: 'for factories?',
+      filter: r => (r.use_cases || []).includes('industrial_manufacturing'),
+      stats: rs => {
+        const shipping = rs.filter(r => r.availability_status === 'shipping_now');
+        const deployed = rs.filter(r => (r.verified_deployments || []).length);
+        const payload = rs.filter(r => r.payload_kg).sort((a, b) => b.payload_kg - a.payload_kg)[0];
+        return [
+          { lbl: 'Platforms', val: rs.length },
+          { lbl: 'Shipping', val: shipping.length },
+          { lbl: 'With deploys', val: deployed.length },
+          { lbl: 'Top payload', val: payload ? payload.payload_kg + ' kg' : '—' },
+        ];
+      },
+    },
+    {
+      a: 'Who has', b: 'real customers?',
+      filter: r => (r.verified_deployments || []).length > 0,
+      stats: rs => {
+        const total = rs.reduce((s, r) => s + (r.verified_deployments || []).length, 0);
+        const shipping = rs.filter(r => r.availability_status === 'shipping_now').length;
+        return [
+          { lbl: 'Platforms', val: rs.length },
+          { lbl: 'Verified deploys', val: total },
+          { lbl: 'Of those shipping', val: shipping },
+          { lbl: 'Countries', val: new Set(rs.map(r => r.country)).size },
+        ];
+      },
+    },
+  ];
+  let heroIdx = 0, heroPaused = false, heroStart = Date.now();
+  const HERO_INTERVAL = 6500;
+  const heroEl = $('#hero');
+  const heroQa = $('#hero-q-a'), heroQb = $('#hero-q-b');
+  const heroMeta = $('#hero-meta');
+  const heroBar = $('#hero-progress-bar');
+  const heroDots = $('#hero-dots');
+
+  // Build dots
+  heroQuestions.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', `Question ${i + 1}`);
+    d.addEventListener('click', () => { heroIdx = i; renderHero(); heroStart = Date.now(); });
+    heroDots.appendChild(d);
+  });
+
+  function renderHero() {
+    const q = heroQuestions[heroIdx];
+    const filtered = q.filter ? data.filter(q.filter) : data;
+    heroEl.classList.add('swapping');
+    setTimeout(() => {
+      heroQa.textContent = q.a;
+      heroQb.textContent = q.b;
+      const stats = q.stats(filtered);
+      heroMeta.innerHTML = stats.map(s => `
+        <div class="col">
+          <div class="label">${s.lbl}</div>
+          <div class="value">${s.val}</div>
+          ${s.sub ? `<div class="sub">${s.sub}</div>` : ''}
+        </div>
+      `).join('');
+      [...heroDots.children].forEach((d, i) => d.classList.toggle('active', i === heroIdx));
+      heroEl.classList.remove('swapping');
+    }, 320);
+  }
+  renderHero();
+
+  // Pause on hover; track progress
+  heroEl.addEventListener('mouseenter', () => heroPaused = true);
+  heroEl.addEventListener('mouseleave', () => { heroPaused = false; heroStart = Date.now() - 0; });
+  let lastFrame = Date.now();
+  function tick() {
+    if (!heroPaused) {
+      const elapsed = Date.now() - heroStart;
+      const pct = Math.min(100, (elapsed / HERO_INTERVAL) * 100);
+      heroBar.style.width = pct + '%';
+      if (elapsed >= HERO_INTERVAL) {
+        heroIdx = (heroIdx + 1) % heroQuestions.length;
+        heroStart = Date.now();
+        renderHero();
+      }
+    } else {
+      // Hold progress bar in place while paused
+    }
+    requestAnimationFrame(tick);
+  }
+  tick();
 
   // ── Activity ticker ───────────────────────────────────────────
   (async () => {
