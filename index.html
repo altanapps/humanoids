@@ -124,11 +124,6 @@
   /* Rotation progress bar */
   .hero-progress { position: absolute; left: 32px; right: 32px; bottom: 24px; height: 1px; background: var(--border); overflow: hidden; }
   .hero-progress .bar { position: absolute; inset: 0 auto 0 0; background: var(--white); width: 0%; transition: width .12s linear; }
-  .hero-dots { display: flex; gap: 5px; margin-top: 24px; }
-  .hero-dots .dot { width: 24px; height: 2px; background: var(--border); transition: background .25s var(--ease); cursor: pointer; }
-  .hero-dots .dot.active { background: var(--white); }
-  .hero-dots .dot:hover { background: var(--silver-faint); }
-  .hero-dots .dot.active:hover { background: var(--white); }
 
   @media (max-width: 720px) { .hero { border-radius: 2rem; } .hero-meta { grid-template-columns: 1fr; gap: 16px; } }
 
@@ -484,7 +479,6 @@
     <br/>
     <span class="grad" id="hero-q-b"></span><span class="caret" id="hero-caret-b"></span>
   </h1>
-  <div class="hero-dots" id="hero-dots" aria-label="Question selector"></div>
   <div class="hero-meta" id="hero-meta"></div>
   <div class="hero-progress"><div class="bar" id="hero-progress-bar"></div></div>
 </section>
@@ -934,7 +928,7 @@ window.HUMANOID_CONFIG = {
     },
   ];
   let heroIdx = 0, heroPaused = false, heroStart = Date.now(), heroTyping = false, heroTypeToken = 0;
-  const HERO_INTERVAL = 5000;  // ms after typewriter completes before swap
+  const HERO_INTERVAL = 2000;  // ms after typewriter completes before swap
   const TYPE_SPEED = 45;        // ms per character
   const LINE_PAUSE = 220;       // ms between line 1 and line 2
   const heroEl = $('#hero');
@@ -942,16 +936,6 @@ window.HUMANOID_CONFIG = {
   const caretA = $('#hero-caret-a'), caretB = $('#hero-caret-b');
   const heroMeta = $('#hero-meta');
   const heroBar = $('#hero-progress-bar');
-  const heroDots = $('#hero-dots');
-
-  // Build dots
-  heroQuestions.forEach((_, i) => {
-    const d = document.createElement('button');
-    d.className = 'dot' + (i === 0 ? ' active' : '');
-    d.setAttribute('aria-label', `Question ${i + 1}`);
-    d.addEventListener('click', () => { heroIdx = i; renderHero(); });
-    heroDots.appendChild(d);
-  });
 
   function typeWrite(el, text, speed, token) {
     return new Promise(resolve => {
@@ -987,7 +971,6 @@ window.HUMANOID_CONFIG = {
         ${s.sub ? `<div class="sub">${s.sub}</div>` : ''}
       </div>
     `).join('');
-    [...heroDots.children].forEach((d, i) => d.classList.toggle('active', i === heroIdx));
     heroEl.classList.remove('swapping');
 
     // Typewriter: clear both, blink caret on line 1, type a, then caret on line 2, type b
