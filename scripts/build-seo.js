@@ -142,11 +142,20 @@ if (startIdx !== -1 && endIdx !== -1) {
   const before = html.slice(0, startIdx + startMarker.length);
   const after = html.slice(endIdx);
   html = before + '\n' + jsonldHtml + '\n' + after;
-  fs.writeFileSync(indexPath, html);
-  console.log('✓ Patched index.html with JSON-LD');
-} else {
-  console.log('⚠ index.html missing SEO_JSONLD markers — JSON-LD written to data/seo-jsonld.html only');
 }
+
+// Cache-bust the robots.js script tag with the dataset length + last modified time.
+// This way every dataset change is a different URL and browsers always fetch fresh.
+const robotsPath = path.join(ROOT, 'data', 'robots.json');
+const stat = fs.statSync(robotsPath);
+const cacheBust = `${robots.length}-${Math.floor(stat.mtimeMs)}`;
+html = html.replace(
+  /<script src="data\/robots\.js(?:\?v=[^"]*)?"><\/script>/,
+  `<script src="data/robots.js?v=${cacheBust}"></script>`
+);
+
+fs.writeFileSync(indexPath, html);
+console.log('✓ Patched index.html (JSON-LD + robots.js cache-bust v=' + cacheBust + ')');
 
 // ─── Summary ──────────────────────────────────────────────────────────
 console.log(`✓ data/seo-jsonld.html (${(jsonldHtml.length / 1024).toFixed(1)}KB)`);
