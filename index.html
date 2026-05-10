@@ -191,7 +191,9 @@
   .chart-toolbar .axis-toggle button.active { background: var(--white); color: var(--obsidian); }
   .chart-toolbar .legend { margin-left: auto; display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
   .chart-toolbar .legend .item { display: flex; gap: 6px; align-items: center; font-family: 'Geist Mono', monospace; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver-faint); }
-  .chart-toolbar .legend .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .chart-toolbar .legend .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .chart-toolbar .legend .dot.diamond { border-radius: 0; transform: rotate(45deg); }
+  .chart-toolbar .legend .dot.hollow { background: transparent !important; border: 1.5px solid; }
   .chart-svg-wrap { position: relative; padding: 24px; min-height: 540px; }
   #chart-svg { width: 100%; height: 540px; display: block; }
   .chart-axis line, .chart-axis path { stroke: rgba(255,255,255,0.12); }
@@ -338,6 +340,8 @@
   .quote-form .submit-btn { background: var(--silver-grad); color: var(--obsidian); padding: 14px; border-radius: 999px; border: 0; cursor: pointer; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600; margin-top: 8px; transition: all .25s var(--ease); }
   .quote-form .submit-btn:hover { transform: translateY(-1px); box-shadow: 0 0 24px rgba(255,255,255,0.18); }
   .quote-form .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  /* Stop status badges inside flex-column forms from stretching full width */
+  .quote-form .status-badge { align-self: flex-start; }
 
   @media (max-width: 720px) {
     .modal-hero, .modal-body { grid-template-columns: 1fr; }
@@ -541,8 +545,8 @@
     </div>
     <div class="legend">
       <div class="item"><span class="dot" style="background:#FFFFFF;"></span>USA</div>
-      <div class="item"><span class="dot" style="background:#94A3B8;"></span>China</div>
-      <div class="item"><span class="dot" style="background:rgba(226,232,240,0.45);"></span>Other</div>
+      <div class="item"><span class="dot diamond" style="background:#FFFFFF;"></span>China</div>
+      <div class="item"><span class="dot hollow" style="border-color:#FFFFFF;"></span>Other</div>
     </div>
   </div>
   <div class="chart-svg-wrap">
@@ -1334,17 +1338,26 @@ window.HUMANOID_CONFIG = {
     g.append('g').attr('class', 'chart-axis').call(d3.axisLeft(y).ticks(6));
     g.append('text').attr('class', 'chart-axis-label').attr('transform', 'rotate(-90)').attr('x', -innerH / 2).attr('y', -50).attr('text-anchor', 'middle').text('// ' + yLabels[yKey].toUpperCase());
 
-    const colorFor = c => c === 'USA' ? '#FFFFFF' : c === 'China' ? '#94A3B8' : 'rgba(226,232,240,0.45)';
     const tooltip = $('#chart-tooltip');
-    g.selectAll('circle.chart-dot').data(points).enter().append('circle')
+    const dotGroups = g.selectAll('g.chart-dot').data(points).enter().append('g')
       .attr('class', 'chart-dot')
-      .attr('cx', d => x(d.price_usd))
-      .attr('cy', d => y(d[yKey]))
-      .attr('r', 6)
-      .attr('fill', d => colorFor(d.country))
-      .attr('fill-opacity', 0.7)
-      .attr('stroke', d => colorFor(d.country))
-      .attr('stroke-width', 1)
+      .attr('transform', d => `translate(${x(d.price_usd)}, ${y(d[yKey])})`)
+      .style('cursor', 'pointer');
+
+    dotGroups.each(function(d) {
+      const sel = d3.select(this);
+      if (d.country === 'USA') {
+        sel.append('circle').attr('r', 9).attr('fill', '#FFFFFF').attr('stroke', '#FFFFFF').attr('fill-opacity', 0.95);
+      } else if (d.country === 'China') {
+        sel.append('rect').attr('x', -7).attr('y', -7).attr('width', 14).attr('height', 14)
+          .attr('transform', 'rotate(45)').attr('fill', '#FFFFFF').attr('fill-opacity', 0.85)
+          .attr('stroke', '#FFFFFF').attr('stroke-width', 1);
+      } else {
+        sel.append('circle').attr('r', 6).attr('fill', 'transparent').attr('stroke', '#FFFFFF').attr('stroke-width', 1.5).attr('stroke-opacity', 0.65);
+      }
+    });
+
+    dotGroups
       .on('mouseenter', (event, d) => {
         tooltip.innerHTML = `
           <div class="nm">${escapeHtml(d.robot_name)}</div>
