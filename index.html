@@ -944,7 +944,7 @@ window.HUMANOID_CONFIG = {
   let heroIdx = 0, heroPaused = false, heroStart = Date.now(), heroTyping = false, heroTypeToken = 0;
   const HERO_INTERVAL = 0;     // ms after typewriter completes before swap
   const TYPE_SPEED = 150;       // ms per character (~6.7 chars/sec, deliberately slow)
-  const LINE_PAUSE = 50;        // ms between line 1 and line 2
+  const LINE_PAUSE = 0;         // ms between line 1 and line 2 (continuous)
   const heroEl = $('#hero');
   const heroQa = $('#hero-q-a'), heroQb = $('#hero-q-b');
   const caretA = $('#hero-caret-a'), caretB = $('#hero-caret-b');
@@ -1003,26 +1003,30 @@ window.HUMANOID_CONFIG = {
     caretB.classList.add('active');
     await typeWrite(heroQb, q.b, TYPE_SPEED, token);
     if (token !== heroTypeToken) return;
-    // Type complete: hide both carets, start the read-then-swap timer
+    // Type complete: hide both carets, immediately schedule next question
     caretA.classList.remove('active');
     caretB.classList.remove('active');
     heroTyping = false;
     heroStart = Date.now();
+    // Trigger the next question on the next microtask — no RAF latency
+    setTimeout(() => {
+      if (token !== heroTypeToken || heroPaused) return;
+      heroIdx = (heroIdx + 1) % heroQuestions.length;
+      renderHero();
+    }, HERO_INTERVAL);
   }
   renderHero();
 
   heroEl.addEventListener('mouseenter', () => heroPaused = true);
-  heroEl.addEventListener('mouseleave', () => { heroPaused = false; });
-  function tick() {
-    if (!heroPaused && !heroTyping) {
-      if (Date.now() - heroStart >= HERO_INTERVAL) {
-        heroIdx = (heroIdx + 1) % heroQuestions.length;
-        renderHero();
-      }
+  heroEl.addEventListener('mouseleave', () => {
+    if (heroPaused && !heroTyping) {
+      heroPaused = false;
+      heroIdx = (heroIdx + 1) % heroQuestions.length;
+      renderHero();
+    } else {
+      heroPaused = false;
     }
-    requestAnimationFrame(tick);
-  }
-  tick();
+  });
 
   // ── Activity ticker ───────────────────────────────────────────
   (async () => {
