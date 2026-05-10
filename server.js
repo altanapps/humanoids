@@ -80,11 +80,16 @@ function serveFile(filePath, res) {
   const ext = path.extname(filePath).toLowerCase();
   const type = MIME[ext] || 'application/octet-stream';
   res.setHeader('Content-Type', type);
-  // Cache static assets aggressively, HTML conservatively
-  if (ext === '.html' || filePath.endsWith('robots.txt') || filePath.endsWith('sitemap.xml')) {
-    res.setHeader('Cache-Control', 'public, max-age=300');
-  } else {
+  // Cache strategy:
+  //   - HTML, sitemap, robots.txt, data files: short cache so updates show up fast
+  //   - Images and fonts: long cache (they're content-addressed-ish)
+  //   - Everything else: short cache by default
+  const isImageOrFont = /^(\.png|\.jpg|\.jpeg|\.webp|\.gif|\.svg|\.ico|\.woff2?|\.ttf|\.otf)$/i.test(ext);
+  if (isImageOrFont) {
     res.setHeader('Cache-Control', 'public, max-age=86400');
+  } else {
+    // HTML, JS, JSON, XML, TXT, MD — short cache so freshly-deployed data shows up
+    res.setHeader('Cache-Control', 'public, max-age=60, must-revalidate');
   }
   res.setHeader('X-Content-Type-Options', 'nosniff');
   fs.createReadStream(filePath).pipe(res);
