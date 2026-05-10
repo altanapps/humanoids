@@ -433,9 +433,10 @@
   <div class="nav-inner">
     <a href="/" class="brand">HUMANOID / DIRECTORY</a>
     <div class="nav-links">
-      <a href="#directory">01 · CATALOG</a>
-      <a href="#map-section">02 · MAP</a>
-      <a href="#submit-link">03 · SUBMIT</a>
+      <a href="#directory" data-nav-view="grid">01 · CATALOG</a>
+      <a href="#directory" data-nav-view="chart">02 · CHART</a>
+      <a href="#directory" data-nav-view="map">03 · MAP</a>
+      <a href="#submit-link" data-nav-action="submit">04 · SUBMIT</a>
     </div>
     <div class="nav-cta">
       <button id="nav-shortlist" class="ghost-btn shortlist-nav" hidden>Shortlist <span class="count" id="nav-shortlist-count">0</span></button>
@@ -1251,6 +1252,19 @@ window.HUMANOID_CONFIG = {
   $('#bug-success-close').addEventListener('click', () => { closeAllModals(); $('#bug-form').reset(); $('#bug-form').style.display = ''; $('#bug-success').style.display = 'none'; });
 
   $('#nav-order-btn').addEventListener('click', e => { e.preventDefault(); document.querySelector('#hero-email').focus(); document.querySelector('#hero-capture').scrollIntoView({ behavior: 'smooth', block: 'center' }); });
+
+  // Wire nav-link view switchers (CATALOG / CHART / MAP / SUBMIT)
+  document.querySelectorAll('[data-nav-view]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const v = a.dataset.navView;
+      switchView(v);
+      document.querySelector('#directory').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+  document.querySelectorAll('[data-nav-action="submit"]').forEach(a => {
+    a.addEventListener('click', e => { e.preventDefault(); $('#submit-link').click(); });
+  });
 
   function openModal(sel) { document.querySelector(sel).classList.add('open'); document.body.style.overflow = 'hidden'; }
   function closeAllModals() {
