@@ -944,7 +944,7 @@ window.HUMANOID_CONFIG = {
   let heroIdx = 0, heroPaused = false, heroStart = Date.now(), heroTyping = false, heroTypeToken = 0;
   const HERO_INTERVAL = 0;     // ms after typewriter completes before swap
   const TYPE_SPEED = 150;       // ms per character (~6.7 chars/sec, deliberately slow)
-  const LINE_PAUSE = 0;         // ms between line 1 and line 2 (continuous)
+  const LINE_PAUSE = 10;        // ms between line 1 and line 2 (tiny breath)
   const heroEl = $('#hero');
   const heroQa = $('#hero-q-a'), heroQb = $('#hero-q-b');
   const caretA = $('#hero-caret-a'), caretB = $('#hero-caret-b');
