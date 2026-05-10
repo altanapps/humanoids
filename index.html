@@ -109,9 +109,18 @@
   .hero-meta .value { font-family: 'DM Serif Display', serif; font-style: italic; font-weight: 400; font-size: 32px; letter-spacing: -0.02em; color: var(--white); line-height: 1; }
   .hero-meta .sub { font-family: 'Geist Mono', monospace; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver-dim); margin-top: 2px; }
 
-  /* Rotating headline transition */
-  .hero h1 { transition: opacity .35s var(--ease), transform .35s var(--ease); }
-  .hero.swapping h1, .hero.swapping .hero-meta .col { opacity: 0; transform: translateY(8px); }
+  /* Rotating headline + typewriter caret */
+  .hero h1 { min-height: 1.7em; }
+  .hero h1 .caret {
+    display: inline-block; width: 0.04em; min-width: 3px; height: 0.85em;
+    background: var(--white); margin-left: 0.06em; vertical-align: -0.08em;
+    opacity: 0;
+    animation: caret-blink 1s steps(2, end) infinite;
+  }
+  .hero h1 .caret.active { opacity: 1; }
+  @keyframes caret-blink { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }
+  .hero-meta .col { transition: opacity .35s var(--ease), transform .35s var(--ease); }
+  .hero.swapping .hero-meta .col { opacity: 0; transform: translateY(8px); }
 
   /* Rotation progress bar */
   .hero-progress { position: absolute; left: 32px; right: 32px; bottom: 24px; height: 1px; background: var(--border); overflow: hidden; }
@@ -471,7 +480,11 @@
 
 <section class="hero reveal" id="hero">
   <div class="hero-eyebrow">// THE BUYER'S DIRECTORY · 2026</div>
-  <h1><span id="hero-q-a">Which humanoid</span><br/>should I <span class="grad" id="hero-q-b">buy?</span></h1>
+  <h1>
+    <span id="hero-q-a"></span><span class="caret" id="hero-caret-a"></span>
+    <br/>
+    <span class="grad" id="hero-q-b"></span><span class="caret" id="hero-caret-b"></span>
+  </h1>
   <div class="hero-dots" id="hero-dots" aria-label="Question selector"></div>
   <div class="hero-meta" id="hero-meta"></div>
   <div class="hero-progress"><div class="bar" id="hero-progress-bar"></div></div>
@@ -921,10 +934,13 @@ window.HUMANOID_CONFIG = {
       },
     },
   ];
-  let heroIdx = 0, heroPaused = false, heroStart = Date.now();
-  const HERO_INTERVAL = 6500;
+  let heroIdx = 0, heroPaused = false, heroStart = Date.now(), heroTyping = false, heroTypeToken = 0;
+  const HERO_INTERVAL = 120000; // 2 minutes
+  const TYPE_SPEED = 45;        // ms per character
+  const LINE_PAUSE = 220;       // ms between line 1 and line 2
   const heroEl = $('#hero');
   const heroQa = $('#hero-q-a'), heroQb = $('#hero-q-b');
+  const caretA = $('#hero-caret-a'), caretB = $('#hero-caret-b');
   const heroMeta = $('#hero-meta');
   const heroBar = $('#hero-progress-bar');
   const heroDots = $('#hero-dots');
@@ -934,47 +950,80 @@ window.HUMANOID_CONFIG = {
     const d = document.createElement('button');
     d.className = 'dot' + (i === 0 ? ' active' : '');
     d.setAttribute('aria-label', `Question ${i + 1}`);
-    d.addEventListener('click', () => { heroIdx = i; renderHero(); heroStart = Date.now(); });
+    d.addEventListener('click', () => { heroIdx = i; renderHero(); });
     heroDots.appendChild(d);
   });
 
-  function renderHero() {
+  function typeWrite(el, text, speed, token) {
+    return new Promise(resolve => {
+      el.textContent = '';
+      let i = 0;
+      const step = () => {
+        if (token !== heroTypeToken) return resolve(); // aborted by a newer render
+        if (i < text.length) {
+          el.textContent += text[i++];
+          setTimeout(step, speed);
+        } else resolve();
+      };
+      step();
+    });
+  }
+
+  async function renderHero() {
+    heroTypeToken++;
+    const token = heroTypeToken;
     const q = heroQuestions[heroIdx];
     const filtered = q.filter ? data.filter(q.filter) : data;
+
+    // Swap stats with fade
     heroEl.classList.add('swapping');
-    setTimeout(() => {
-      heroQa.textContent = q.a;
-      heroQb.textContent = q.b;
-      const stats = q.stats(filtered);
-      heroMeta.innerHTML = stats.map(s => `
-        <div class="col">
-          <div class="label">${s.lbl}</div>
-          <div class="value">${s.val}</div>
-          ${s.sub ? `<div class="sub">${s.sub}</div>` : ''}
-        </div>
-      `).join('');
-      [...heroDots.children].forEach((d, i) => d.classList.toggle('active', i === heroIdx));
-      heroEl.classList.remove('swapping');
-    }, 320);
+    await new Promise(r => setTimeout(r, 320));
+    if (token !== heroTypeToken) return; // a newer render fired
+
+    const stats = q.stats(filtered);
+    heroMeta.innerHTML = stats.map(s => `
+      <div class="col">
+        <div class="label">${s.lbl}</div>
+        <div class="value">${s.val}</div>
+        ${s.sub ? `<div class="sub">${s.sub}</div>` : ''}
+      </div>
+    `).join('');
+    [...heroDots.children].forEach((d, i) => d.classList.toggle('active', i === heroIdx));
+    heroEl.classList.remove('swapping');
+
+    // Typewriter: clear both, blink caret on line 1, type a, then caret on line 2, type b
+    heroQa.textContent = '';
+    heroQb.textContent = '';
+    caretA.classList.add('active');
+    caretB.classList.remove('active');
+    heroTyping = true;
+    await typeWrite(heroQa, q.a, TYPE_SPEED, token);
+    if (token !== heroTypeToken) return;
+    caretA.classList.remove('active');
+    await new Promise(r => setTimeout(r, LINE_PAUSE));
+    if (token !== heroTypeToken) return;
+    caretB.classList.add('active');
+    await typeWrite(heroQb, q.b, TYPE_SPEED, token);
+    if (token !== heroTypeToken) return;
+    heroTyping = false;
+    // Start the 2-minute timer fresh once the question is fully written
+    heroStart = Date.now();
   }
   renderHero();
 
-  // Pause on hover; track progress
   heroEl.addEventListener('mouseenter', () => heroPaused = true);
-  heroEl.addEventListener('mouseleave', () => { heroPaused = false; heroStart = Date.now() - 0; });
-  let lastFrame = Date.now();
+  heroEl.addEventListener('mouseleave', () => { heroPaused = false; });
   function tick() {
-    if (!heroPaused) {
+    if (!heroPaused && !heroTyping) {
       const elapsed = Date.now() - heroStart;
       const pct = Math.min(100, (elapsed / HERO_INTERVAL) * 100);
       heroBar.style.width = pct + '%';
       if (elapsed >= HERO_INTERVAL) {
         heroIdx = (heroIdx + 1) % heroQuestions.length;
-        heroStart = Date.now();
         renderHero();
       }
-    } else {
-      // Hold progress bar in place while paused
+    } else if (heroTyping) {
+      heroBar.style.width = '0%';
     }
     requestAnimationFrame(tick);
   }
