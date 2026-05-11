@@ -92,6 +92,10 @@ function serveFile(filePath, res) {
     res.setHeader('Cache-Control', 'public, max-age=60, must-revalidate');
   }
   res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+  res.setHeader('Permissions-Policy', 'geolocation=(), camera=(), microphone=(), payment=()');
   fs.createReadStream(filePath).pipe(res);
 }
 
