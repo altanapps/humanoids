@@ -555,8 +555,8 @@
 
 <section class="featured-strip reveal" id="featured-strip">
   <div class="featured-strip-head">
-    <span class="lbl">// MATCHING</span>
-    <span class="title" id="featured-strip-title">Top picks for this question</span>
+    <span class="lbl">// FEATURED</span>
+    <span class="title">The marquee names — most funded, shipping or piloting today</span>
   </div>
   <div class="featured-strip-row" id="featured-strip-row"></div>
 </section>
@@ -1041,23 +1041,17 @@ window.HUMANOID_CONFIG = {
   }
 
   // ── Featured strip ────────────────────────────────────────────
-  // Shows 6 robots matching the current rotating question.
-  // Updates as the question rotates.
-  function renderFeaturedStrip(question, filtered) {
+  // Static curation: top 8 most-funded commercial or pilot-stage robots.
+  // Rendered once at init — independent of the rotating hero question.
+  function renderFeaturedStrip() {
     const row = document.getElementById('featured-strip-row');
-    const titleEl = document.getElementById('featured-strip-title');
-    if (!row || !titleEl) return;
+    if (!row) return;
 
-    const top = [...filtered].sort((a, b) => {
-      const so = { shipping_now: 0, preorder: 1, pilot_only: 2, research_only: 3, retired: 4 };
-      const sa = so[a.availability_status] ?? 5, sb = so[b.availability_status] ?? 5;
-      if (sa !== sb) return sa - sb;
-      const af = a.funding_usd_m || 0, bf = b.funding_usd_m || 0;
-      if (af !== bf) return bf - af;
-      return (a.company || '').localeCompare(b.company || '');
-    }).slice(0, 8);
-
-    titleEl.textContent = `${filtered.length} matches · top picks`;
+    const candidates = data.filter(r =>
+      (r.availability_status === 'shipping_now' || r.availability_status === 'pilot_only') &&
+      r.funding_usd_m
+    );
+    const top = candidates.sort((a, b) => (b.funding_usd_m || 0) - (a.funding_usd_m || 0)).slice(0, 8);
 
     row.innerHTML = top.map(r => {
       const price = fmtPrice(r);
@@ -1085,6 +1079,7 @@ window.HUMANOID_CONFIG = {
       if (robot) openDetail(robot);
     };
   }
+  renderFeaturedStrip();
 
   async function renderHero() {
     heroTypeToken++;
@@ -1092,8 +1087,7 @@ window.HUMANOID_CONFIG = {
     const q = heroQuestions[heroIdx];
     const filtered = q.filter ? data.filter(q.filter) : data;
 
-    // Update the featured strip in parallel with the typewriter
-    renderFeaturedStrip(q, filtered);
+    // (Featured strip is static — rendered once at init, not per question)
 
     // Clear headline and start typing IMMEDIATELY — no empty-state delay.
     // Caret on line 1 active right away so something is visible the instant we swap.
