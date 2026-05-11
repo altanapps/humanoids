@@ -120,6 +120,26 @@
   .hero-meta .value { font-family: 'DM Serif Display', serif; font-style: italic; font-weight: 400; font-size: 32px; letter-spacing: -0.02em; color: var(--white); line-height: 1; }
   .hero-meta .sub { font-family: 'Geist Mono', monospace; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver-dim); margin-top: 2px; }
 
+  /* Hero scroll-down hint */
+  .scroll-hint {
+    position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+    font-family: 'Geist Mono', monospace; font-size: 9px; letter-spacing: 0.32em;
+    text-transform: uppercase; color: var(--silver-dim); pointer-events: none;
+    opacity: 0; transition: opacity .5s var(--ease);
+  }
+  .hero:hover .scroll-hint, .scroll-hint.visible { opacity: 1; }
+  .scroll-hint .arr {
+    display: block; width: 10px; height: 10px;
+    border-right: 1px solid var(--silver); border-bottom: 1px solid var(--silver);
+    transform: rotate(45deg); animation: scroll-hint-bounce 1.6s var(--ease) infinite;
+  }
+  @keyframes scroll-hint-bounce {
+    0%, 100% { transform: translateY(0) rotate(45deg); opacity: 0.4; }
+    50% { transform: translateY(6px) rotate(45deg); opacity: 1; }
+  }
+  @media (max-width: 720px) { .scroll-hint { display: none; } }
+
   /* Featured robot strip below the hero (tied to rotating question) */
   .featured-strip { width: 92vw; max-width: 1600px; margin: 32px auto 0; }
   .featured-strip-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; flex-wrap: wrap; }
@@ -575,6 +595,10 @@
     <a href="#directory" class="hero-cta" id="hero-cta-browse" data-nav-view="grid">See all <span id="hero-cta-count">174</span> robots <span class="arr">→</span></a>
     <a href="#directory" class="hero-cta-secondary" data-nav-view="map">or explore by country ↓</a>
   </div>
+  <div class="scroll-hint" id="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <span class="arr"></span>
+  </div>
 </section>
 
 <section class="featured-strip reveal" id="featured-strip">
@@ -879,8 +903,8 @@
 </div>
 
 <script src="data/robots.js?v=308-1778442375384"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/topojson-client@3" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
 <script>
 // ─── Configurable endpoints ──────────────────────────────────────
 // Replace WAITLIST_ENDPOINT with your Formspree / Tally / own URL after deploy.
@@ -922,6 +946,14 @@ window.HUMANOID_CONFIG = {
 
   const countries = [...new Set(data.map(r => r.country))].sort();
   for (const c of countries) { const o = document.createElement('option'); o.value = c; o.textContent = c; country.appendChild(o); }
+
+  // Hide the scroll hint once the user has scrolled past the hero
+  const scrollHint = document.getElementById('scroll-hint');
+  if (scrollHint) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) scrollHint.style.opacity = '0';
+    }, { passive: true });
+  }
 
   // Inject the live total wherever it appears in the static markup
   const heroCtaCount = document.getElementById('hero-cta-count');
