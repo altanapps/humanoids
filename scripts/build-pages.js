@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const SITE_URL = process.env.SITE_URL || 'https://humanoid.directory';
+const SITE_URL = process.env.SITE_URL || 'https://whichhumanoid.ai';
 const robots = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'robots.json'), 'utf8'));
 
 function slug(s) { return String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); }
@@ -258,7 +258,7 @@ ${commonHead({ title, description, url })}
 </div>
 
 <footer>
-  <p>Part of <a href="../">humanoid.directory</a>. The complete reference of humanoid robots: pricing, availability, lead times, verified deployments. <a href="../">View the full catalog →</a></p>
+  <p>Part of <a href="../">whichhumanoid.ai</a>. The complete reference of humanoid robots: pricing, availability, lead times, verified deployments. <a href="../">View the full catalog →</a></p>
   <p style="margin-top:16px;"><a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="mailto:a@nuff.tech">Contact</a></p>
 </footer>
 </body>

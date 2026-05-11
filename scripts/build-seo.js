@@ -12,7 +12,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const SITE_URL = process.env.SITE_URL || 'https://humanoid.directory';
+const SITE_URL = process.env.SITE_URL || 'https://whichhumanoid.ai';
 
 function slug(s) {
   return String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
