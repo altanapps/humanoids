@@ -2181,6 +2181,70 @@ window.ROBOTS = [
     "verified_deployments": []
   },
   {
+    "company": "Rotaku",
+    "robot_name": "Domo",
+    "country": "USA",
+    "hq_city": null,
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": 90,
+    "weight_kg": 20,
+    "payload_kg": null,
+    "dof": 23,
+    "battery_hours": 2,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.rotaku.ai/",
+    "image_url": "images/rotaku--domo.png",
+    "image_source": "Rotaku company website (rotaku.ai)",
+    "short_description": "Developer-ready 90 cm humanoid platform designed for whole-body control, manipulation research, and embodied AI, with modular architecture and policy training pipelines.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
+    "company": "Rotaku",
+    "robot_name": "Domo Plus",
+    "country": "USA",
+    "hq_city": null,
+    "year_founded": null,
+    "year_revealed": 2025,
+    "height_cm": 130,
+    "weight_kg": 35,
+    "payload_kg": null,
+    "dof": 25,
+    "battery_hours": 2,
+    "walking_speed_ms": null,
+    "status": "commercial",
+    "funding_usd_m": null,
+    "key_customers_or_pilots": [],
+    "website": "https://www.rotaku.ai/",
+    "image_url": "images/rotaku--domo-plus.png",
+    "image_source": "Rotaku company website (rotaku.ai)",
+    "short_description": "Larger 130 cm sibling of Rotaku Domo, with 25 DoF and the same modular architecture for whole-body control and embodied AI research.",
+    "price_usd": null,
+    "price_note": null,
+    "availability_status": "shipping_now",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "USA"
+    ],
+    "use_cases": [
+      "research_education"
+    ],
+    "verified_deployments": []
+  },
+  {
     "company": "Spirit AI",
     "robot_name": "Moz1",
     "country": "China",
