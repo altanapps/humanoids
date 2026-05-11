@@ -116,6 +116,30 @@
   .hero-meta .value { font-family: 'DM Serif Display', serif; font-style: italic; font-weight: 400; font-size: 32px; letter-spacing: -0.02em; color: var(--white); line-height: 1; }
   .hero-meta .sub { font-family: 'Geist Mono', monospace; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver-dim); margin-top: 2px; }
 
+  /* Featured robot strip below the hero (tied to rotating question) */
+  .featured-strip { width: 92vw; max-width: 1600px; margin: 32px auto 0; }
+  .featured-strip-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; flex-wrap: wrap; }
+  .featured-strip-head .lbl { font-family: 'Geist Mono', monospace; font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dim); }
+  .featured-strip-head .title { font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver-faint); transition: opacity .25s var(--ease); }
+  .featured-strip-head .title.swap { opacity: 0; }
+  .featured-strip-row { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 4px; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+  .featured-strip-row::-webkit-scrollbar { height: 6px; }
+  .featured-strip-row::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  .featured-strip-row::-webkit-scrollbar-track { background: transparent; }
+  .mini-card { flex-shrink: 0; width: 220px; background: var(--glass); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; cursor: pointer; transition: all .25s var(--ease); scroll-snap-align: start; display: flex; flex-direction: column; text-decoration: none; }
+  .mini-card:hover { border-color: var(--border-strong); transform: translateY(-2px); background: var(--glass-2); }
+  .mini-card .mini-photo { aspect-ratio: 4/3; background: var(--obsidian-1); position: relative; overflow: hidden; border-bottom: 1px solid var(--border); }
+  .mini-card .mini-photo img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1); opacity: 0.9; mix-blend-mode: luminosity; transition: all .3s var(--ease); }
+  .mini-card:hover .mini-photo img { filter: grayscale(0); opacity: 1; mix-blend-mode: normal; }
+  .mini-card .mini-price { position: absolute; top: 8px; left: 8px; font-family: 'Geist Mono', monospace; font-size: 9px; padding: 3px 7px; border-radius: 999px; background: var(--white); color: var(--obsidian); font-weight: 600; letter-spacing: 0.06em; }
+  .mini-card .mini-status { position: absolute; top: 8px; right: 8px; display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--border-strong); padding: 3px 8px; border-radius: 999px; background: rgba(8,8,8,0.6); backdrop-filter: blur(12px); font-family: 'Geist Mono', monospace; font-size: 8px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver); }
+  .mini-card .mini-status .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--white); }
+  .mini-card .mini-body { padding: 10px 12px; }
+  .mini-card .mini-name { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 16px; color: var(--white); line-height: 1.1; }
+  .mini-card .mini-meta { font-family: 'Geist Mono', monospace; font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--silver-dim); margin-top: 4px; }
+  .mini-card.swap { opacity: 0.3; }
+  @media (max-width: 720px) { .mini-card { width: 180px; } .featured-strip { margin-top: 24px; } }
+
   /* Hero CTA row — guides the user into the directory */
   .hero-cta-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 32px; }
   .hero-cta { display: inline-flex; align-items: center; gap: 10px; background: var(--silver-grad); color: var(--obsidian); font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; padding: 14px 22px; border-radius: 999px; border: 0; cursor: pointer; text-decoration: none; transition: all .25s var(--ease); }
@@ -527,6 +551,14 @@
     <a href="#directory" class="hero-cta" id="hero-cta-browse" data-nav-view="grid">See all <span id="hero-cta-count">174</span> robots <span class="arr">→</span></a>
     <a href="#directory" class="hero-cta-secondary" data-nav-view="map">or explore by country ↓</a>
   </div>
+</section>
+
+<section class="featured-strip reveal" id="featured-strip">
+  <div class="featured-strip-head">
+    <span class="lbl">// MATCHING</span>
+    <span class="title" id="featured-strip-title">Top picks for this question</span>
+  </div>
+  <div class="featured-strip-row" id="featured-strip-row"></div>
 </section>
 
 <form class="capture reveal" id="hero-capture">
@@ -1008,11 +1040,60 @@ window.HUMANOID_CONFIG = {
     });
   }
 
+  // ── Featured strip ────────────────────────────────────────────
+  // Shows 6 robots matching the current rotating question.
+  // Updates as the question rotates.
+  function renderFeaturedStrip(question, filtered) {
+    const row = document.getElementById('featured-strip-row');
+    const titleEl = document.getElementById('featured-strip-title');
+    if (!row || !titleEl) return;
+
+    const top = [...filtered].sort((a, b) => {
+      const so = { shipping_now: 0, preorder: 1, pilot_only: 2, research_only: 3, retired: 4 };
+      const sa = so[a.availability_status] ?? 5, sb = so[b.availability_status] ?? 5;
+      if (sa !== sb) return sa - sb;
+      const af = a.funding_usd_m || 0, bf = b.funding_usd_m || 0;
+      if (af !== bf) return bf - af;
+      return (a.company || '').localeCompare(b.company || '');
+    }).slice(0, 8);
+
+    titleEl.textContent = `${filtered.length} matches · top picks`;
+
+    row.innerHTML = top.map(r => {
+      const price = fmtPrice(r);
+      const img = r.image_url
+        ? `<img src="${escapeHtml(r.image_url)}" alt="${escapeHtml(r.robot_name)}" loading="lazy" onerror="this.style.display='none'" />`
+        : '';
+      return `
+        <a class="mini-card" data-id="${escapeHtml(r._id)}">
+          <div class="mini-photo">${img}
+            ${price ? `<span class="mini-price">${price}</span>` : ''}
+            <span class="mini-status ${r.availability_status}"><span class="dot"></span>${availLabel(r.availability_status)}</span>
+          </div>
+          <div class="mini-body">
+            <div class="mini-name">${escapeHtml(r.robot_name)}</div>
+            <div class="mini-meta">${escapeHtml(r.company)} · ${escapeHtml(r.country)}</div>
+          </div>
+        </a>
+      `;
+    }).join('');
+
+    row.onclick = e => {
+      const card = e.target.closest('[data-id]');
+      if (!card) return;
+      const robot = data.find(r => r._id === card.dataset.id);
+      if (robot) openDetail(robot);
+    };
+  }
+
   async function renderHero() {
     heroTypeToken++;
     const token = heroTypeToken;
     const q = heroQuestions[heroIdx];
     const filtered = q.filter ? data.filter(q.filter) : data;
+
+    // Update the featured strip in parallel with the typewriter
+    renderFeaturedStrip(q, filtered);
 
     // Clear headline and start typing IMMEDIATELY — no empty-state delay.
     // Caret on line 1 active right away so something is visible the instant we swap.
