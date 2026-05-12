@@ -910,11 +910,11 @@
 // Replace WAITLIST_ENDPOINT with your Formspree / Tally / own URL after deploy.
 // If empty, the form falls back to mailto: a@nuff.tech.
 window.HUMANOID_CONFIG = {
-  // Examples:
-  //   Formspree:   'https://formspree.io/f/YOUR_FORM_ID'
-  //   Tally:       'https://api.tally.so/forms/YOUR_FORM_ID/submit'
-  //   Custom API:  '/api/waitlist'
-  WAITLIST_ENDPOINT: '',
+  // Loops.so newsletter form endpoint — collects all 4 submission types
+  // (waitlist, shortlist, submission, bug). Loops accepts URL-encoded form
+  // posts; custom properties (robotName, company, country, source) auto-populate
+  // on the contact if those names exist in Audience -> Contact Properties.
+  WAITLIST_ENDPOINT: 'https://app.loops.so/api/newsletter-form/cmp2o65ov0e9y0i1n1ibg008b',
   CONTACT_EMAIL: 'a@nuff.tech',
 };
 </script>
@@ -1260,7 +1260,14 @@ window.HUMANOID_CONFIG = {
     const id = $('#shortlist-pending').value;
     if (!email || !id) return;
     localStorage.setItem(EMAIL_KEY, email);
-    fireMailto(`Shortlist email captured`, [`Email: ${email}`, `Saved robot: ${id}`, `Submitted: ${new Date().toISOString()}`].join('\n'));
+    const savedRobot = data.find(r => r._id === id);
+    fireSubmission('shortlist', {
+      email,
+      robot_id: id,
+      robot_name: savedRobot?.robot_name,
+      company: savedRobot?.company,
+      country: savedRobot?.country,
+    }, `Shortlist email captured`, [`Email: ${email}`, `Saved robot: ${id}`, `Submitted: ${new Date().toISOString()}`].join('\n'));
     if (window.plausible) window.plausible('Email Saved For Shortlist', { props: { source: 'shortlist' } });
     commitSave(id);
     closeAllModals();
@@ -1529,17 +1536,31 @@ window.HUMANOID_CONFIG = {
   // Returns a promise that resolves regardless of method (best-effort delivery).
   async function fireSubmission(kind, payload, mailtoSubject, mailtoBody) {
     const endpoint = (window.HUMANOID_CONFIG && window.HUMANOID_CONFIG.WAITLIST_ENDPOINT) || '';
-    if (endpoint) {
+    const email = payload.email;
+
+    // POST to Loops only when we have an email + endpoint
+    if (endpoint && email) {
       try {
+        const params = new URLSearchParams();
+        params.set('email', email);
+        params.set('userGroup', '');
+        params.set('mailingLists', '');
+        params.set('source', kind);
+        if (payload.robot_name) params.set('robotName', payload.robot_name);
+        else if (payload.name) params.set('robotName', payload.name);
+        if (payload.company) params.set('company', payload.company);
+        if (payload.country) params.set('country', payload.country);
+
         const res = await fetch(endpoint, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify({ kind, ...payload, ts: new Date().toISOString() }),
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: params.toString(),
         });
         if (res.ok) return { ok: true, mode: 'endpoint' };
       } catch {}
     }
-    // Fallback: mailto via hidden iframe
+
+    // Fallback: mailto (anonymous submissions, network errors, no endpoint)
     const contact = (window.HUMANOID_CONFIG && window.HUMANOID_CONFIG.CONTACT_EMAIL) || 'a@nuff.tech';
     const mailto = `mailto:${contact}?subject=${encodeURIComponent(mailtoSubject)}&body=${encodeURIComponent(mailtoBody)}`;
     const iframe = document.createElement('iframe');
@@ -1592,7 +1613,9 @@ window.HUMANOID_CONFIG = {
     e.preventDefault();
     const name = $('#submit-name').value.trim(), company = $('#submit-company').value.trim(), country = $('#submit-country').value.trim(), statusSel = $('#submit-status').value, website = $('#submit-website').value.trim(), desc = $('#submit-description').value.trim(), notes = $('#submit-notes').value.trim(), email = $('#submit-email').value.trim();
     if (!name || !company || !country || !desc) return;
-    fireMailto(`Robot submission: ${name} (${company})`, [`New robot submitted for review`, ``, `Robot: ${name}`, `Company: ${company}`, `Country: ${country}`, `Status: ${statusSel || '(not specified)'}`, `Website: ${website || '(none)'}`, ``, `Description:`, desc, ``, `Notes:`, notes || '(none)', ``, `Submitter: ${email || '(anonymous)'}`, `Submitted: ${new Date().toISOString()}`].join('\n'));
+    fireSubmission('submission', { email, name, company, country },
+      `Robot submission: ${name} (${company})`,
+      [`New robot submitted for review`, ``, `Robot: ${name}`, `Company: ${company}`, `Country: ${country}`, `Status: ${statusSel || '(not specified)'}`, `Website: ${website || '(none)'}`, ``, `Description:`, desc, ``, `Notes:`, notes || '(none)', ``, `Submitter: ${email || '(anonymous)'}`, `Submitted: ${new Date().toISOString()}`].join('\n'));
     try { const subs = JSON.parse(localStorage.getItem('humanoid_directory_submissions') || '[]'); subs.push({ name, company, country, ts: Date.now() }); localStorage.setItem('humanoid_directory_submissions', JSON.stringify(subs)); } catch {}
     if (window.plausible) window.plausible('Robot Submission', { props: { country, status: statusSel || 'unspecified' } });
     $('#submit-success-name').textContent = `${name} (${company})`;
@@ -1628,7 +1651,7 @@ window.HUMANOID_CONFIG = {
       ``,
       `Submitted: ${new Date().toISOString()}`,
     ].join('\n');
-    fireMailto(subject, body);
+    fireSubmission('bug', { email }, subject, body);
     if (window.plausible) window.plausible('Bug Report', { props: { hasEmail: email ? 'yes' : 'no' } });
     $('#bug-form').style.display = 'none';
     $('#bug-success').style.display = '';
