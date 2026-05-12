@@ -54,7 +54,9 @@ function pageHead({ title, description, url, image }) {
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Geist+Mono:wght@100..900&family=Inter:wght@300..600&display=swap" rel="stylesheet" />`;
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Geist+Mono:wght@100..900&family=Inter:wght@300..600&display=swap" rel="stylesheet" />
+<script defer data-domain="whichhumanoid.ai" src="https://plausible.io/js/script.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>`;
 }
 
 function pageStyles() {
