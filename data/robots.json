@@ -1403,14 +1403,14 @@
     "battery_hours": null,
     "walking_speed_ms": null,
     "status": "commercial",
-    "funding_usd_m": null,
+    "funding_usd_m": 21,
     "key_customers_or_pilots": [
       "automotive production lines"
     ],
     "website": "https://www.magiclab.top/en/human",
     "image_url": "images/magiclab--magicbot-gen1.webp",
     "image_source": "humanoid.guide MagicBot page",
-    "short_description": "Full-size general-purpose humanoid with 42 DoF, 7.5 kg per-arm payload, 40 kg static body load, deployed on production lines.",
+    "short_description": "MagicLab flagship humanoid; selected as Official Intelligent Robot Strategic Partner of the 2026 CCTV Spring Festival Gala. 42-DoF industrial body with 525 Nm peak torque, 7.5 kg single-arm payload, 5-hour runtime.",
     "price_usd": null,
     "price_note": null,
     "availability_status": "shipping_now",
@@ -1419,9 +1419,17 @@
       "China"
     ],
     "use_cases": [
-      "industrial_manufacturing"
+      "industrial_manufacturing",
+      "entertainment_events"
     ],
-    "verified_deployments": []
+    "verified_deployments": [
+      {
+        "customer": "CCTV Spring Festival Gala 2026",
+        "year": 2026,
+        "details": "Official Intelligent Robot Strategic Partner of the 2026 CCTV Spring Festival Gala (春晚) — the most-watched television broadcast in the world.",
+        "source": "https://www.magiclab.top/"
+      }
+    ]
   },
   {
     "company": "Noble Machines",
@@ -3183,7 +3191,7 @@
     "company": "MagicLab",
     "robot_name": "MagicBot",
     "country": "China",
-    "hq_city": "Beijing",
+    "hq_city": "Wuxi",
     "year_founded": 2024,
     "year_revealed": 2024,
     "height_cm": null,
@@ -3193,7 +3201,7 @@
     "battery_hours": 5,
     "walking_speed_ms": null,
     "status": "pilot",
-    "funding_usd_m": null,
+    "funding_usd_m": 21,
     "key_customers_or_pilots": [
       "industrial deployments"
     ],
@@ -6695,7 +6703,7 @@
     "company": "MagicLab",
     "robot_name": "MagicBot Z1",
     "country": "China",
-    "hq_city": "Beijing",
+    "hq_city": "Wuxi",
     "year_founded": 2024,
     "year_revealed": 2025,
     "height_cm": 140,
@@ -6705,7 +6713,7 @@
     "battery_hours": null,
     "walking_speed_ms": null,
     "status": "prototype",
-    "funding_usd_m": null,
+    "funding_usd_m": 21,
     "key_customers_or_pilots": [],
     "website": "https://www.magiclab.top/",
     "image_url": "images/magiclab--magicbot-z1.webp",
@@ -6725,7 +6733,7 @@
     "company": "MagicLab",
     "robot_name": "MagicBot X1",
     "country": "China",
-    "hq_city": null,
+    "hq_city": "Wuxi",
     "year_founded": null,
     "year_revealed": 2026,
     "height_cm": 180,
@@ -6735,7 +6743,7 @@
     "battery_hours": null,
     "walking_speed_ms": null,
     "status": "prototype",
-    "funding_usd_m": null,
+    "funding_usd_m": 21,
     "key_customers_or_pilots": [],
     "website": null,
     "image_url": null,
