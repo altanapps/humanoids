@@ -2634,6 +2634,39 @@
     ]
   },
   {
+    "company": "Unitree Robotics",
+    "robot_name": "GD01",
+    "country": "China",
+    "hq_city": "Hangzhou",
+    "year_founded": 2016,
+    "year_revealed": 2026,
+    "height_cm": null,
+    "weight_kg": 500,
+    "payload_kg": null,
+    "dof": null,
+    "battery_hours": null,
+    "walking_speed_ms": null,
+    "status": "preorder",
+    "funding_usd_m": 155,
+    "key_customers_or_pilots": [],
+    "website": "https://www.unitree.com/",
+    "image_url": "images/unitree-robotics--gd01.jpg",
+    "image_source": "CN EV Post (cnevpost.com)",
+    "short_description": "Worlds first mass-produced manned mecha (unveiled 12 May 2026). Transforms between bipedal humanoid and quadrupedal civilian-vehicle form; ~500 kg with pilot. Halo / flex product rather than a volume play — Unitree’s R1 remains the strategically central recent move.",
+    "price_usd": 574090,
+    "price_note": "From RMB 3.9M (~$574K). Production-ready, classified as a civilian vehicle in China.",
+    "availability_status": "preorder",
+    "lead_time_weeks": null,
+    "support_regions": [
+      "China"
+    ],
+    "use_cases": [
+      "entertainment_events",
+      "agriculture_outdoor"
+    ],
+    "verified_deployments": []
+  },
+  {
     "company": "1X Technologies",
     "robot_name": "Eve",
     "country": "USA",
