@@ -1532,6 +1532,18 @@ window.HUMANOID_CONFIG = {
         </div>
       </div>
       <div class="modal-body">
+        ${typeof r.editorial_score === 'number' ? `
+          <div class="modal-section" style="grid-column: 1 / -1;">
+            <h3>// Editor's verdict</h3>
+            <div class="editorial-block">
+              <div class="head">
+                <span class="lbl">whichhumanoid.ai score</span>
+                <span class="score">${r.editorial_score.toFixed(1)}<span class="max">/10</span></span>
+              </div>
+              <div class="verdict">${escapeHtml(r.editorial_verdict || '')}</div>
+            </div>
+          </div>
+        ` : ''}
         <div class="modal-section"><h3>// Specs</h3><div class="modal-specs">${specs.map(([k,v]) => `<div class="row"><span class="k">${k}</span><span class="v">${v}</span></div>`).join('')}</div></div>
         <div class="modal-section"><h3>// Verified deployments</h3>${deployments}</div>
       </div>
