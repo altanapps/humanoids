@@ -187,6 +187,22 @@ function renderRobotPage(r) {
       availability: availSchema(r.availability_status), url,
     };
   }
+  if (typeof r.editorial_score === 'number') {
+    product.aggregateRating = {
+      '@type': 'AggregateRating',
+      ratingValue: r.editorial_score,
+      bestRating: 10,
+      worstRating: 0,
+      ratingCount: 1,
+      reviewCount: 1,
+    };
+    product.review = {
+      '@type': 'Review',
+      reviewRating: { '@type': 'Rating', ratingValue: r.editorial_score, bestRating: 10 },
+      author: { '@type': 'Organization', name: 'whichhumanoid.ai' },
+      reviewBody: r.editorial_verdict,
+    };
+  }
 
   const video = videoByKey.get(r.company + '||' + r.robot_name);
   let videoSchema = null;
@@ -299,6 +315,16 @@ ${videoSchema ? `<script type="application/ld+json">${JSON.stringify(videoSchema
   ${useCaseTags ? `<div class="uc-tags">${useCaseTags}</div>` : ''}
 
   ${r.short_description ? `<p class="lede">${escapeHtml(r.short_description)}</p>` : ''}
+
+  ${typeof r.editorial_score === 'number' ? `
+    <div style="background:var(--glass);border:1px solid var(--border);border-left:3px solid var(--white);border-radius:8px;padding:24px 28px;margin:32px 0;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+        <span style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.32em;text-transform:uppercase;color:var(--silver-dim);">// Editor's verdict · whichhumanoid.ai</span>
+        <span style="font-family:'DM Serif Display',serif;font-style:italic;font-size:56px;line-height:1;color:var(--white);letter-spacing:-0.02em;">${r.editorial_score.toFixed(1)}<span style="font-family:'Geist Mono',monospace;font-style:normal;font-size:14px;color:var(--silver-dim);letter-spacing:0.06em;margin-left:6px;">/10</span></span>
+      </div>
+      <div style="font-family:'DM Serif Display',serif;font-style:italic;font-size:22px;line-height:1.4;color:var(--white);letter-spacing:-0.01em;">${escapeHtml(r.editorial_verdict || '')}</div>
+    </div>
+  ` : ''}
 
   <div class="price-row">
     <div class="price-big">${price || 'Contact'}</div>

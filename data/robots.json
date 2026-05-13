@@ -173,7 +173,9 @@
         "details": "Digits deployed at Schaeffler auto-parts factory carrying bins.",
         "source": "https://www.deeplearning.ai/the-batch/agiliy-digits-humanoid-robots-fetch-and-carry-bins-at-a-schaeffler-auto-parts-factory-displacing-humans-into-higher-level-jobs/"
       }
-    ]
+    ],
+    "editorial_score": 8,
+    "editorial_verdict": "First and still most-proven commercially deployed humanoid in US logistics. The bird-legs read weird but the GXO and Amazon deployments are not theoretical. Less iconic than Atlas; more real."
   },
   {
     "company": "AI2 Robotics (Zhifang)",
@@ -955,7 +957,9 @@
         "details": "GR-1 targeted at rehabilitation; Fourier built reputation in exoskeleton/rehab space before pivoting to humanoids.",
         "source": "https://www.fftai.com/products-gr1"
       }
-    ]
+    ],
+    "editorial_score": 6.8,
+    "editorial_verdict": "Solid Tier-2 player. 40 DOF, 50kg payload, $150K. Healthcare positioning is interesting but underdefined. No marquee deployment yet to anchor the story."
   },
   {
     "company": "Fourier Intelligence",
@@ -2364,7 +2368,9 @@
         "details": "$37M (264M yuan) contract to deploy Walker S2 robots at border checkpoints — first government/security deployment of humanoids.",
         "source": "https://www.facebook.com/TechnologyInnovation1/posts/chinas-ubtech-robotics-has-signed-a-264-million-yuan-us37-million-deal-to-deploy/1161464002806911/"
       }
-    ]
+    ],
+    "editorial_score": 8.3,
+    "editorial_verdict": "China’s commercial leader. Autonomous battery swap is a quiet breakthrough; BYD, Geely, FAW-Volkswagen, Nio orders make the numbers real. $112M+ in confirmed orders by late 2025. Unitree gets the headlines; Walker S2 does the work."
   },
   {
     "company": "Unitree Robotics",
@@ -2498,7 +2504,9 @@
         "details": "Most widely-purchased full-size humanoid for research; ships to 40+ countries via authorized dealers.",
         "source": "https://shop.unitree.com/products/unitree-g1"
       }
-    ]
+    ],
+    "editorial_score": 9,
+    "editorial_verdict": "The reference humanoid for researchers. At $13.5K it is an order of magnitude cheaper than anything comparable. Dominant in academic labs globally because the price-performance ratio has no competitor. Shipping in volume."
   },
   {
     "company": "1X Technologies",
@@ -2539,7 +2547,9 @@
         "details": "10,000 pre-orders booked; full-scale production began April 2026; first US home deliveries in 2026.",
         "source": "https://www.forbes.com/sites/johnkoetsier/2026/04/30/1x-kicks-off-full-scale-production-of-humanoid-robot-neo/"
       }
-    ]
+    ],
+    "editorial_score": 7.5,
+    "editorial_verdict": "The first humanoid you can actually preorder for your home. Soft body and tendon drives are the right call; $20K pricing is brave. Whether it survives real homes — kids, stairs, pets — is the open question."
   },
   {
     "company": "Pudu Robotics",
@@ -2855,7 +2865,9 @@
         "details": "Apollo deployed in pilot manufacturing operations.",
         "source": "https://www.linkedin.com/posts/ryanabramson_updates-in-robotics-humanoid-robots-apptronik-activity-7438275204608528384-6lA3"
       }
-    ]
+    ],
+    "editorial_score": 8.7,
+    "editorial_verdict": "The most commercially serious US humanoid right now. Mercedes-Benz, GXO, Jabil, NASA — partner roster reads like a procurement officer’s wishlist. Hot-swap batteries are the kind of pragmatic engineering that wins long term."
   },
   {
     "company": "Boston Dynamics",
@@ -2901,7 +2913,9 @@
         "details": "Hyundai committed to deploying tens of thousands of Atlas robots; first deployments at Robotics Metaplant America (RMAC) in Georgia. 2026 production fully committed to Hyundai.",
         "source": "https://www.forbes.com/sites/johnkoetsier/2026/01/06/atlas-humanoid-robots-production-fully-committed-for-2026-factory-will-build-30000-per-year/"
       }
-    ]
+    ],
+    "editorial_score": 9.1,
+    "editorial_verdict": "The engineering benchmark. Superhuman range of motion, real Hyundai pilots, Boston Dynamics at its best. If a 2026 humanoid feels astonishing in person, it is probably this one. Every other lab benchmarks against Atlas."
   },
   {
     "company": "Enchanted Tools",
@@ -2981,7 +2995,9 @@
         "details": "BMW announced Figure 03 deployment in production in Germany — first humanoid use in BMW Germany operations following Spartanburg pilot.",
         "source": "https://www.press.bmwgroup.com/canada/article/detail/T0456018EN/bmw-group-to-deploy-humanoid-robots-in-production-in-germany-for-the-first-time"
       }
-    ]
+    ],
+    "editorial_score": 8.4,
+    "editorial_verdict": "Helix VLA model is genuinely impressive; BMW Spartanburg deployment is real and expanding to 30 stations. Series C at $1.5B says investors believe the trajectory. Burn rate against unproven home-robot revenue is the elephant in the room."
   },
   {
     "company": "Foxconn (Hon Hai)",
@@ -3467,7 +3483,9 @@
         "details": "Microsoft collaboration for general-purpose robot research, leveraging Azure AI.",
         "source": "https://techcrunch.com/2024/05/01/microsoft-taps-sanctuary-ai-for-general-purpose-robot-research/"
       }
-    ]
+    ],
+    "editorial_score": 7.2,
+    "editorial_verdict": "Canadian quiet excellence. 21-DOF hydraulic hands are remarkable, Magna deployment is real, but Canadian-scale funding caps the ambition. Likely to get acquired before it scales globally."
   },
   {
     "company": "Telexistence",
@@ -8378,7 +8396,9 @@
         "details": "Tesla deploying Optimus units at its own factories on simple repetitive tasks; no external customers yet.",
         "source": "https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/"
       }
-    ]
+    ],
+    "editorial_score": 6.8,
+    "editorial_verdict": "Tesla’s most-watched product after the Model 3 — but every demo so far has been a controlled environment, and there is still no public shipping date. Massive funding, massive ambition, theoretical product. Watch closely; do not pre-order yet."
   },
   {
     "company": "Tokyo Robotics",

@@ -302,6 +302,26 @@
   .spec { display: flex; justify-content: space-between; gap: 8px; padding: 6px 0; border-top: 1px solid var(--border); }
   .spec .k { color: var(--silver-dim); letter-spacing: 0.12em; text-transform: uppercase; font-size: 9px; }
   .spec .v { color: var(--silver); font-variant-numeric: tabular-nums; letter-spacing: 0.04em; }
+  /* Editorial score badge on the card */
+  .editorial-score {
+    position: absolute; bottom: 10px; left: 10px;
+    display: inline-flex; align-items: baseline; gap: 4px;
+    background: rgba(8,8,8,0.75); backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.18); border-radius: 999px;
+    padding: 4px 10px;
+    font-family: 'DM Serif Display', serif; font-style: italic;
+    color: var(--white); font-size: 15px; line-height: 1;
+  }
+  .editorial-score .lbl { font-family: 'Geist Mono', monospace; font-style: normal; font-size: 8px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-dim); }
+
+  /* Editorial verdict block in the detail modal */
+  .editorial-block { background: var(--glass-2); border: 1px solid var(--border); border-left: 3px solid var(--white); border-radius: 0.5rem; padding: 18px 20px; margin-bottom: 14px; }
+  .editorial-block .head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .editorial-block .head .lbl { font-family: 'Geist Mono', monospace; font-size: 9px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dim); }
+  .editorial-block .head .score { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 36px; line-height: 1; color: var(--white); letter-spacing: -0.02em; }
+  .editorial-block .head .score .max { font-family: 'Geist Mono', monospace; font-style: normal; font-size: 11px; color: var(--silver-dim); letter-spacing: 0.06em; margin-left: 4px; }
+  .editorial-block .verdict { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 18px; line-height: 1.35; color: var(--white); letter-spacing: -0.01em; }
+
   .use-case-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
   .use-case-tags span { font-family: 'Geist Mono', monospace; font-size: 8px; padding: 3px 8px; border-radius: 999px; color: var(--silver-faint); border: 1px solid var(--border); letter-spacing: 0.18em; text-transform: uppercase; }
 
@@ -902,7 +922,7 @@
   </div>
 </div>
 
-<script src="data/robots.js?v=311-1778589857409"></script>
+<script src="data/robots.js?v=311-1778672487710"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script src="https://unpkg.com/topojson-client@3"></script>
 <script>
@@ -1374,9 +1394,12 @@ window.HUMANOID_CONFIG = {
     const isCompared = state.compare.has(r._id);
     const useCaseTagsHtml = (r.use_cases || []).slice(0, 3).map(u => `<span>${useCaseLabel(u)}</span>`).join('');
     const isSaved = isInShortlist(r._id);
+    const scoreBadge = (typeof r.editorial_score === 'number')
+      ? `<div class="editorial-score" title="Editorial verdict"><span class="lbl">score</span>${r.editorial_score.toFixed(1)}</div>`
+      : '';
     return `
       <article class="card ${isCompared ? 'compared' : ''} ${isSaved ? 'saved' : ''}" data-id="${escapeHtml(r._id)}">
-        <div class="photo">${img}${priceTag}${statusBadgeHtml(r.availability_status)}<button class="save-btn" data-save title="Save to shortlist">${isSaved ? '♥' : '♡'}</button><button class="compare-toggle" data-compare title="Add to compare">${isCompared ? '✓' : '+'}</button></div>
+        <div class="photo">${img}${priceTag}${scoreBadge}${statusBadgeHtml(r.availability_status)}<button class="save-btn" data-save title="Save to shortlist">${isSaved ? '♥' : '♡'}</button><button class="compare-toggle" data-compare title="Add to compare">${isCompared ? '✓' : '+'}</button></div>
         <div class="body">
           <div class="name">${escapeHtml(r.robot_name)}</div>
           <div class="company">${escapeHtml(r.company)}</div>
